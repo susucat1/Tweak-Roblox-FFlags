@@ -294,7 +294,7 @@
 {
     "FIntFRMMinGrassDistance": "0",
     "FIntFRMMaxGrassDistance": "0",
-    "FIntRenderGrassDetailStrands": "0",
+    "FIntRenderGrassDetailStrands": "0"
 }
 ```
 ### Increased Grass Motion & No Grass Motion
