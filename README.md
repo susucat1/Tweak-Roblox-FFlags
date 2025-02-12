@@ -88,7 +88,7 @@
 }
 ```
 ### Max Shadow Atlas Usage Before Downscale
-> **Note!: u can change number and use unified lighting
+> **Note!: u can change number and use unified lighting**
 ```json
 {
     "FIntRenderMaxShadowAtlasUsageBeforeDownscale": "-1"
