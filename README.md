@@ -396,6 +396,17 @@
     "DFIntTimeBetweenSendConnectionAttemptsMS": "200"
 }
 ```
+### Network Cpu RSS tweaks
+``` json
+{
+    "DFIntPhysicsReceiveNumParallelTasks": "20",
+    "DFIntPhysicsAnalyticsHighFrequencyIntervalSec": "20",
+    "FIntSimWorldTaskQueueParallelTasks": "20",
+    "FIntSmoothClusterTaskQueueMaxParallelTasks": "20",
+    "DFIntReplicationDataCacheNumParallelTasks": "20",
+    "DFIntMegaReplicatorNumParallelTasks": "20"
+}
+```
 ### Unified Lighting Blend Zone
 ##### Smaller value = FPS boost > Bigger value = FPS loss
 ##### Explanation:
