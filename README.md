@@ -70,7 +70,7 @@
 ### Unified Lighting (LightGrid - Beta)
 ```json
 {
-    "FFlagRenderUnifiedLighting": "true"
+    "FFlagRenderUnifiedLighting12": "true"
 }
 ```
 <h1 align="center">Graphical Settings</h1>
