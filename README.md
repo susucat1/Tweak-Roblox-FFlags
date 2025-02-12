@@ -697,7 +697,7 @@
 ```
 ### Capture posts
 ###### Twitter x Roblox edition
-```
+```json
 {
     "FFlagCapturesPostEnabledForAll_v4": "true"
 }
