@@ -524,3 +524,22 @@
     "FFlagRenderDebugCheckThreading2": "true"
 }
 ```
+
+<h1 align="center">Telemetry</h1>
+
+### Disable Telemetry 
+```json
+{
+    "FFlagDebugDisableTelemetryEphemeralCounter": "True",
+    "FFlagDebugDisableTelemetryEphemeralStat": "True",
+    "FFlagDebugDisableTelemetryEventIngest": "True",
+    "FFlagDebugDisableTelemetryPoint": "True",
+    "FFlagDebugDisableTelemetryV2Counter": "True",
+    "FFlagDebugDisableTelemetryV2Event": "True",
+    "FFlagDebugDisableTelemetryV2Stat": "True",
+    "FStringTencentAuthPath": "null"
+}
+```
+
+<h1 align="center">Quality of Life</h1>
+
