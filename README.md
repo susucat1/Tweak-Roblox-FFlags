@@ -713,6 +713,12 @@
     "FFlagFixReducedMotionStuckIGM2": "true"
 }
 ```
+### Cleaner home page
+```json
+{
+    "FIntGameGridFlexFeedItemTileNumPerFeed": "0"
+}
+```
 ### Display FPS
 ```json
 {
@@ -860,3 +866,97 @@
     "FFlagViewCollisionFadeToBlackInVR": "false"
 }
 ```
+
+<h1 align="center">User Interface/Visuals Experimental</h1>
+
+### Menu V2
+```json
+{
+    "FIntNewInGameMenuPercentRollout3": "100",
+    "FFlagEnableInGameMenuControls": "false",
+    "FFlagDisableNewIGMinDUA": "true",
+    "FFlagEnableInGameMenuChromeABTest4": "false"
+}
+```
+### Menu V4
+```json
+{
+    "FFlagEnableInGameMenuControls": "false",
+    "FFlagDisableNewIGMinDUA": "true",
+    "FFlagEnableInGameMenuChromeABTest4": "false"
+}
+```
+### Chrome UI TopBar
+```json
+{
+    "FFlagEnableReportAbuseMenuRoactABTest2": "true",
+    "FFlagEnableInGameMenuChromeABTest2": "true",
+    "FFlagEnableInGameMenuChromeABTest3": "true"
+}
+```
+### Chrome UI Topbar Removal
+```json
+{
+    "FFlagEnableInGameMenuChromeABTest2": "false",
+    "FFlagEnableReportAbuseMenuRoactABTest2": "false",
+    "FFlagEnableInGameMenuChromeABTest3": "false"
+}
+```
+### Hide playerlist close button on Chrome UI
+```json
+{
+    "FFlagDisablePlayerListDisplayCloseBtn": "true"
+}
+```
+### Pin Chat on Chrome UI
+```json
+{
+    "FFlagEnableChromePinnedChat": "true"
+}
+```
+
+<h1 align="center">Audio Related</h1>
+
+### Allows you to change voice chat distance 
+###### default: [Min 7 Max 80]
+```json
+{
+    "DFIntVoiceChatRollOffMinDistance": "7",
+    "DFIntVoiceChatRollOffMaxDistance": "80"
+}
+```
+### Sounds use physical velocity and become distorted
+###### <2017
+```json
+{
+    "FFlagSoundsUsePhysicalVelocity": "true"
+}
+```
+### Audio Occlusion
+```json
+{
+    "FFlagDebugEnableDirectAudioOcclusion2": "true"
+}
+```
+### Limit audios that are being played
+```json
+{
+    "DFIntMaxLoadableAudioChannelCount": "1"
+}
+```
+### Mess with voice chat volume
+###### default 1000
+```json
+{
+    "DFIntVoiceChatVolumeThousandths": "100000"
+}
+```
+### No sounds
+```json
+{
+    "FFlagDebugRomarkMockingAudioDevices": "true"
+}
+```
+
+<h1 align="center">Another</h1>
+
