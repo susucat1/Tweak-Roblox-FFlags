@@ -1,19 +1,19 @@
 <h1 align="center">Rendering API</h1>
 ### Direct X 11 🌟
-```json
+``` json
 {
     "FFlagDebugGraphicsPreferD3D11": "true"
 }
 ```
 ### Direct X 10
-```json
+``` json
 {
     "FFlagDebugGraphicsPreferD3D11FL10": "true",
     "FFlagGraphicsEnableD3D10Compute": "true"
 }
 ```
 ### OpenGL
-```json
+``` json
 {
     "FFlagDebugGraphicsDisableDirect3D11": "true",
     "FFlagDebugGraphicsPreferOpenGL": "true",
@@ -25,7 +25,7 @@
 ### Vulkan ❗
 > [!CAUTION]
 > **Note!: Visual Crashes with NVIDIA AND INTEL GPU work normal with AMD GPU**
-```json
+``` json
 {
     "FFlagDebugGraphicsDisableDirect3D11": "True",
     "FFlagDebugGraphicsPreferVulkan": "True"
