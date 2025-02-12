@@ -100,7 +100,7 @@
     "DFIntTimestepArbiterDebounceFrames": "2147483647"
 }
 ```
-### SSAO
+### SSAO (Screen-Space Ambient Occlusion)
 ```json
 {
     "FFlagDebugSSAOForce": "true"
