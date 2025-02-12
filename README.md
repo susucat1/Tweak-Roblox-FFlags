@@ -530,16 +530,333 @@
 ### Disable Telemetry 
 ```json
 {
-    "FFlagDebugDisableTelemetryEphemeralCounter": "True",
-    "FFlagDebugDisableTelemetryEphemeralStat": "True",
-    "FFlagDebugDisableTelemetryEventIngest": "True",
-    "FFlagDebugDisableTelemetryPoint": "True",
-    "FFlagDebugDisableTelemetryV2Counter": "True",
-    "FFlagDebugDisableTelemetryV2Event": "True",
-    "FFlagDebugDisableTelemetryV2Stat": "True",
+    "FFlagDebugDisableTelemetryEphemeralCounter": "true",
+    "FFlagDebugDisableTelemetryEphemeralStat": "true",
+    "FFlagDebugDisableTelemetryEventIngest": "true",
+    "FFlagDebugDisableTelemetryPoint": "true",
+    "FFlagDebugDisableTelemetryV2Counter": "true",
+    "FFlagDebugDisableTelemetryV2Event": "true",
+    "FFlagDebugDisableTelemetryV2Stat": "true",
     "FStringTencentAuthPath": "null"
+}
+```
+### Disable In-game Advertisements
+```json
+{
+    "FFlagAdServiceEnabled": "false"
+}
+```
+### Disable In-Game Purchases
+```json
+{
+    "DFFlagOrder66": "true"
+}
+```
+### Disable Chat
+```json
+{
+    "FFlagDebugForceChatDisabled": "true"
+}
+```
+### Disable Voicechat
+###### Setting this to True will not do anything 
+###### [TIP] Use PlaceFilter for specific games
+```json
+{
+    "DFFlagVoiceChat4": "false"
+}
+```
+### Overlay that shows what you type
+``` json
+{
+    "FFlagDebugTextBoxServiceShowOverlay": "true"
+}
+```
+### Disable Bubble Chat
+``` json
+{
+    "FFlagEnableBubbleChatFromChatService": "false"
+}
+```
+### Disable Autocomplete
+``` json
+{
+    "FFlagEnableCommandAutocomplete": "false"
+}
+```
+### Disable Avatar Chat
+```json
+{
+    "FFlagAvatarChatServiceEnabled3": "false"
 }
 ```
 
 <h1 align="center">Quality of Life</h1>
 
+### Smoother/Faster Input
+##### Tip: When enabled the game will use an updated implementation for processing user input, which may lead to smoother and more responsive interactions. This flag controls the refactoring of the legacy input handling system in Roblox.
+##### Recommendation: Test your game thoroughly after enabling this flag to ensure that everything functions as expected.
+``` json
+{
+    "FFlagLuaAppLegacyInputSettingRefactor": "true"
+}
+```
+### Disable New Dark Theme + Blue Button
+```json
+{
+   "FFlagUIBloxUseNewThemeColorPalettes": "false",
+   "FFlagLuaAppEnableFoundationColors7": "false",
+   "FFlagLuaAppUseUIBloxColorPalettes1": "false"
+}
+```
+### Party Voice early access
+```json
+{
+    "FFlagEnablePartyVoiceOnlyForUnfilteredThreads": "false",
+    "FFlagEnablePartyVoiceOnlyForEligibleUsers": "false"
+}
+```
+### Disable New Debug Menu UI
+```json
+{
+    "FFlagImproveMicroprofilerReadability": "false"
+}
+```
+### Stuttery Animation Fix
+```json
+{
+    "DFIntTimestepArbiterThresholdCFLThou": "300"
+}
+```
+### Surf the web inside of Roblox
+###### Click the Beta badge or the 13+ badge to open the webview browser.
+```json
+{
+    "FFlagTopBarUseNewBadge": "true",
+    "FStringTopBarBadgeLearnMoreLink": "https://google.com/",
+    "FStringVoiceBetaBadgeLearnMoreLink": "https://google.com/"
+}
+```
+### Adjust Default Timeout Time
+###### 1 second = 1000
+###### @dis_spencer
+```json
+{
+    "DFIntDefaultTimeoutTimeMs": "10000"
+}
+```
+### Automatically unmutes your mic on join (VC)
+```json
+{
+    "FFlagDebugDefaultChannelStartMuted": "false"
+}
+```
+### Lets you change the zoom out limit
+###### Only applies to games that has not changed the default zoom limit
+```json
+{
+    "FIntCameraMaxZoomDistance": "9999"
+}
+```
+### Exclusive Fullscreen
+```json
+{
+    "FFlagHandleAltEnterFullscreenManually": "false"
+}
+```
+### Remove translated supported message on join
+``` json
+{
+    "FFlagChatTranslationEnableSystemMessage": "false"
+}
+```
+### Always display Render Stats
+###### pretty self explanatory fflag, you can't disable them using the hotkey
+```json
+{
+    "FFlagDebugAlwaysDisplayRenderStats": "true"
+}
+```
+### Subscriptions Page
+```json
+{
+    "FFlagLuaAppDevSubsEnabled": "true"
+}
+```
+### Better Trackpad Scrolling
+``` json
+{
+    "FFlagBetterTrackpadScrolling": "true"
+}
+```
+### Adjust Scroll Speed
+```json
+{
+    "FIntScrollWheelDeltaAmount": "140"
+}
+```
+### Capture posts
+###### Twitter x Roblox edition
+```
+{
+    "FFlagCapturesPostEnabledForAll_v4": "true"
+}
+```
+
+<h1 align="center">User Interface/Visuals</h1>
+
+### Fix Reduced Motion Stuck
+###### @kezcn
+![image](https://github.com/user-attachments/assets/cfdc9732-084e-4c09-bc43-8039a3bf0d89)
+```json
+{
+    "FFlagFixReducedMotionStuckIGM2": "true"
+}
+```
+### Display FPS
+```json
+{
+    "FFlagDebugDisplayFPS": "true"
+}
+```
+### Applies rainbow colors to stuff
+```json
+{
+    "FFlagDebugDisplayUnthemedInstances": "true"
+}
+```
+### Revert new invite menu
+```json
+{
+    "FFlagEnableNewInviteMenuIXP2": "false"
+}
+```
+### Revert spacing on errors
+```json
+{
+    "FFlagErrorPromptResizesHeight": "false"
+}
+```
+### Remove Disconnect Blur/Loading Blur
+```json
+{
+    "FIntRobloxGuiBlurIntensity": "0"
+}
+```
+### Disable New Chat Translation Settings
+```json
+{
+    "FFlagChatTranslationSettingEnabled3": "false"
+}
+```
+### Disable New Camera Mode
+``` json
+{
+    "FFlagNewCameraControls": "false"
+}
+```
+### Disable CTM Climbing
+```json
+{
+    "FFlagUserClickToMoveSupportAgentCanClimb2": "false"
+}
+```
+### Disable Drag Detectors
+```json
+{
+    "FFlagDragDetectors1": "false"
+}
+```
+### Disable Feedback Button in ESC
+```json
+{
+    "FFlagDisableFeedbackSoothsayerCheck": "false"
+}
+```
+### Disable Camera & Selfview
+``` json
+{
+    "FFlagSelfieViewEnabled": "true"
+}
+```
+### Preferred text size scale
+##### enables a font scaler in the escape menu
+##### found by Sky (364112742153584640) in Bloxstrap stuff
+``` json
+{
+     "FFlagEnablePreferredTextSizeScale": "true",
+     "FFlagEnablePreferredTextSizeSettingInMenus2": "true"
+}
+```
+### Preferred Text Size Settings (new)
+``` json
+{
+  "FFlagEnablePreferredTextSizeGuiService": "true",
+  "FFlagEnablePreferredTextSizeScale": "true",
+  "FFlagEnablePreferredTextSizeScalePerLayerCollector": "true",
+  "FFlagEnablePreferredTextSizeSettingInMenus2": "true",
+  "FFlagEnablePreferredTextSizeStyleFixesInCaptureMenu": "true",
+  "FFlagEnablePreferredTextSizeStyleFixesInExperienceMenu": "true",
+  "FFlagEnablePreferredTextSizeStyleFixesInPlayerList": "true",
+  "FFlagPreferredTextSizeSettingBetaFeature": "true",
+  "FIntPreferredTextSizeSettingBetaFeatureRolloutPercent": "100",
+  "FFlagEnablePreferredTextSizeConnection": "true",
+  "FFlagEnablePreferredTextSizeStyleFixesAddFriends": "true",
+  "FFlagEnablePreferredTextSizeStyleFixesGameTile": "true",
+  "FFlagEnablePreferredTextSizeStyleFixesInAppShell3": "true",
+  "FFlagEnablePreferredTextSizeStyleFixesInPurchasePrompt": "true",
+  "FFlagEnablePreferredTextSizeStyleFixesInReportMenu": "true"
+}
+```
+### Disable Better Haptics
+``` json
+{
+    "FFlagEnableBetterHapticsResultHandling": "false"
+}
+```
+### Disable Haptics Option
+``` json
+{
+    "FFlagAddHapticsToggle": "false"
+}
+```
+### New Report Menu
+```json
+{
+    "FStringSelectInSceneReportMenuOverrideUserIds": "UserID"
+}
+```
+### Removes the Experience Language option in settings
+```json
+{
+    "FIntV1MenuLanguageSelectionFeaturePerMillageRollout": "0"
+}
+```
+### No Transparency V4 Menu **(2023)**
+```json
+{
+    "FStringInGameMenuModernizationStickyBarForcedUserIds": "UserID"
+}
+```
+### Remove VC Beta Badge
+```json
+{
+    "FFlagVoiceBetaBadge": "false",
+    "FFlagTopBarUseNewBadge": "false",
+    "FFlagBetaBadgeLearnMoreLinkFormview": "false",
+    "FFlagControlBetaBadgeWithGuac": "false",
+    "FStringVoiceBetaBadgeLearnMoreLink": "null"
+}
+```
+### VR Controller transparency
+```json
+{
+    "FIntVRTouchControllerTransparency": "0"
+}
+```
+### Disable VR Collision Fade
+```json
+{
+    "FFlagViewCollisionFadeToBlackInVR": "false"
+}
+```
