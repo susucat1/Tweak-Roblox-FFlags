@@ -75,6 +75,31 @@
 ```
 <h1 align="center">Graphical Settings</h1>
 
+### Dynamic Resolution Scale
+```json
+{
+    "FFlagRenderDynamicResolutionScale11": "true"
+}
+```
+### Rendering Pre Processor
+```json
+{
+    "FFlagRemovedRbxRenderingPreProcessor": "true"
+}
+```
+### Max Shadow Atlas Usage Before Downscale
+> **Note!: u can change number and use unified lighting
+```json
+{
+    "FIntRenderMaxShadowAtlasUsageBeforeDownscale": "-1"
+}
+```
+### Improve FPS and Smooth out your game
+```json
+{
+    "DFIntTimestepArbiterDebounceFrames": "2147483647"
+}
+```
 ### More brighter
 ```json
 {
@@ -221,6 +246,13 @@
 ```json
 {
     "DFIntMaxFrameBufferSize": "4"
+}
+```
+### Target Time & Frame Delay Performance
+```json
+{
+    "FIntInterpolationAwareTargetTimeLerpHundredth": "100",
+    "DFIntMaxAverageFrameDelayExceedFactor": "0"
 }
 ```
 ### Low Quallity Terrain Textures
