@@ -1,6 +1,6 @@
 <h1 align="center">Tweak-Roblox-FFlags</h1>
-### [Bloxstrap](https://github.com/bloxstraplabs/bloxstrap/releases/)
-### [Fishstrap](https://github.com/returnrqt/fishstrap/releases/)
+[Bloxstrap](https://github.com/bloxstraplabs/bloxstrap/releases/)
+[Fishstrap](https://github.com/returnrqt/fishstrap/releases/)
 
 > [!CAUTION]
 > **Note!: Fast Flags are extremely powerful, being that they are intended to only be used by Roblox engineers. While they can be very useful, they can cause issues with stability and functionality if you don't know what you're doing.**
