@@ -18,6 +18,10 @@
 > [!CAUTION]
 > **Note!: Fast Flags are extremely powerful, being that they are intended to only be used by Roblox engineers. While they can be very useful, they can cause issues with stability and functionality if you don't know what you're doing.**
 
+## How To Use BloxsTrap:
+![image](https://github.com/user-attachments/assets/3d109932-b9e9-4dca-9d04-7ec8956139a9)
+
+
 <h1 align="center">Rendering API</h1>
 
 ### Direct X 11 🌟
@@ -115,7 +119,7 @@
 }
 ```
 ### Max Shadow Atlas Usage Before Downscale
-> **Note!: u can change number and use unified lighting**
+##### You can change number and work with Unified Lighting**
 ```json
 {
     "FIntRenderMaxShadowAtlasUsageBeforeDownscale": "-1"
@@ -156,11 +160,19 @@
 }
 ```
 ### Threads
-> **Note!: You can use it or roblox default it**
+> [!WARNING]
+> **Note!: You can use it or roblox default**
 ```json
 {
     "FIntTaskSchedulerThreadMin": "0",
     "FIntRuntimeMaxNumOfThreads": "2400"
+}
+```
+### HyperThreading
+``` json
+{
+    "FFlagDebugCheckRenderThreading": "true",
+    "FFlagRenderDebugCheckThreading2": "true"
 }
 ```
 ### Disable Player Shadows
@@ -171,6 +183,7 @@
 ```
 
 ### Disable Shadows 🌟
+> [!WARNING]
 > **Note!: Work only with Shadowmap Lighting**
 ```json
 {
@@ -180,7 +193,7 @@
 ```
 
 ### Force Graphics Quality Level 
-> **Note!: 1-21**
+##### Note: 1-21
 ```json
 {
     "FIntRomarkStartWithGraphicQualityLevel": "1"
@@ -196,7 +209,6 @@
 ```
 
 ### Low Render Distance
-###### [FRM](https://github.com/luafv/rbxflags/tree/master?tab=readme-ov-file#frm-levels)
 ```json
 {
     "DFIntDebugRestrictGCDistance": "1"
@@ -229,6 +241,8 @@ High
 ```
 
 ### Limits light updates
+> [!WARNING]
+> **Note!: You can use it or roblox default**
 ```json
 {
     "FIntRenderLocalLightUpdatesMin": "0",
@@ -253,13 +267,15 @@ High
 }
 ```
 ### Gray Sky
-###### Only applies to games with the default skybox
+> [!WARNING]
+> **Note!: You can use it or roblox default**
 ```json
 {
     "FFlagDebugSkyGray": "true"
 }
 ```
 ### Pause Voxelizer/Disable Baked Shadows
+> [!WARNING]
 > **Note!: If u play hornor game i dont recommend u use it**
 ```json
 {
@@ -286,6 +302,7 @@ High
 }
 ```
 ### Lighting Attenuation
+> [!CAUTION]
 > **Note!: BUG**
 ```json
 {
@@ -293,6 +310,7 @@ High
 }
 ```
 ### Frame Buffer 🌟
+> [!WARNING]
 > **Note!: Explnation: 0 makes white screen 1-3 makes other players have laggy movement, 4 is stable has better performance than 10 and less input lag**
 ```json
 {
@@ -314,7 +332,7 @@ High
 }
 ```
 ### High Quality Textures 
-###### *[1-3]*
+###### 1-3
 ```json
 {
     "DFFlagTextureQualityOverrideEnabled": "True",
@@ -361,7 +379,7 @@ High
 }
 ```
 ### Force MSAA 
-###### *[1-7]*
+###### 1-7
 ```json
 {
     "FIntDebugForceMSAASamples": "1"
@@ -396,7 +414,8 @@ High
 }
 ```
 ### Remove head roll limit for face tracking
-###### server sided???
+> [!WARNING]
+> **Note!: Server Sided**
 ``` json
 {
     "DFIntAvatarFaceChatHeadRollLimitDegrees": "360"
@@ -409,6 +428,7 @@ High
 }
 ```
 ### Quick game launch
+> [!CAUTION]
 > **Note!: BUG cant loading fully item avatar**
 ``` json
 {
@@ -423,6 +443,7 @@ High
 }
 ```
 ### Enable Highlight Outlines on any Rendering API
+> [!WARNING]
 > **Note!: lag a bit use if u love highlight**
 ``` json
 {
@@ -458,26 +479,28 @@ High
 }
 ```
 ### Unified Lighting Blend Zone
-##### Smaller value = FPS boost > Bigger value = FPS loss
-##### Explanation:
-##### Controls the distance over which light transitions blend.
-##### Lower values create sharper transitions.
-##### Higher values make transitions smoother.
+> [!WARNING]
+> Smaller value = FPS boost > Bigger value = FPS loss
+> Explanation: Controls the distance over which light transitions blend.
+> Lower values create sharper transitions.
+> Higher values make transitions smoother.
 ``` json
 {
      "FIntUnifiedLightingBlendZone": "400"
 }
 ```
 ### Vertex Smoothing Group Tolerance
-##### The FIntVertexSmoothingGroupTolerance flag controls the tolerance level for vertex smoothing groups in 3D graphics.
-##### Lower values result in lower smoothing quality as more errors are tolerated, making models appear more angular and less smooth.
-##### Higher values increase the smoothing accuracy, leading to smoother, more visually appealing models with fewer artifacts.
+> [!WARNING]
+> The FIntVertexSmoothingGroupTolerance flag controls the tolerance level for vertex smoothing groups in 3D graphics.
+> Lower values result in lower smoothing quality as more errors are tolerated, making models appear more angular and less smooth.
+> Higher values increase the smoothing accuracy, leading to smoother, more visually appealing models with fewer artifacts.
 ``` json
 {
     "FIntVertexSmoothingGroupTolerance": "1000"
 }
 ```
 ### Better shadows
+> [!WARNING]
 > **Note!: Loading will take longer but the shadows are much better**
 ``` json
 {
@@ -485,8 +508,9 @@ High
 }
 ```
 ### Raycast Performance Improvements
-##### tip: Uses workspace:Raycast() instead of worldmodel:FindPartOnRayWithIgnoreList()
-> **Note!: if u didnt know just dont use or google search**
+##### [Review](https://create.roblox.com/docs/workspace/raycasting)
+> [!WARNING]
+> **Note!: if u dont know just ignore it**
 ``` json
 {
     "FFlagUserRaycastPerformanceImprovements": "true"
@@ -503,11 +527,11 @@ High
 }
 ```
 ### Move Pre-Render Phase [~25% Performance Boost] ❗
-###### This FastFlag moves the Pre-Render task to an off thread after all other tasks are completed. By default, Pre-Render runs first, forcing the render thread to wait until the Pre-Render process finishes before it can start rendering a frame.
-###### With this FastFlag enabled, Pre-Renderer is executed while the main thread is processing the previous frame. This adjustment allows the main thread to proceed without waiting for Pre-Renderer, leading to increased framerates at the expense of some frame latency.
-###### This flag is most effective in CPU-bound scenarios.
-###### This fflag might cause issues
-###### @blobanium
+> [!CAUTION]
+> This FastFlag moves the Pre-Render task to an off thread after all other tasks are completed. By default, Pre-Render runs first, forcing the render thread to wait until the Pre-Render process finishes before it can start rendering a frame.
+> With this FastFlag enabled, Pre-Renderer is executed while the main thread is processing the previous frame. This adjustment allows the main thread to proceed without waiting for Pre-Renderer, leading to increased framerates at the expense of some frame latency.
+> This flag is most effective in CPU-bound scenarios.
+> This fflag might cause issues
 ```json
 {
     "FFlagMovePrerender": "true"
@@ -521,11 +545,12 @@ High
 }
 ```
 ### Directional Attenuation Max Points
-##### Tip: Lower values: May improve performance but reduce lighting accuracy. > Higher values: Increase lighting accuracy at the cost of performance, potentially leading to slower rendering, especially in scenes with complex lighting setups.
-##### Explanation:
-##### Limits the maximum number of sample points for calculating directional light attenuation..
-##### Lower values improve performance but may reduce lighting accuracy.
-##### Higher values increase lighting accuracy but may slow rendering in complex lighting setups.
+> [!WARNING]
+> Tip: Lower values: May improve performance but reduce lighting accuracy. > Higher values: Increase lighting accuracy at the cost of performance, potentially leading to slower rendering, especially in scenes with complex lighting setups.
+> Explanation:
+> Limits the maximum number of sample points for calculating directional light attenuation..
+> Lower values improve performance but may reduce lighting accuracy.
+> Higher values increase lighting accuracy but may slow rendering in complex lighting setups.
 ``` json
 {
    "FIntDirectionalAttenuationMaxPoints": "400"
@@ -559,13 +584,6 @@ High
 {
   "FIntBloomFrmCutoff": "1654515",
   "FFlagRenderNoLowFrmBloom": "true"
-}
-```
-### HyperThreading
-``` json
-{
-    "FFlagDebugCheckRenderThreading": "true",
-    "FFlagRenderDebugCheckThreading2": "true"
 }
 ```
 
@@ -734,6 +752,7 @@ High
 }
 ```
 ### Better Trackpad Scrolling
+##### For Laptop User use trackpad
 ``` json
 {
     "FFlagBetterTrackpadScrolling": "true"
@@ -835,16 +854,16 @@ High
     "FFlagSelfieViewEnabled": "true"
 }
 ```
-### Preferred text size scale
-##### enables a font scaler in the escape menu
-##### found by Sky (364112742153584640) in Bloxstrap stuff
+### Simple Preferred Text Size Scale
+##### Enables a font scaler in the escape menu
+##### Found by Sky (364112742153584640) in Bloxstrap stuff
 ``` json
 {
      "FFlagEnablePreferredTextSizeScale": "true",
      "FFlagEnablePreferredTextSizeSettingInMenus2": "true"
 }
 ```
-### Preferred Text Size Settings (new)
+### Preferred Text Size Settings (Fully)
 ``` json
 {
   "FFlagEnablePreferredTextSizeGuiService": "true",
@@ -1001,7 +1020,7 @@ High
 <h1 align="center">Latency & Another</h1>
 
 ### Network Ownership
-###### better [network ownership](https://create.roblox.com/docs/physics/network-ownership) of parts
+###### Better [Network Ownership](https://create.roblox.com/docs/physics/network-ownership) of parts
 ``` json
 {
     "DFIntMinClientSimulationRadius": "2147000000",
@@ -1012,6 +1031,8 @@ High
 }
 ```
 ### WIFI OPTIMIZE????
+> [!WARNING]
+> **Note!: if you want just use it. default 100**
 ``` json
 {
     "DFIntTrackCountryRegionAPIHundredthsPercent": "10000"
