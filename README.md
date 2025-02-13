@@ -19,7 +19,7 @@
 > **Note!: Fast Flags are extremely powerful, being that they are intended to only be used by Roblox engineers. While they can be very useful, they can cause issues with stability and functionality if you don't know what you're doing.**
 
 ## How To Use BloxsTrap:
-![gif](http://web.archive.org/web/20240822215026im_/https://github.com/luafv/rbxflags/blob/master/assets/tutorial260.gif?raw=true)
+![newbie](http://web.archive.org/web/20240803170418im_/https://raw.githubusercontent.com/luafv/rbxflags/master/assets/tutorial260.gif)
 
 
 <h1 align="center">Rendering API</h1>
@@ -481,8 +481,11 @@ High
 ### Unified Lighting Blend Zone
 > [!WARNING]
 > Smaller value = FPS boost > Bigger value = FPS loss
+> 
 > Explanation: Controls the distance over which light transitions blend.
+> 
 > Lower values create sharper transitions.
+> 
 > Higher values make transitions smoother.
 ``` json
 {
@@ -492,7 +495,9 @@ High
 ### Vertex Smoothing Group Tolerance
 > [!WARNING]
 > The FIntVertexSmoothingGroupTolerance flag controls the tolerance level for vertex smoothing groups in 3D graphics.
+> 
 > Lower values result in lower smoothing quality as more errors are tolerated, making models appear more angular and less smooth.
+> 
 > Higher values increase the smoothing accuracy, leading to smoother, more visually appealing models with fewer artifacts.
 ``` json
 {
@@ -529,8 +534,11 @@ High
 ### Move Pre-Render Phase [~25% Performance Boost] ❗
 > [!CAUTION]
 > This FastFlag moves the Pre-Render task to an off thread after all other tasks are completed. By default, Pre-Render runs first, forcing the render thread to wait until the Pre-Render process finishes before it can start rendering a frame.
+> 
 > With this FastFlag enabled, Pre-Renderer is executed while the main thread is processing the previous frame. This adjustment allows the main thread to proceed without waiting for Pre-Renderer, leading to increased framerates at the expense of some frame latency.
+> 
 > This flag is most effective in CPU-bound scenarios.
+> 
 > This fflag might cause issues
 ```json
 {
@@ -547,9 +555,11 @@ High
 ### Directional Attenuation Max Points
 > [!WARNING]
 > Tip: Lower values: May improve performance but reduce lighting accuracy. > Higher values: Increase lighting accuracy at the cost of performance, potentially leading to slower rendering, especially in scenes with complex lighting setups.
-> Explanation:
-> Limits the maximum number of sample points for calculating directional light attenuation..
+> 
+> Explanation: Limits the maximum number of sample points for calculating directional light attenuation.
+> 
 > Lower values improve performance but may reduce lighting accuracy.
+> 
 > Higher values increase lighting accuracy but may slow rendering in complex lighting setups.
 ``` json
 {
