@@ -19,7 +19,7 @@
 > **Note!: Fast Flags are extremely powerful, being that they are intended to only be used by Roblox engineers. While they can be very useful, they can cause issues with stability and functionality if you don't know what you're doing.**
 
 ## How To Use BloxsTrap:
-![image](https://github.com/user-attachments/assets/3d109932-b9e9-4dca-9d04-7ec8956139a9)
+![gif](http://web.archive.org/web/20240822215026im_/https://github.com/luafv/rbxflags/blob/master/assets/tutorial260.gif?raw=true)
 
 
 <h1 align="center">Rendering API</h1>
