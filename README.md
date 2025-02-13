@@ -918,23 +918,6 @@ High
 
 <h1 align="center">User Interface/Visuals Experimental</h1>
 
-### Menu V2
-```json
-{
-    "FIntNewInGameMenuPercentRollout3": "100",
-    "FFlagEnableInGameMenuControls": "false",
-    "FFlagDisableNewIGMinDUA": "true",
-    "FFlagEnableInGameMenuChromeABTest4": "false"
-}
-```
-### Menu V4 ❗
-```json
-{
-    "FFlagEnableInGameMenuControls": "false",
-    "FFlagDisableNewIGMinDUA": "true",
-    "FFlagEnableInGameMenuChromeABTest4": "false"
-}
-```
 ### Chrome UI TopBar
 ```json
 {
