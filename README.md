@@ -7,7 +7,12 @@
 > **Note!: Fast Flags are extremely powerful, being that they are intended to only be used by Roblox engineers. While they can be very useful, they can cause issues with stability and functionality if you don't know what you're doing.**
 
 ## How to Fix 403 in <2.5.4 Bloxstrap
-### https://gist.github.com/burgerboxer/c8bf0bb56dc848da9552aedb3467b117.
+![image](http://web.archive.org/web/20240705210210im_/https://private-user-images.githubusercontent.com/166893422/340889199-e1f50b6f-8d62-434c-a95b-4ff535127c09.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjAyMTM2MzAsIm5iZiI6MTcyMDIxMzMzMCwicGF0aCI6Ii8xNjY4OTM0MjIvMzQwODg5MTk5LWUxZjUwYjZmLThkNjItNDM0Yy1hOTViLTRmZjUzNTEyN2MwOS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwNzA1JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDcwNVQyMTAyMTBaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0zYTEzNGY1OThiNjIzMmRmNjFjMTE2MmNkOTY3ZTEzNzNlOGQzNWM4NzZjZDEwMjY3NWVmNzE3NDE4M2QzYjcxJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.kBc2QqZGcGxbp_bn2gRBxD1vbrPZ04nZGJfzGW_FVsc)
+#### 1. `%localappdata%\Bloxstrap\Settings.json` or `%appdata%\Bloxstrap\Settings.json`
+#### 2. Inside the contents of the file you will find `"Channel": "example"`
+#### 3. Now change that to `"Channel": "LIVE"`
+#### 4. Your configuration is complete!
+## Why does this happen?: Because the channel you are assigned to is a common channel.
 
 <h1 align="center">Rendering API</h1>
 
