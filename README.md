@@ -75,7 +75,7 @@
 ```
 <h1 align="center">Graphical Settings</h1>
 
-### Dynamic Resolution Scale
+### Dynamic Resolution Scale 🌟
 ```json
 {
     "FFlagRenderDynamicResolutionScale11": "true"
@@ -94,7 +94,7 @@
     "FIntRenderMaxShadowAtlasUsageBeforeDownscale": "-1"
 }
 ```
-### Improve FPS and Smooth out your game
+### Improve FPS and Smooth out your game 🌟
 ```json
 {
     "DFIntTimestepArbiterDebounceFrames": "2147483647"
@@ -143,7 +143,7 @@
 }
 ```
 
-### Disable Shadows
+### Disable Shadows 🌟
 > **Note!: Work only with Shadowmap Lighting**
 ```json
 {
@@ -152,7 +152,7 @@
 }
 ```
 
-### Force Graphics Quality Level
+### Force Graphics Quality Level 
 > **Note!: 1-21**
 ```json
 {
@@ -160,7 +160,7 @@
 }
 ```
 
-### Low Graphics Quality w/ Max Render Distance/FRM Quality Levels
+### Low Graphics Quality w/ Max Render Distance/FRM Quality Levels 🌟
 ###### Explanation: 1-6 Are low graphics, Above 6 are high graphics. Like the 1-21 graphics slider
 ```json
 {
@@ -198,7 +198,7 @@
 }
 ```
 
-### Force LOD on Meshes
+### Force LOD on Meshes 🌟
 ```json
 {
     "DFIntCSGLevelOfDetailSwitchingDistance": "0",
@@ -247,14 +247,14 @@
     "FFlagNewLightAttenuation": "true"
 }
 ```
-### Frame Buffer
+### Frame Buffer 🌟
 > **Note!: Explnation: 0 makes white screen 1-3 makes other players have laggy movement, 4 is stable has better performance than 10 and less input lag**
 ```json
 {
     "DFIntMaxFrameBufferSize": "4"
 }
 ```
-### Target Time & Frame Delay Performance
+### Target Time & Frame Delay Performance 🌟
 ```json
 {
     "FIntInterpolationAwareTargetTimeLerpHundredth": "100",
@@ -329,7 +329,7 @@
     "FIntRenderShadowmapBias": "75"
 }
 ```
-### Faster preloading
+### Faster preloading 🌟
 ``` json
 {
     "DFIntNumAssetsMaxToPreload": "9999999"
@@ -458,7 +458,7 @@
     "FFlagVisBugChecksThreadYield": "true"
 }
 ```
-### Move Pre-Render Phase [~25% Performance Boost]
+### Move Pre-Render Phase [~25% Performance Boost] ❗
 ###### This FastFlag moves the Pre-Render task to an off thread after all other tasks are completed. By default, Pre-Render runs first, forcing the render thread to wait until the Pre-Render process finishes before it can start rendering a frame.
 ###### With this FastFlag enabled, Pre-Renderer is executed while the main thread is processing the previous frame. This adjustment allows the main thread to proceed without waiting for Pre-Renderer, leading to increased framerates at the expense of some frame latency.
 ###### This flag is most effective in CPU-bound scenarios.
@@ -469,7 +469,7 @@
     "FFlagMovePrerender": "true"
 }
 ```
-### New Version of Render
+### New Version of Render 🌟
 ##### Enables an updated rendering system to improve performance and manage render calls.
 ``` json
 {
@@ -527,7 +527,7 @@
 
 <h1 align="center">Telemetry</h1>
 
-### Disable Telemetry 
+### Disable Telemetry 🌟
 ```json
 {
     "FFlagDebugDisableTelemetryEphemeralCounter": "true",
@@ -540,7 +540,7 @@
     "FStringTencentAuthPath": "null"
 }
 ```
-### Disable In-game Advertisements
+### Disable In-game Advertisements 🌟
 ```json
 {
     "FFlagAdServiceEnabled": "false"
@@ -593,7 +593,7 @@
 
 <h1 align="center">Quality of Life</h1>
 
-### Smoother/Faster Input
+### Smoother/Faster Input 🌟
 ##### Tip: When enabled the game will use an updated implementation for processing user input, which may lead to smoother and more responsive interactions. This flag controls the refactoring of the legacy input handling system in Roblox.
 ##### Recommendation: Test your game thoroughly after enabling this flag to ensure that everything functions as expected.
 ``` json
@@ -878,7 +878,7 @@
     "FFlagEnableInGameMenuChromeABTest4": "false"
 }
 ```
-### Menu V4
+### Menu V4 ❗
 ```json
 {
     "FFlagEnableInGameMenuControls": "false",
@@ -914,6 +914,13 @@
     "FFlagEnableChromePinnedChat": "true"
 }
 ```
+### Red font
+###### You need to use Default Roblox Font to activate this. Also it can be glitchy in the settings menu
+```json
+{
+    "FStringDebugHighlightSpecificFont": "rbxasset://fonts/families/BuilderSans.json"
+}
+```
 
 <h1 align="center">Audio Related</h1>
 
@@ -932,7 +939,7 @@
     "FFlagSoundsUsePhysicalVelocity": "true"
 }
 ```
-### Audio Occlusion
+### Audio Occlusion 🌟
 ```json
 {
     "FFlagDebugEnableDirectAudioOcclusion2": "true"
@@ -958,5 +965,80 @@
 }
 ```
 
-<h1 align="center">Another</h1>
+<h1 align="center">Latency & Another</h1>
 
+### Network Ownership
+###### better [network ownership](https://create.roblox.com/docs/physics/network-ownership) of parts
+``` json
+{
+    "DFIntMinClientSimulationRadius": "2147000000",
+    "DFIntMinimalSimRadiusBuffer": "2147000000",
+    "DFIntMaxClientSimulationRadius": "2147000000",
+    "DFFlagDebugPhysicsSenderDoesNotShrinkSimRadius": "true",
+    "FFlagDebugUseCustomSimRadius": "true"
+}
+```
+### WIFI OPTIMIZE????
+``` json
+{
+    "DFIntTrackCountryRegionAPIHundredthsPercent": "10000"
+}
+```
+### Walk Speed Scale Based
+##### Taller characters have a slower walking animation.
+``` json
+{
+    "DFFlagUserAnimateScaleRun ": "true"
+}
+```
+### Keyboard Latency 🌟
+##### Default value: 500 > > Lower value = more responsive keyboard.
+##### This flag controls the keyboard input latency in milliseconds.By setting this value to 1, it minimizes the delay between key presses and the game's recognition of the input, effectively improving keyboard responsiveness. However, such a low value might cause excessively frequent key registration, which can lead to issues like repeated actions during key holds. The default value is 500 milliseconds, providing a balance between input responsiveness and preventing unintentional key repetition.
+``` json
+{
+  "FIntActivatedCountTimerMSKeyboard": "5"
+}
+```
+### Mouse Latency 🌟
+##### Default value: 500 > > Lower value = more responsive mouse
+##### This flag determines the mouse input delay in milliseconds. A lower value (such as 1) will reduce the latency between mouse movement or clicks and the game's response, making the mouse feel more responsive. However, setting the value too low could result in excessively sensitive mouse input, potentially leading to issues like unintended multiple clicks or overly sensitive pointer movements. The default value of 500 milliseconds provides a balance between responsiveness and control, reducing the risk of input errors.
+``` json
+{
+  "FIntActivatedCountTimerMSMouse": "5"
+}
+```
+### Dev Console Logging
+###### Changes how long a Message can be, doesn't give you the ability to exceed the 16k Message Length Limit
+```Json
+{
+  "FIntStandardOutputMaximumCharacterLength": "1"
+}
+```
+### Dev Console Log Count
+###### Control how many developer console logs can be shown at once, for example if you set the limit to be 100, then 100 different log messages will be shown while any older ones will be deleted when the limit is reached
+###### @satlybpro
+``` json
+{
+    "FIntNewDevConsoleMaxLogCount": "2"
+}
+```
+### Replace all Decals with a Test Image
+###### @.rbx.bloxy
+```json
+{
+    "FFlagDebugTestImageDrawItem": "true"
+}
+```
+### Shows the state of a flag
+```json
+{
+    "FStringDebugShowFlagState": "FLAG_HERE"
+}
+```
+> [!TIP]
+> 
+```json
+{
+    "FStringDebugShowFlagState": "DFIntTaskSchedulerTargetFps, ChannelName"
+}
+```
