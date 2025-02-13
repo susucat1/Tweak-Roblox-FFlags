@@ -1,5 +1,12 @@
 <h1 align="center">Tweak-Roblox-FFlags</h1>
-<h1 align="center">[Bloxstrap](https://github.com/bloxstraplabs/bloxstrap/releases/)</h1>
+### [Bloxstrap](https://github.com/bloxstraplabs/bloxstrap/releases/)
+### [Fishstrap](https://github.com/returnrqt/fishstrap/releases/)
+
+> [!CAUTION]
+> **Note!: Fast Flags are extremely powerful, being that they are intended to only be used by Roblox engineers. While they can be very useful, they can cause issues with stability and functionality if you don't know what you're doing.**
+
+## How to Fix 403 in <2.5.4 Bloxstrap
+### [Link](https://gist.github.com/burgerboxer/c8bf0bb56dc848da9552aedb3467b117.)
 
 <h1 align="center">Rendering API</h1>
 
@@ -177,6 +184,24 @@
 {
     "DFIntDebugRestrictGCDistance": "1"
 }
+```
+### FRM Levels
+```json
+Low
+
+1 = 3
+2 = 2
+3 = 6
+
+High
+
+4 = 7
+5 = 11
+6 = 14
+7 = 15 
+8 = 17
+9 = 18
+10 = 21
 ```
 
 ### Disables fade in and fade out animation every light update
