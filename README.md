@@ -52,7 +52,7 @@
 
 ### Vulkan❗
 > [!CAUTION]
-> **Note!: Visual Crashes with NVIDIA AND INTEL GPU work normal with AMD GPU**
+> **Note!: Visual Crashes**
 ```json
 {
     "FFlagDebugGraphicsDisableDirect3D11": "true",
