@@ -106,7 +106,9 @@
     "FFlagRenderDynamicResolutionScale12": "true"
 }
 ```
-### Make Low Quality Roblox
+### Make Low Quality Roblox❗
+> [!WARNING]
+> **Note!: Rat Quality, careful if u want use it**
 ```json
 {
     "DFIntDebugDynamicRenderKiloPixels": "2"
@@ -311,7 +313,7 @@ High
 ```
 ### Frame Buffer 🌟
 > [!WARNING]
-> **Note!: Explnation: 0 makes white screen 1-3 makes other players have laggy movement, 4 is stable has better performance than 10 and less input lag**
+> **Note!: 0 makes white screen 1-3 makes other players have laggy movement, 4 is stable has better performance than 10 and less input lag**
 ```json
 {
     "DFIntMaxFrameBufferSize": "4"
