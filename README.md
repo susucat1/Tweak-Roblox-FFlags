@@ -438,7 +438,6 @@ High
     "DFIntPerformanceControlFrameTimeMax": "1",
     "DFIntPerformanceControlFrameTimeMaxUtility": "-1",
     "FFlagPushFrameTimeToHarmony": "true",
-    "FFlagUISUseLastFrameTimeInUpdateInputSignal": "true",
     "DFIntAnimatorThrottleMaxFramesToSkip": "1",
     "DFIntNumFramesAllowedToBeAboveError": "1",
     "DFIntVisibilityCheckRayCastLimitPerFrame": "10",
