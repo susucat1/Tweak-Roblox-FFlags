@@ -101,6 +101,12 @@
     "FFlagRenderDynamicResolutionScale11": "true"
 }
 ```
+### Make Low Quality Roblox
+```json
+{
+    "DFIntDebugDynamicRenderKiloPixels": "2"
+}
+```
 ### Rendering Pre Processor
 ```json
 {
@@ -639,6 +645,12 @@ High
     "FFlagLuaAppLegacyInputSettingRefactor": "true"
 }
 ```
+### Enable New Chat Report 🌟
+``` json
+{
+    "DFFlagChatLineAbuseReportAPIEnabled2": "true"
+}
+```
 ### Disable New Dark Theme + Blue Button
 ```json
 {
@@ -1078,5 +1090,13 @@ High
 ```json
 {
     "FStringDebugShowFlagState": "DFIntTaskSchedulerTargetFps, ChannelName"
+}
+```
+### Useful for bladeball & deathball
+```json
+{
+    "DFFlagPreventReturnOfElevatedPhysicsFPS": "false",
+    "DFFlagReducePhysicsReceiverAllocations": "false",
+    "DFIntPhysicsNOUCountHundredth": "2147483647"
 }
 ```
