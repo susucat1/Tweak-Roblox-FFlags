@@ -56,7 +56,16 @@
 ```json
 {
     "FFlagDebugGraphicsDisableDirect3D11": "true",
-    "FFlagDebugGraphicsPreferVulkan": "true"
+    "FFlagDebugGraphicsPreferVulkan": "true",
+    "FFlagSupportsTexture3DCopyVulkan": "true",
+    "FFlagSupportHeadlessDeviceVulkan": "true",
+    "FFlagGraphicsVulkanBonusMemory": "true",
+    "FFlagGraphicsVulkanYuvTexturesSamplers5": "true",
+    "FFlagGraphicsVulkanMtSubmitResizing2": "true",
+    "FFlagGraphicsVulkanMtSubmitWaitLater": "true",
+    "FFlagGraphicsVulkanMtSubmit3": "true",
+    "FFlagGraphicsVulkanDeviceLostCrash": "true",
+    "FFlagGraphicsVKEXTDeviceFault": "true"
 }
 ```
 
