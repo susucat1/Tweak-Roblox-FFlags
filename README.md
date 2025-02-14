@@ -115,6 +115,12 @@
     "FFlagRenderDynamicResolutionScale12": "true"
 }
 ```
+### Render Mesh Optimize
+```json
+{
+    "FIntRenderMeshOptimizeVertexBuffer": "1"
+}
+```
 ### Make Low Quality Roblox❗
 > [!WARNING]
 > **Note!: Rat Quality, careful if u want use it**
