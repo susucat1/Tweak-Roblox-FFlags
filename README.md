@@ -148,10 +148,28 @@
     "DFIntTimestepArbiterDebounceFrames": "2147483647"
 }
 ```
+### Disable Highlights on Parts
+```json
+{
+   "FFlagRenderHighlightManagerPrepare2": "true"
+}
+```
+### Legacy Shadow
+```json
+{
+   "FFlagRenderLegacyShadowsQualityRefactor": "true"
+}
+```
 ### SSAO (Screen-Space Ambient Occlusion)
 ```json
 {
     "FFlagDebugSSAOForce": "true"
+}
+```
+### Fast Render
+```json
+{
+     "FIntRenderFastCluster": "255"
 }
 ```
 ### More brighter
