@@ -32,6 +32,8 @@
 ```
 
 ### Direct X 10
+> [!NOTE]
+> **FOR POTATO DESKTOP**
 ```json
 {
     "FFlagDebugGraphicsPreferD3D11FL10": "true",
@@ -56,16 +58,7 @@
 ```json
 {
     "FFlagDebugGraphicsDisableDirect3D11": "true",
-    "FFlagDebugGraphicsPreferVulkan": "true",
-    "FFlagSupportsTexture3DCopyVulkan": "true",
-    "FFlagSupportHeadlessDeviceVulkan": "true",
-    "FFlagGraphicsVulkanBonusMemory": "true",
-    "FFlagGraphicsVulkanYuvTexturesSamplers5": "true",
-    "FFlagGraphicsVulkanMtSubmitResizing2": "true",
-    "FFlagGraphicsVulkanMtSubmitWaitLater": "true",
-    "FFlagGraphicsVulkanMtSubmit3": "true",
-    "FFlagGraphicsVulkanDeviceLostCrash": "true",
-    "FFlagGraphicsVKEXTDeviceFault": "true"
+    "FFlagDebugGraphicsPreferVulkan": "true"
 }
 ```
 
@@ -109,7 +102,9 @@
 ```
 <h1 align="center">Graphical Settings</h1>
 
-### Dynamic Resolution Scale 🌟
+### Dynamic Resolution Scale
+> [!Note]
+> **Default by Roblox**
 ```json
 {
     "FFlagRenderDynamicResolutionScale12": "true"
@@ -127,7 +122,7 @@
     "FIntRenderMeshOptimizeVertexBuffer": "1"
 }
 ```
-### Make Low Quality Roblox❗
+### Pixel Quality Roblox❗
 > [!WARNING]
 > **Note!: Rat Quality, careful if u want use it**
 ```json
@@ -148,7 +143,7 @@
     "FIntRenderMaxShadowAtlasUsageBeforeDownscale": "-1"
 }
 ```
-### Improve FPS and Smooth out your game 🌟
+### Improve Smooth Frames Out Your Game 🌟
 ```json
 {
     "DFIntTimestepArbiterDebounceFrames": "2147483647"
@@ -195,8 +190,8 @@
 }
 ```
 ### Threads
-> [!WARNING]
-> **Note!: You can use it or roblox default**
+> [!NOTE]
+> **You can use it or roblox default**
 ```json
 {
     "FIntTaskSchedulerThreadMin": "0",
@@ -204,6 +199,8 @@
 }
 ```
 ### HyperThreading
+> [!NOTE]
+> **Default by roblox**
 ``` json
 {
     "FFlagDebugCheckRenderThreading": "true",
@@ -276,8 +273,8 @@ High
 ```
 
 ### Limits light updates
-> [!WARNING]
-> **Note!: You can use it or roblox default**
+> [!NOTE]
+> **You can use it or Roblox Default**
 ```json
 {
     "FIntRenderLocalLightUpdatesMin": "0",
@@ -295,15 +292,15 @@ High
 ### Force LOD on Meshes 🌟
 ```json
 {
-    "DFIntCSGLevelOfDetailSwitchingDistance": "0",
-    "DFIntCSGLevelOfDetailSwitchingDistanceL12": "0",
-    "DFIntCSGLevelOfDetailSwitchingDistanceL23": "0",
-    "DFIntCSGLevelOfDetailSwitchingDistanceL34": "0"
+    "DFIntCSGLevelOfDetailSwitchingDistance": "1",
+    "DFIntCSGLevelOfDetailSwitchingDistanceL12": "2",
+    "DFIntCSGLevelOfDetailSwitchingDistanceL23": "3",
+    "DFIntCSGLevelOfDetailSwitchingDistanceL34": "4"
 }
 ```
 ### Gray Sky
-> [!WARNING]
-> **Note!: You can use it or roblox default**
+> [!NOTE]
+> **You can use it or Roblox Default**
 ```json
 {
     "FFlagDebugSkyGray": "true"
@@ -338,25 +335,18 @@ High
 ```
 ### Lighting Attenuation
 > [!CAUTION]
-> **Note!: BUG**
+> **BUG**
 ```json
 {
     "FFlagNewLightAttenuation": "true"
 }
 ```
 ### Frame Buffer 🌟
-> [!WARNING]
-> **Note!: 0 makes white screen 1-3 makes other players have laggy movement, 4 is stable has better performance than 10 and less input lag**
+> [!NOTE]
+> **0 makes white screen 1-3 makes other players have laggy movement, 4 is stable has better performance than 10 and less input lag**
 ```json
 {
     "DFIntMaxFrameBufferSize": "4"
-}
-```
-### Target Time & Frame Delay Performance 🌟
-```json
-{
-    "FIntInterpolationAwareTargetTimeLerpHundredth": "100",
-    "DFIntMaxAverageFrameDelayExceedFactor": "0"
 }
 ```
 ### Low Quallity Terrain Textures
@@ -430,10 +420,13 @@ High
 ### Faster preloading 🌟
 ``` json
 {
+    "DFIntAssetPreloading": "9999999",
     "DFIntNumAssetsMaxToPreload": "9999999"
 }
 ```
 ### Reduce avatar item particles in first person
+> [!NOTE]
+> **Default by Roblox**
 ``` json
 {
     "FFlagUserHideCharacterParticlesInFirstPerson": "true"
@@ -464,14 +457,14 @@ High
 ```
 ### Quick game launch
 > [!CAUTION]
-> **Note!: BUG cant loading fully item avatar**
+> **BUG cant loading fully item avatar**
 ``` json
 {
     "FFlagEnableQuickGameLaunch": "true"
 }
 ```
 ### roblox shaders
-##### false = old true  = new
+##### false = old | true  = new
 ``` json
 {
     "FFlagShaderLightingRefactor": "true"
@@ -479,7 +472,7 @@ High
 ```
 ### Enable Highlight Outlines on any Rendering API
 > [!WARNING]
-> **Note!: lag a bit use if u love highlight**
+> **lag a bit use if u love highlight**
 ``` json
 {
     "FFlagHighlightOutlinesOnMobile": "True"
@@ -495,11 +488,13 @@ High
     "DFIntPerformanceControlFrameTimeMax": "1",
     "DFIntPerformanceControlFrameTimeMaxUtility": "-1",
     "FFlagPushFrameTimeToHarmony": "true",
-    "DFIntAnimatorThrottleMaxFramesToSkip": "1",
-    "DFIntNumFramesAllowedToBeAboveError": "1",
+    "DFIntAnimatorThrottleMaxFramesToSkip": "0",
+    "DFIntNumFramesAllowedToBeAboveError": "0",
     "DFIntVisibilityCheckRayCastLimitPerFrame": "10",
     "DFIntNetworkSchemaCompressionRatio": "100",
-    "DFIntTimeBetweenSendConnectionAttemptsMS": "200"
+    "DFIntTimeBetweenSendConnectionAttemptsMS": "100",
+    "FIntInterpolationAwareTargetTimeLerpHundredth": "100",
+    "DFIntMaxAverageFrameDelayExceedFactor": "0"
 }
 ```
 ### Network Cpu RSS tweaks
@@ -541,7 +536,7 @@ High
 ```
 ### Better shadows
 > [!WARNING]
-> **Note!: Loading will take longer but the shadows are much better**
+> **Loading will take longer but the shadows are much better**
 ``` json
 {
     "FFlagRenderInitShadowmaps": "true"
@@ -549,8 +544,8 @@ High
 ```
 ### Raycast Performance Improvements
 ##### [Review](https://create.roblox.com/docs/workspace/raycasting)
-> [!WARNING]
-> **Note!: if u dont know just ignore it**
+> [!NOTE]
+> **if u dont know just ignore it**
 ``` json
 {
     "FFlagUserRaycastPerformanceImprovements": "true"
@@ -561,7 +556,6 @@ High
 ``` json
 {
     "DFFlagUseVisBugChecks": "true",
-    "FFlagEnableVisBugChecks": "true",
     "FFlagEnableVisBugChecks28": "true",
     "FFlagVisBugChecksThreadYield": "true"
 }
@@ -589,7 +583,7 @@ High
 ```
 ### Directional Attenuation Max Points
 > [!WARNING]
-> Tip: Lower values: May improve performance but reduce lighting accuracy. > Higher values: Increase lighting accuracy at the cost of performance, potentially leading to slower rendering, especially in scenes with complex lighting setups.
+> Lower values: May improve performance but reduce lighting accuracy. > Higher values: Increase lighting accuracy at the cost of performance, potentially leading to slower rendering, especially in scenes with complex lighting setups.
 > 
 > Explanation: Limits the maximum number of sample points for calculating directional light attenuation.
 > 
@@ -602,7 +596,8 @@ High
 }
 ```
 ### Simulation Optimization Flag
-##### Be mindful that while optimization can improve performance, it may also require testing to ensure that the behavior of sets remains consistent and that no necessary details are lost during the optimization process. The DFFlagSimOptimizeSetSize flag is used to optimize the size of sets in simulations. Enabling this flag activates optimization techniques that reduce the size of simulation sets, leading to better performance by decreasing memory usage and potentially improving processing speeds during simulations.
+> [!NOTE]
+> **Be mindful that while optimization can improve performance, it may also require testing to ensure that the behavior of sets remains consistent and that no necessary details are lost during the optimization process. The DFFlagSimOptimizeSetSize flag is used to optimize the size of sets in simulations. Enabling this flag activates optimization techniques that reduce the size of simulation sets, leading to better performance by decreasing memory usage and potentially improving processing speeds during simulations.**
 ``` json
 {
   "DFFlagSimOptimizeSetSize": "true"
