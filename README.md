@@ -123,11 +123,11 @@
 }
 ```
 ### Pixel Quality Roblox❗
-> [!WARNING]
-> **Note!: Rat Quality, careful if u want use it**
+> [!NOTE]
+> **Value: 1 -> Unlimited**
 ```json
 {
-    "DFIntDebugDynamicRenderKiloPixels": "2"
+    "DFIntDebugDynamicRenderKiloPixels": "1"
 }
 ```
 ### Rendering Pre Processor
