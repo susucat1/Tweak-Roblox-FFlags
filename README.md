@@ -456,7 +456,25 @@ High
 > **lag a bit use if u love highlight**
 ``` json
 {
-    "FFlagHighlightOutlinesOnMobile": "True"
+    "FFlagHighlightOutlinesOnMobile": "true"
+}
+```
+### Enable Gpu Texture Compressor
+``` json
+{
+    "FFlagRenderGpuTextureCompressor": "true"
+}
+```
+### Enable HSR (Hidden Surface Removal)
+``` json
+{
+    "FFlagDebugForceGenerateHSR": "true"
+}
+```
+### Enable Old Lighting Compatibility
+``` json
+{
+    "FFlagRemoveLightingCompatibilityCode2": "false"
 }
 ```
 ### Simulation Optimization Flag
@@ -539,15 +557,7 @@ High
     "FFlagEnableVisBugChecks28": "true"
 }
 ```
-### Move Pre-Render Phase [~25% Performance Boost] ❗
-> [!CAUTION]
-> This FastFlag moves the Pre-Render task to an off thread after all other tasks are completed. By default, Pre-Render runs first, forcing the render thread to wait until the Pre-Render process finishes before it can start rendering a frame.
-> 
-> With this FastFlag enabled, Pre-Renderer is executed while the main thread is processing the previous frame. This adjustment allows the main thread to proceed without waiting for Pre-Renderer, leading to increased framerates at the expense of some frame latency.
-> 
-> This flag is most effective in CPU-bound scenarios.
-> 
-> This fflag might cause issues
+### Move Pre-Render Phase [~25% Performance Boost] 🌟
 ```json
 {
     "FFlagMovePrerenderV2": "true"
