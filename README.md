@@ -102,15 +102,15 @@
 ```
 <h1 align="center">Graphical Settings</h1>
 
-### Dynamic Resolution Scale
-> [!Note]
-> **Default by Roblox**
+### Disable Dynamic Resolution Scale
 ```json
 {
-    "FFlagRenderDynamicResolutionScale12": "true"
+    "FFlagRenderDynamicResolutionScale12": "false"
 }
 ```
 ### Fast Render
+> [!WARNING]
+> **More Laggy**
 ```json
 {
      "FIntRenderFastCluster": "255"
@@ -122,7 +122,7 @@
     "FIntRenderMeshOptimizeVertexBuffer": "1"
 }
 ```
-### Pixel Quality Roblox❗
+### Pixel Quality Roblox
 > [!NOTE]
 > **Value: 1 -> Unlimited**
 ```json
@@ -130,7 +130,7 @@
     "DFIntDebugDynamicRenderKiloPixels": "1"
 }
 ```
-### Rendering Pre Processor
+### Remove Rendering Pre Processor
 ```json
 {
     "FFlagRemovedRbxRenderingPreProcessor": "true"
@@ -143,16 +143,10 @@
     "FIntRenderMaxShadowAtlasUsageBeforeDownscale": "-1"
 }
 ```
-### Improve Smooth Frames Out Your Game 🌟
-```json
-{
-    "DFIntTimestepArbiterDebounceFrames": "2147483647"
-}
-```
 ### Disable Highlights on Parts
 ```json
 {
-   "FFlagRenderHighlightManagerPrepare2": "true"
+   "FFlagRenderHighlightManagerPrepare3": "true"
 }
 ```
 ### Legacy Shadow
@@ -211,16 +205,6 @@
 ```json
 {
     "FIntRenderShadowIntensity": "0"
-}
-```
-
-### Disable Shadows 🌟
-> [!WARNING]
-> **Note!: Work only with Shadowmap Lighting**
-```json
-{
-    "DFIntCullFactorPixelThresholdShadowMapHighQuality": "2147483647",
-    "DFIntCullFactorPixelThresholdShadowMapLowQuality": "2147483647"
 }
 ```
 
@@ -290,12 +274,16 @@ High
 ```
 
 ### Force LOD on Meshes 🌟
+> [!NOTE]
+> **Not Recommend for Evade Player**
+>
+> **Weird Map**
 ```json
 {
-    "DFIntCSGLevelOfDetailSwitchingDistance": "1",
-    "DFIntCSGLevelOfDetailSwitchingDistanceL12": "2",
-    "DFIntCSGLevelOfDetailSwitchingDistanceL23": "3",
-    "DFIntCSGLevelOfDetailSwitchingDistanceL34": "4"
+    "DFIntCSGLevelOfDetailSwitchingDistance": "0",
+    "DFIntCSGLevelOfDetailSwitchingDistanceL12": "0",
+    "DFIntCSGLevelOfDetailSwitchingDistanceL23": "0",
+    "DFIntCSGLevelOfDetailSwitchingDistanceL34": "0"
 }
 ```
 ### Gray Sky
@@ -335,7 +323,7 @@ High
 ```
 ### Lighting Attenuation
 > [!CAUTION]
-> **BUG**
+> **Weird Lighting**
 ```json
 {
     "FFlagNewLightAttenuation": "true"
@@ -442,7 +430,7 @@ High
 }
 ```
 ### Remove head roll limit for face tracking
-> [!WARNING]
+> [!NOTE]
 > **Note!: Server Sided**
 ``` json
 {
@@ -463,13 +451,6 @@ High
     "FFlagEnableQuickGameLaunch": "true"
 }
 ```
-### roblox shaders
-##### false = old | true  = new
-``` json
-{
-    "FFlagShaderLightingRefactor": "true"
-}
-```
 ### Enable Highlight Outlines on any Rendering API
 > [!WARNING]
 > **lag a bit use if u love highlight**
@@ -482,7 +463,6 @@ High
 ##### Optimization, latency, delay FFlag
 ``` json
 {
-    "FFlagSimEnableDCD16": "true",
     "DFIntBufferCompressionLevel": "0",
     "DFIntBufferCompressionThreshold": "100",
     "DFIntPerformanceControlFrameTimeMax": "1",
@@ -492,7 +472,7 @@ High
     "DFIntNumFramesAllowedToBeAboveError": "0",
     "DFIntVisibilityCheckRayCastLimitPerFrame": "10",
     "DFIntNetworkSchemaCompressionRatio": "100",
-    "DFIntTimeBetweenSendConnectionAttemptsMS": "100",
+    "DFIntTimeBetweenSendConnectionAttemptsMS": "50",
     "FIntInterpolationAwareTargetTimeLerpHundredth": "100",
     "DFIntMaxAverageFrameDelayExceedFactor": "0"
 }
@@ -556,8 +536,7 @@ High
 ``` json
 {
     "DFFlagUseVisBugChecks": "true",
-    "FFlagEnableVisBugChecks28": "true",
-    "FFlagVisBugChecksThreadYield": "true"
+    "FFlagEnableVisBugChecks28": "true"
 }
 ```
 ### Move Pre-Render Phase [~25% Performance Boost] ❗
@@ -571,7 +550,7 @@ High
 > This fflag might cause issues
 ```json
 {
-    "FFlagMovePrerender": "true"
+    "FFlagMovePrerenderV2": "true"
 }
 ```
 ### New Version of Render 🌟
@@ -680,18 +659,6 @@ High
     "FFlagEnableBubbleChatFromChatService": "false"
 }
 ```
-### Disable Autocomplete
-``` json
-{
-    "FFlagEnableCommandAutocomplete": "false"
-}
-```
-### Disable Avatar Chat
-```json
-{
-    "FFlagAvatarChatServiceEnabled3": "false"
-}
-```
 
 <h1 align="center">Quality of Life</h1>
 
@@ -709,19 +676,10 @@ High
     "DFFlagChatLineAbuseReportAPIEnabled2": "true"
 }
 ```
-### Disable New Dark Theme + Blue Button
+### Disable Blue Button
 ```json
 {
-   "FFlagUIBloxUseNewThemeColorPalettes": "false",
-   "FFlagLuaAppEnableFoundationColors7": "false",
-   "FFlagLuaAppUseUIBloxColorPalettes1": "false"
-}
-```
-### Party Voice early access
-```json
-{
-    "FFlagEnablePartyVoiceOnlyForUnfilteredThreads": "false",
-    "FFlagEnablePartyVoiceOnlyForEligibleUsers": "false"
+   "FFlagLuaAppEnableFoundationColors7": "false"
 }
 ```
 ### Disable New Debug Menu UI
@@ -822,12 +780,6 @@ High
     "FFlagFixReducedMotionStuckIGM2": "true"
 }
 ```
-### Cleaner home page
-```json
-{
-    "FIntGameGridFlexFeedItemTileNumPerFeed": "0"
-}
-```
 ### Display FPS
 ```json
 {
@@ -874,12 +826,6 @@ High
 ```json
 {
     "FFlagUserClickToMoveSupportAgentCanClimb2": "false"
-}
-```
-### Disable Drag Detectors
-```json
-{
-    "FFlagDragDetectors1": "false"
 }
 ```
 ### Disable Feedback Button in ESC
@@ -929,12 +875,6 @@ High
     "FFlagEnableBetterHapticsResultHandling": "false"
 }
 ```
-### Disable Haptics Option
-``` json
-{
-    "FFlagAddHapticsToggle": "false"
-}
-```
 ### New Report Menu
 ```json
 {
@@ -945,12 +885,6 @@ High
 ```json
 {
     "FIntV1MenuLanguageSelectionFeaturePerMillageRollout": "0"
-}
-```
-### No Transparency V4 Menu **(2023)**
-```json
-{
-    "FStringInGameMenuModernizationStickyBarForcedUserIds": "UserID"
 }
 ```
 ### Remove VC Beta Badge
@@ -1099,6 +1033,21 @@ High
 ``` json
 {
   "FIntActivatedCountTimerMSMouse": "5"
+}
+```
+### Gamepad Latency 🌟
+##### Default value: 500 > > Lower value = more responsive gamepad
+##### This flag determines the gamepad input delay in milliseconds. A lower value (such as 1) will reduce the latency between gamepad movement or button and the game's response, making the gamepad feel more responsive. However, setting the value too low could result in excessively sensitive gamepad input, potentially leading to issues like unintended multiple button or overly sensitive pointer movements. The default value of 500 milliseconds provides a balance between responsiveness and control, reducing the risk of input errors.
+``` json
+{
+  "FIntActivatedCountTimerMSGamepad": "5"
+}
+```
+### Touch Latency 🌟
+##### Default value: 500 > > Lower value = more responsive touch
+``` json
+{
+  "FIntActivatedCountTimerMSTouch": "5"
 }
 ```
 ### Dev Console Logging
