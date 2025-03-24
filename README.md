@@ -1062,6 +1062,13 @@ High
   "FIntActivatedCountTimerMSTouch": "100"
 }
 ```
+### Zero Delay with Mouse
+##### Default value: 16 > > Lower value = more double click
+``` json
+{
+    "FIntCLI20390_2": "0"
+}
+```
 ### Dev Console Logging
 ###### Changes how long a Message can be, doesn't give you the ability to exceed the 16k Message Length Limit
 ```Json
