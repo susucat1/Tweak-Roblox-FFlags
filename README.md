@@ -48,6 +48,7 @@
     "FFlagDebugGraphicsPreferOpenGL": "true",
     "FFlagGraphicsGLEnableHQShadersExclusion": "true",
     "FFlagGraphicsGLEnableSuperHQShadersExclusion": "true",
+    "FFlagGLES3_0EnableCBs": "true",
     "FFlagGraphicsGLWindowsShutdownFix": "true"
 }
 ```
