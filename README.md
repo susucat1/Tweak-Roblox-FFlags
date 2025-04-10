@@ -125,7 +125,7 @@
 ```
 ### Pixel Quality Roblox
 > [!NOTE]
-> **Value: 1 -> Unlimited**
+> **This flag makes your graphics pixelated, higher values will show you more pixels**
 ```json
 {
     "DFIntDebugDynamicRenderKiloPixels": "1"
@@ -190,16 +190,14 @@
 ```json
 {
     "FIntTaskSchedulerThreadMin": "0",
-    "FIntRuntimeMaxNumOfThreads": "2400"
+    "FIntRuntimeMaxNumOfThreads": "2000"
 }
 ```
-### HyperThreading
-> [!NOTE]
-> **Default by roblox**
+### Disable HyperThreading
 ``` json
 {
-    "FFlagDebugCheckRenderThreading": "true",
-    "FFlagRenderDebugCheckThreading2": "true"
+    "FFlagDebugCheckRenderThreading": "false",
+    "FFlagRenderDebugCheckThreading2": "false"
 }
 ```
 ### Disable Player Shadows
@@ -208,7 +206,12 @@
     "FIntRenderShadowIntensity": "0"
 }
 ```
-
+### Preserve rendering quality with display setting
+```json
+{
+    "DFFlagDisableDPIScale": "true"
+}
+```
 ### Force Graphics Quality Level 
 ##### Note: 1-21
 ```json
@@ -263,7 +266,7 @@ High
 ```json
 {
     "FIntRenderLocalLightUpdatesMin": "0",
-    "FIntRenderLocalLightUpdatesMax": "10"
+    "FIntRenderLocalLightUpdatesMax": "8"
 }
 ```
 
@@ -380,13 +383,13 @@ High
     "FIntRenderGrassDetailStrands": "0"
 }
 ```
-### Increased Grass Motion & No Grass Motion
-###### Best for non gamers to touch grass
+### No Grass Motion
 ```json
 {
     "FIntGrassMovementReducedMotionFactor": "0"
 }
 ```
+### Increased Grass Motion
 ```json
 {
     "FIntGrassMovementReducedMotionFactor": "999"
@@ -413,12 +416,10 @@ High
     "DFIntNumAssetsMaxToPreload": "9999999"
 }
 ```
-### Reduce avatar item particles in first person
-> [!NOTE]
-> **Default by Roblox**
+### Disable Reduce avatar item particles in first person
 ``` json
 {
-    "FFlagUserHideCharacterParticlesInFirstPerson": "true"
+    "FFlagUserHideCharacterParticlesInFirstPerson": "false"
 }
 ```
 ### Disable Dynamic Heads Animations
@@ -472,12 +473,6 @@ High
 ``` json
 {
     "FFlagDebugForceGenerateHSR": "true"
-}
-```
-### Enable Old Lighting Compatibility
-``` json
-{
-    "FFlagRemoveLightingCompatibilityCode2": "false"
 }
 ```
 ### Simulation Optimization Flag
@@ -560,7 +555,7 @@ High
     "FFlagEnableVisBugChecks28": "true"
 }
 ```
-### Move Pre-Render Phase [~25% Performance Boost] 🌟
+### Move Pre-Render Base [~25% Performance Boost] 🌟
 ```json
 {
     "FFlagMovePrerenderV2": "true"
@@ -595,6 +590,7 @@ High
   "DFFlagSimOptimizeSetSize": "true"
 }
 ```
+
 ### Fully dark map
 ``` json
 {
@@ -609,6 +605,12 @@ High
 {
     "DFIntRenderClampRoughnessMax": "-640000000",
     "DFIntDebugFRMQualityLevelOverride": "6"
+}
+```
+### Limits number of animations being played
+```json
+{
+    "DFIntMaxActiveAnimationTracks": "0"
 }
 ```
 ### Remove Bloom
@@ -672,9 +674,71 @@ High
     "FFlagEnableBubbleChatFromChatService": "false"
 }
 ```
+### Disable Autocomplete
+```json
+{
+    "FFlagEnableCommandAutocomplete": "false"
+}
+```
 
 <h1 align="center">Quality of Life</h1>
 
+### Unlimited FPS Unlocker
+```json
+{
+    "FFlagTaskSchedulerLimitTargetFpsTo2402": "false",
+    "FFlagGameBasicSettingsFramerateCap5": "false",
+    "DFIntTaskSchedulerTargetFps": "9999"
+}
+```
+### GUI Hiding Toggles
+```json
+{
+    "FFlagUserShowGuiHideToggles": "true",
+    "GuiHidingApiSupport2": "true"
+}
+```
+### Hide guis
+Instructions: Replace "ID" with any group ID that you are in.
+![image]([https://github.com/user-attachments/assets/cfdc9732-084e-4c09-bc43-8039a3bf0d89](https://cdn.discordapp.com/attachments/1177897776340807734/1359898836801421403/image.png?ex=67f927fc&is=67f7d67c&hm=627affa6da123b3ed549618a0a533a68901382605166bc9b883fd96c0dec2bdf&))
+```json
+{
+    "DFIntCanHideGuiGroupId": "ID"
+}
+```
+### Disable Fullscreen Title Bar
+```json
+{
+    "FIntFullscreenTitleBarTriggerDelayMillis": "3600000"
+}
+```
+### Spammed letters
+##### This fflag basically spams every other letter on roblox coregui and the game's gui but it doesn't affect some parts of the games!
+##### Default is 0 and if you set it to anything higher it just follows whatever number you put
+```json
+{
+    "FIntDebugTextElongationFactor": "999999"
+}
+```
+### MTU
+```json
+{
+    "DFIntConnectionMTUSize": "MTU_HERE"
+}
+```
+### No Internet Disconnect
+##### [You will still be kicked but the message wont show.]
+```json
+{
+    "DFFlagDebugDisableTimeoutDisconnect": "true"
+}
+```
+### Automatically unmutes your mic on join (VC)
+```json
+{
+    "FFlagDebugDefaultChannelStartMuted": "false"
+}
+```
 ### Smoother/Faster Input 🌟
 ##### Tip: When enabled the game will use an updated implementation for processing user input, which may lead to smoother and more responsive interactions. This flag controls the refactoring of the legacy input handling system in Roblox.
 ##### Recommendation: Test your game thoroughly after enabling this flag to ensure that everything functions as expected.
@@ -782,15 +846,32 @@ High
     "FFlagCapturesPostEnabledForAll_v4": "true"
 }
 ```
+### Custom MicroProfiler Scale
+```json
+{
+    "DFIntMicroProfilerDpiScaleOverride":  "100"
+}
+```
 
 <h1 align="center">User Interface/Visuals</h1>
 
-### Fix Reduced Motion Stuck
-###### @kezcn
-![image](https://github.com/user-attachments/assets/cfdc9732-084e-4c09-bc43-8039a3bf0d89)
+### Custom Disconnect Message
 ```json
 {
-    "FFlagFixReducedMotionStuckIGM2": "true"
+    "FFlagReconnectDisabled": "true",
+    "FStringReconnectDisabledReason": "You're stupid and I hate you"
+}
+```
+### Verified Badge
+```json
+{
+    "FStringWhitelistVerifiedUserId": "UserID"
+}
+```
+### Verified Badge on everyone
+```json
+{
+    "FFlagOverridePlayerVerifiedBadge": "true"
 }
 ```
 ### Display FPS
@@ -829,16 +910,22 @@ High
     "FFlagChatTranslationSettingEnabled3": "false"
 }
 ```
-### Disable New Camera Mode
+### Enable New Camera Mode
 ``` json
 {
-    "FFlagNewCameraControls": "false"
+    "FFlagNewCameraControls": "true"
 }
 ```
 ### Disable CTM Climbing
 ```json
 {
     "FFlagUserClickToMoveSupportAgentCanClimb2": "false"
+}
+```
+### Disable Drag Detectors
+```json
+{
+    "FFlagDragDetectors1": "false"
 }
 ```
 ### Disable Feedback Button in ESC
@@ -922,9 +1009,137 @@ High
     "FFlagViewCollisionFadeToBlackInVR": "false"
 }
 ```
+### Limit Videos Playing
+```json
+{
+    "DFIntVideoMaxNumberOfVideosPlaying": "0"
+}
+```
+### Disable DSA Reporting In-game
+```json
+{
+    "FFlagDSAIllegalContentReporting2": "false"
+}
+```
+### Desktop App Dev Tools
+##### only works on web view windows like profiles, ctrl + shift + I
+```json
+{
+    "FFlagDebugEnableNewWebView2DevTool": "true"
+}
+```
+### Show All Error Strings
+```json
+{
+    "FFlagDebugEnableErrorStringTesting": "true"
+}
+```
+### Customize chat translation settings
+```json
+{
+    "FStringChatTranslationEnabledLocales": "es_es,fr_fr,pt_br,de_de,it_it,ja_jp,ko_kr,id_id,tr_tr,zh_cn,zh_tw,th_th,pl_pl,vi_vn,ru_ru,"
+}
+```
+### Remove the vr toggle
+```json
+{
+    "FFlagAlwaysShowVRToggleV3": "false"
+}
+```
+### Cleaner desktop home page
+```json
+{
+    "FIntGameGridFlexFeedItemTileNumPerFeed": "0"
+}
+```
+### Mini webview
+```json
+{
+    "FFlagWebViewProtocol": "false"
+}
+```
+### Remove Parental Controls Tab
+```json
+{
+    "FFlagLuaAppsEnableParentalControlsTab": "false"
+}
+```
+### Legacy Search
+```json
+{
+    "FFlagAXSearchLandingPageIXPEnabled4": "false"
+}
+```
+### Disable Profile Picture Customization
+```json
+{
+    "FFlagAXDefaultAvatarToShopEnabled3": "false"
+}
+```
+### old luaapp chat button
+```json
+{
+    "FStringNewChatTabExperimentLayerValue": "2024MUSIC"
+}
+```
+### Disable Toast Notifications
+```json
+{
+    "FFlagToastNotificationsProtocolEnabled2": "false"
+}
+```
+### Rename Communications to Voice Enabled
+```json
+{
+    "FFlagGameDetailsDecoupledCommunication": "false"
+}
+```
 
 <h1 align="center">User Interface/Visuals Experimental</h1>
 
+### No opacity to Chrome UI
+```json
+{
+    "FFlagChromeUsePreferredTransparency": "false"
+}
+```
+### Multi Try On
+##### Allows you to try on multiple things in the catalog and buy everything at once
+```json
+{
+   "FFlagAXEnableMultiTryOnUI": "true"
+}
+```
+### Reset Character instead of Respawn in Experience Menu
+```json
+{
+    "FFlagInExperienceMenuResetButtonTextToRespawn": "false"
+}
+```
+### Break Collectible Icon
+```json
+{
+    "FFlagDisplayCollectiblesIcon": "false"
+}
+```
+### Changes some tiny things about Party
+```json
+{
+    "FFlagAppChatAddConnectUnibarForActiveSquad": "false"
+}
+```
+### Renames Party back to Roblox Chat
+```json
+{
+    "FFlagAppChatRebrandStringUpdates": "false"
+}
+```
+### Disable Sidebar Text (Default: True)
+```json
+{
+    "FFlagEnableNavBarLabels3": "false"
+}
+```
 ### Chrome UI TopBar
 ```json
 {
@@ -1070,6 +1285,19 @@ High
     "FIntCLI20390_2": "0"
 }
 ```
+### Better serversided character position
+##### 100 makes your serversided character closer to your client
+```json
+{
+    "DFIntS2PhysicsSenderRate": "100"
+}
+```
+### Wallglide
+```json
+{
+    "DFIntMaximumUnstickForceInGs": "-4"
+}
+```
 ### Dev Console Logging
 ###### Changes how long a Message can be, doesn't give you the ability to exceed the 16k Message Length Limit
 ```Json
@@ -1090,6 +1318,12 @@ High
 ```json
 {
     "FFlagDebugTestImageDrawItem": "true"
+}
+```
+### Allows you to edit the DataModel Patch
+```json
+{
+    "FFlagDataModelPatcherForceLocal": "true"
 }
 ```
 ### Shows the state of a flag
