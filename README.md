@@ -49,7 +49,11 @@
     "FFlagGraphicsGLEnableHQShadersExclusion": "true",
     "FFlagGraphicsGLEnableSuperHQShadersExclusion": "true",
     "FFlagGLES3_0EnableCBs": "true",
-    "FFlagGraphicsGLWindowsShutdownFix": "true"
+    "FFlagUseConstantBufferViewsGL3": "true",
+    "FFlagDebugGraphicsGLDisableDiscard": "true",
+    "FFlagFixGLResourceFreeOnDeviceShutdown": "true",
+    "FFlagGraphicsGLWindowsShutdownFix": "true",
+    "FIntGraphicsTextureReductionOpenGL": "5"
 }
 ```
 
@@ -59,7 +63,10 @@
 ```json
 {
     "FFlagDebugGraphicsDisableDirect3D11": "true",
-    "FFlagDebugGraphicsPreferVulkan": "true"
+    "FFlagDebugGraphicsPreferVulkan": "true",
+    "FFlagGraphicsVulkanBonusMemory": "true",
+    "FIntGraphicsTextureReductionVulkan": "5",
+    "FFlagRenderEnableGlobalInstancingVulkan": "true"
 }
 ```
 
@@ -298,6 +305,14 @@ High
     "FFlagDebugSkyGray": "true"
 }
 ```
+### White Sky
+##### Only applies to games with the default skybox
+```json
+{
+    "FFlagDebugSkyGray": "true",
+    "FFlagSkyUseRGBEEncoding": "true"
+}
+```
 ### Pause Voxelizer/Disable Baked Shadows
 > [!WARNING]
 > **Note!: If u play hornor game i dont recommend u use it**
@@ -338,7 +353,9 @@ High
 > **0 makes white screen 1-3 makes other players have laggy movement, 4 is stable has better performance than 10 and less input lag**
 ```json
 {
-    "DFIntMaxFrameBufferSize": "4"
+    "DFIntMaxFrameBufferSize": "4",
+    "FIntInterpolationAwareTargetTimeLerpHundredth": "100",
+    "DFIntMaxAverageFrameDelayExceedFactor": "0"
 }
 ```
 ### Low Quallity Terrain Textures
@@ -472,7 +489,9 @@ High
 > **its working like occlusion culling**
 ``` json
 {
-    "FFlagDebugForceGenerateHSR": "true"
+    "FFlagDebugForceGenerateHSR": "true",
+    "FFlagHSRClusterImprovement": "true",
+    "FFlagHSRRemoveDuplicateindices": "true"
 }
 ```
 ### Simulation Optimization Flag
@@ -489,8 +508,6 @@ High
     "DFIntVisibilityCheckRayCastLimitPerFrame": "10",
     "DFIntNetworkSchemaCompressionRatio": "50",
     "DFIntTimeBetweenSendConnectionAttemptsMS": "50",
-    "FIntInterpolationAwareTargetTimeLerpHundredth": "100",
-    "DFIntMaxAverageFrameDelayExceedFactor": "0"
 }
 ```
 ### Network Cpu RSS tweaks
@@ -555,10 +572,10 @@ High
     "FFlagEnableVisBugChecks28": "true"
 }
 ```
-### Move Pre-Render Base [~25% Performance Boost] 🌟
+### Disable Move Pre-Render Base
 ```json
 {
-    "FFlagMovePrerenderV2": "true"
+    "FFlagMovePrerenderV2": "false"
 }
 ```
 ### New Version of Render 🌟
@@ -618,6 +635,13 @@ High
 {
   "FIntBloomFrmCutoff": "1654515",
   "FFlagRenderNoLowFrmBloom": "true"
+}
+```
+### No Clouds/Sky
+```json
+{
+    "FFlagRenderNoLowFrmBloom": "false",
+    "FFlagFRMRefactor": "false"
 }
 ```
 
@@ -700,7 +724,6 @@ High
 ```
 ### Hide guis
 Instructions: Replace "ID" with any group ID that you are in.
-![image](https://photos.app.goo.gl/GcgYk26GW91vXrkd8)
 ```json
 {
     "DFIntCanHideGuiGroupId": "ID"
@@ -1292,12 +1315,19 @@ Instructions: Replace "ID" with any group ID that you are in.
     "DFIntS2PhysicsSenderRate": "100"
 }
 ```
-### Wallglide
+### Fling People
 ```json
 {
-    "DFIntMaximumUnstickForceInGs": "-4"
+    "DFIntNewRunningBaseGravityReductionFactorHundredth": "1695"
 }
 ```
+### Spin
+```json
+{
+    "FFlagSimAdaptiveTimesteppingDefault2": "true",
+    "DFIntSimAdaptiveHumanoidPDControllerSubstepMultiplier": "-999999",
+    "DFFlagSimHumanoidTimestepModelUpdate": "true"
+}
 ### Dev Console Logging
 ###### Changes how long a Message can be, doesn't give you the ability to exceed the 16k Message Length Limit
 ```Json
