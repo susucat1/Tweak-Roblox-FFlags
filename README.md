@@ -700,7 +700,7 @@ High
 ```
 ### Hide guis
 Instructions: Replace "ID" with any group ID that you are in.
-![image]([https://github.com/user-attachments/assets/cfdc9732-084e-4c09-bc43-8039a3bf0d89](https://cdn.discordapp.com/attachments/1177897776340807734/1359898836801421403/image.png?ex=67f927fc&is=67f7d67c&hm=627affa6da123b3ed549618a0a533a68901382605166bc9b883fd96c0dec2bdf&))
+![image](https://photos.app.goo.gl/GcgYk26GW91vXrkd8)
 ```json
 {
     "DFIntCanHideGuiGroupId": "ID"
