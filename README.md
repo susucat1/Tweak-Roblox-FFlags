@@ -1120,6 +1120,12 @@ Instructions: Replace "ID" with any group ID that you are in.
 
 <h1 align="center">User Interface/Visuals Experimental</h1>
 
+### Disable centered experience details page
+```json
+{
+    "FFlagUIBloxMoveDetailsPageToLuaApps": "false"
+}
+```
 ### No opacity to Chrome UI
 ```json
 {
