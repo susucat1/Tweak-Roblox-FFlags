@@ -138,10 +138,10 @@
     "DFIntDebugDynamicRenderKiloPixels": "1"
 }
 ```
-### Remove Rendering Pre Processor
+### Disable Remove Rendering Pre Processor
 ```json
 {
-    "FFlagRemovedRbxRenderingPreProcessor": "true"
+    "FFlagRemovedRbxRenderingPreProcessor": "false"
 }
 ```
 ### Max Shadow Atlas Usage Before Downscale
