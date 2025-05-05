@@ -565,6 +565,18 @@ High
     "FFlagUserRaycastPerformanceImprovements": "true"
 }
 ```
+### Shoe Skip Render Mesh
+```json
+{
+    "FFlagShoeSkipRenderMesh": "true"
+}
+```
+### Enable Old ShaderLighting Roblox
+```json
+{
+    "FFlagShaderLightingRefactor": "false"
+}
+```
 ### Render Occlusion Culling
 ##### [@CloneTrooper1019](https://x.com/MaximumADHD/status/1832331711486865769)
 ``` json
