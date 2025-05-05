@@ -47,13 +47,7 @@
     "FFlagDebugGraphicsDisableDirect3D11": "true",
     "FFlagDebugGraphicsPreferOpenGL": "true",
     "FFlagGraphicsGLEnableHQShadersExclusion": "true",
-    "FFlagGraphicsGLEnableSuperHQShadersExclusion": "true",
-    "FFlagGLES3_0EnableCBs": "true",
-    "FFlagUseConstantBufferViewsGL3": "true",
-    "FFlagDebugGraphicsGLDisableDiscard": "true",
-    "FFlagFixGLResourceFreeOnDeviceShutdown": "true",
-    "FFlagGraphicsGLWindowsShutdownFix": "true",
-    "FIntGraphicsTextureReductionOpenGL": "5"
+    "FFlagGraphicsGLEnableSuperHQShadersExclusion": "true"
 }
 ```
 
@@ -65,7 +59,6 @@
     "FFlagDebugGraphicsDisableDirect3D11": "true",
     "FFlagDebugGraphicsPreferVulkan": "true",
     "FFlagGraphicsVulkanBonusMemory": "true",
-    "FIntGraphicsTextureReductionVulkan": "5",
     "FFlagRenderEnableGlobalInstancingVulkan": "true"
 }
 ```
@@ -197,7 +190,7 @@
 ```json
 {
     "FIntTaskSchedulerThreadMin": "0",
-    "FIntRuntimeMaxNumOfThreads": "2000"
+    "FIntRuntimeMaxNumOfThreads": "1600"
 }
 ```
 ### Disable HyperThreading
@@ -311,6 +304,14 @@ High
 {
     "FFlagDebugSkyGray": "true",
     "FFlagSkyUseRGBEEncoding": "true"
+}
+```
+### Black Sky
+##### Very Buggy
+```json
+{
+    "FFlagDebugSkyGray": "true",
+    "FIntCameraFarZPlane" "600"
 }
 ```
 ### Pause Voxelizer/Disable Baked Shadows
@@ -849,13 +850,6 @@ Instructions: Replace "ID" with any group ID that you are in.
     "FFlagLuaAppDevSubsEnabled": "true"
 }
 ```
-### Better Trackpad Scrolling
-##### For Laptop User use trackpad
-``` json
-{
-    "FFlagBetterTrackpadScrolling": "true"
-}
-```
 ### Adjust Scroll Speed
 ```json
 {
@@ -1248,7 +1242,7 @@ Instructions: Replace "ID" with any group ID that you are in.
 }
 ```
 
-<h1 align="center">Latency & Another</h1>
+<h1 align="center">Latency & Abuse</h1>
 
 ### Network Ownership
 ###### Better [Network Ownership](https://create.roblox.com/docs/physics/network-ownership) of parts
@@ -1314,6 +1308,30 @@ Instructions: Replace "ID" with any group ID that you are in.
     "FIntCLI20390_2": "0"
 }
 ```
+### Mesh Noclip V1
+```json
+{
+    "DFIntPhysicsDecompForceUpgradeVersion": "1500"
+}
+```
+### Mesh Noclip V2
+```json
+
+{
+   "DFIntBulletContactBreakOrthogonalThresholdActivatePercent": 2147483647,
+   "DFIntBulletContactBreakThresholdPercent": -2147483648,
+   "DFIntBulletContactBreakOrthogonalThresholdPercent": -2147483648
+}
+```
+### Mesh Noclip V3 (Combined)
+```json
+{
+   "DFIntPhysicsDecompForceUpgradeVersion": "1500",
+   "DFIntBulletContactBreakOrthogonalThresholdActivatePercent": 2147483647,
+   "DFIntBulletContactBreakThresholdPercent": -2147483648,
+   "DFIntBulletContactBreakOrthogonalThresholdPercent": -2147483648
+}
+```
 ### Better serversided character position
 ##### 100 makes your serversided character closer to your client
 ```json
@@ -1321,10 +1339,73 @@ Instructions: Replace "ID" with any group ID that you are in.
     "DFIntS2PhysicsSenderRate": "100"
 }
 ```
-### Fling People
+### Wall Glide
+```json
+ {
+     "DFIntMaximumUnstickForceInGs": "-10"
+ }
+```
+### Fling you or a part that is below you
 ```json
 {
-    "DFIntNewRunningBaseGravityReductionFactorHundredth": "1695"
+    "DFIntSolidFloorMassMultTenth": "-2147483647",
+    "DFIntSolidFloorPercentForceApplication": "-450",
+    "DFIntNonSolidFloorPercentForceApplication": "-3200"
+}
+```
+### Fling Parts v2
+```json
+{
+    "DFIntSolidFloorPercentForceApplication": "-1000",
+    "DFIntNonSolidFloorPercentForceApplication": "-5000"
+}
+```
+### Invisible 1 (Freezes you in place)
+```json
+{
+    "DFIntGameNetOptimizeParallelPhysicsSendAssemblyBatch": "-1",
+    "DFIntGameNetPVHeaderTranslationZeroCutoffExponent": "-1"
+}
+```
+### Invisible 2 (restricts the client from moving through the server)
+```json
+{
+    "DFIntPhysicsSenderMaxBandwidthBps": "1",
+    "DFIntPhysicsSenderMaxBandwidthBpsScaling": "0"
+}
+```
+### Well known speed fflag (Buggy)
+```json
+{
+     "DFIntMaximumUnstickForceInGs": "-1",
+     "DFIntRaycastMaxDistance": "0"
+}
+```
+### You dont have animations for the server but you do for your client
+```json
+{
+    "DFIntReplicatorAnimationTrackLimitPerAnimator": "-1"
+}
+```
+### Max raycast distance
+##### breaks leg collision and some games under 3
+```json
+{
+    "DFIntRaycastMaxDistance": "3"
+}
+```
+### No animations
+```json
+{
+    "DFIntReplicatorAnimationTrackLimitPerAnimator": "-1"
+}
+```
+### No knockback in certain games
+##### In slap battles its bannable (USE AT YOUR OWN RISK)
+```json
+{
+   "DFIntGameNetLocalSpaceMaxSendIndex": "100000",
+   "DFIntPhysicsImprovedCyclicExecutiveThrottleThresholdTenth": "0"
 }
 ```
 ### Spin
