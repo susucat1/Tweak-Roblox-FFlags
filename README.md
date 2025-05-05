@@ -103,6 +103,17 @@
 ```
 <h1 align="center">Graphical Settings</h1>
 
+
+### Multithreading Improvement
+> [!NOTE]
+> **Default is 3**
+> **Basically makes roblox use as many threads as u put there (+1 because of main/render thread) HOWEVER this is poorly made (L roblox) it actually just switches between the threads really quickly causing overhead**
+> **What i reccomend is setting this to 1 so it uses 2 worker threads + the main thread**
+```json
+{
+    "DFIntRuntimeConcurrency": "your core+1"
+}
+```
 ### Disable Dynamic Resolution Scale
 ```json
 {
