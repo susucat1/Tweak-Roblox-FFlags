@@ -106,13 +106,27 @@
 
 ### Multithreading Improvement
 > [!NOTE]
-> **Default is 3**
 > **Basically makes roblox use as many threads as u put there (+1 because of main/render thread) HOWEVER this is poorly made (L roblox) it actually just switches between the threads really quickly causing overhead**
 > 
 > **What i reccomend is setting this to 1 so it uses 2 worker threads + the main thread (wont go lower than this) if u have a decent cpu this can improve ur fps (it did for me)**
+>
+> **Default = 3**
 ```json
 {
     "DFIntRuntimeConcurrency": "your core+1"
+}
+```
+### Removes Only Roblox Texture
+```json
+{
+    "FFlagTextureUseACR3": "true",
+    "FIntTextureUseACRHundredthPercent": "10000"
+}
+```
+### Disable Render Shadow Huge Radius
+```json
+{
+    "DFIntRenderShadowHugeRadius": "0"
 }
 ```
 ### Disable Dynamic Resolution Scale
