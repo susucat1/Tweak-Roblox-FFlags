@@ -196,7 +196,7 @@
 ```
 ### Smoother Terrain❗
 > [!CAUTION]
-> **Note!: The particle's speed is based on you FPS**
+> **The particle's speed is based on you FPS**
 ```json
 {
     "FFlagDebugRenderingSetDeterministic": "true"
@@ -204,7 +204,7 @@
 ```
 ### Speed up particle emitters❗
 > [!CAUTION]
-> **Note!: The particle's speed is based on you FPS**
+> **The particle's speed is based on you FPS**
 ``` json
 {
   "FFlagDebugDeterministicParticles": "true"
@@ -316,6 +316,20 @@ High
     "DFIntCSGLevelOfDetailSwitchingDistanceL34": "0"
 }
 ```
+### White Everything
+```json
+{
+    "FFlagSkyUseRGBEEncoding": "true"
+}
+```
+### Black Wall
+> [!CAUTION]
+> **Very Buggy**
+```json
+{
+    "FIntCameraFarZPlane": "60"
+}
+```
 ### Gray Sky
 > [!NOTE]
 > **You can use it or Roblox Default**
@@ -325,7 +339,8 @@ High
 }
 ```
 ### White Sky
-##### Only applies to games with the default skybox
+> [!NOTE]
+> **Only applies to games with the default skybox**
 ```json
 {
     "FFlagDebugSkyGray": "true",
@@ -333,7 +348,8 @@ High
 }
 ```
 ### Black Sky
-##### Very Buggy
+> [!CAUTION]
+> **Very Buggy**
 ```json
 {
     "FFlagDebugSkyGray": "true",
@@ -450,7 +466,7 @@ High
 ###### ***[Future & ShadowMap]***
 ```json
 {
-    "FIntRenderShadowmapBias": "75"
+    "FIntRenderShadowmapBias": "-1"
 }
 ```
 ### Faster preloading 🌟
@@ -1239,6 +1255,14 @@ Instructions: Replace "ID" with any group ID that you are in.
 
 <h1 align="center">Audio Related</h1>
 
+### Voice chat range/volume
+> [!NOTE]
+> **For people that play Roblox on low volume, 10000 is the optimal range/volume but it's a personal opinion so adjust it to your liking and i hope this flag is useful**
+```json
+{
+     "DFIntVoiceChatVolumeThousandths": "10000"
+}
+```
 ### Allows you to change voice chat distance 
 ###### default: [Min 7 Max 80]
 ```json
@@ -1452,6 +1476,27 @@ Instructions: Replace "ID" with any group ID that you are in.
     "FFlagSimAdaptiveTimesteppingDefault2": "true",
     "DFIntSimAdaptiveHumanoidPDControllerSubstepMultiplier": "-999999",
     "DFFlagSimHumanoidTimestepModelUpdate": "true"
+}
+```
+### Drive vehicles slow
+```json
+{
+    "DFIntPhysicsImprovedCyclicExecutiveThrottleThresholdTenth": "0"
+}
+```
+### Drunk
+```json
+{
+    "FFlagSimAdaptiveTimesteppingDefault2": "true",
+    "DFIntSimAdaptiveHumanoidPDControllerSubstepMultiplier": "-999999"
+}
+```
+### Even funnier drunk fflag
+```json
+{
+    "DFIntMaxAltitudePDHipHeightPercent": "-10000",
+    "DFIntNewPDAltitudeNoForceZonePercent": "14673",
+    "DFIntSimAdaptiveHumanoidPDControllerSubstepMultiplier": "-999999"
 }
 ```
 ### Dev Console Logging
