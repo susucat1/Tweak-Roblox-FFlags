@@ -123,6 +123,15 @@
     "FIntTextureUseACRHundredthPercent": "10000"
 }
 ```
+### Modify Graphics Frame Time Target Ms
+> [!NOTE]
+> **Not Recommended For Low-End PC**
+```json
+{
+    "DFIntGraphicsOptimizationModeMinFrameTimeTargetMs": "10",
+    "DFIntGraphicsOptimizationModeMaxFrameTimeTargetMs": "25"
+}
+```
 ### Disable Render Shadow Huge Radius
 ```json
 {
@@ -164,7 +173,8 @@
 }
 ```
 ### Max Shadow Atlas Usage Before Downscale
-##### You can change number and work with Unified Lighting
+> [!NOTE]
+> **You can change number and work with Unified Lighting**
 ```json
 {
     "FIntRenderMaxShadowAtlasUsageBeforeDownscale": "-1"
@@ -239,7 +249,8 @@
 }
 ```
 ### Force Graphics Quality Level 
-##### Note: 1-21
+> [!NOTE]
+> **Note: 1-21**
 ```json
 {
     "FIntRomarkStartWithGraphicQualityLevel": "1"
@@ -247,7 +258,8 @@
 ```
 
 ### Low Graphics Quality w/ Max Render Distance/FRM Quality Levels 🌟
-###### Explanation: 1-6 Are low graphics, Above 6 are high graphics. Like the 1-21 graphics slider
+> [!NOTE]
+> **Explanation: 1-6 Are low graphics, Above 6 are high graphics. Like the 1-21 graphics slider**
 ```json
 {
     "DFIntDebugFRMQualityLevelOverride": "1"
@@ -255,6 +267,8 @@
 ```
 
 ### Low Render Distance
+> [!NOTE]
+> **Only Work if game have StreamingEnabled**
 ```json
 {
     "DFIntDebugRestrictGCDistance": "1"
@@ -358,7 +372,7 @@ High
 ```
 ### Pause Voxelizer/Disable Baked Shadows
 > [!WARNING]
-> **Note!: If u play hornor game i dont recommend u use it**
+> **If u play hornor game i dont recommend u use it**
 ```json
 {
     "DFFlagDebugPauseVoxelizer": "true"
@@ -377,7 +391,8 @@ High
 }
 ```
 ### Enable GPULightCulling
-###### Combine with [Lighting Attenuation](https://FastFlags/FastFlags-Collective/?tab=readme-ov-file#lighting-attenuation) for better vision
+> [!NOTE]
+> **Combine with [Lighting Attenuation](https://FastFlags/FastFlags-Collective/?tab=readme-ov-file#lighting-attenuation) for better vision**
 ```json
 {
     "FFlagFastGPULightCulling3": "true"
@@ -402,14 +417,16 @@ High
 }
 ```
 ### Low Quallity Terrain Textures
-###### 4 for less quality 16, 32, 64 for higher quality
+> [!NOTE]
+> **0 --> 4 for less quality 16, 32, 64 for higher quality**
 ```json
 {
     "FIntTerrainArraySliceSize": "0"
 }
 ```
 ### High Quality Textures 
-###### 1-3
+> [!NOTE]
+> **1 --> 3**
 ```json
 {
     "DFFlagTextureQualityOverrideEnabled": "True",
@@ -429,7 +446,8 @@ High
 }
 ```
 ### Texture Manager
-###### 1-4 Blurry, 5-7 low quality also removes studs, 8-10 Removes almost everything (this is better)
+> [!NOTE]
+> **1-4 Blurry, 5-7 low quality also removes studs, 8-10 Removes almost everything (this is better)**
 ```json
 {
     "FIntDebugTextureManagerSkipMips": "10"
@@ -456,14 +474,16 @@ High
 }
 ```
 ### Force MSAA 
-###### 1-7
+> [!NOTE]
+> **1 --> 7**
 ```json
 {
     "FIntDebugForceMSAASamples": "1"
 }
 ```
 ### ShadowMap Bias 
-###### ***[Future & ShadowMap]***
+> [!NOTE]
+> **[Future & ShadowMap]***
 ```json
 {
     "FIntRenderShadowmapBias": "-1"
@@ -483,7 +503,8 @@ High
 }
 ```
 ### Disable Dynamic Heads Animations
-###### https://roblox.fandom.com/wiki/Dynamic_Head
+> [!NOTE]
+> **https://roblox.fandom.com/wiki/Dynamic_Head**
 ```json
 {
     "DFIntAnimationLodFacsDistanceMin": "0",
@@ -493,7 +514,7 @@ High
 ```
 ### Remove head roll limit for face tracking
 > [!NOTE]
-> **Note!: Server Sided**
+> **Server Sided Only**
 ``` json
 {
     "DFIntAvatarFaceChatHeadRollLimitDegrees": "360"
@@ -529,7 +550,7 @@ High
 ```
 ### Enable HSR (Hidden Surface Removal)
 > [!NOTE]
-> **its working like occlusion culling**
+> **Its working like occlusion culling**
 ``` json
 {
     "FFlagDebugForceGenerateHSR": "true",
@@ -672,7 +693,7 @@ High
 }
 ```
 ### Makes avatars shiny 
-###### [everything goes black on <3] ***[DFIntDebugFRMQualityLevelOverride is there to set your graphics to 10, You can change it to anything above 3: [Click here to view](https://github.com/luafv/rbxflags/tree/master?tab=readme-ov-file#frm-levels) ]***
+##### [everything goes black on <3] ***[DFIntDebugFRMQualityLevelOverride is there to set your graphics to 10, You can change it to anything above 3: [Click here to view](https://github.com/luafv/rbxflags/tree/master?tab=readme-ov-file#frm-levels) ]***
 ```json
 {
     "DFIntRenderClampRoughnessMax": "-640000000",
