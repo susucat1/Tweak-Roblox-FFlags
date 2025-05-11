@@ -37,7 +37,9 @@
 ```json
 {
     "FFlagDebugGraphicsPreferD3D11FL10": "true",
-    "FFlagGraphicsEnableD3D10Compute": "true"
+    "FFlagGraphicsEnableD3D10Compute": "true",
+    "FFlagRenderEnableGlobalInstancingD3D10": "true",
+    "FFlagRenderEnableGlobalInstancingD3D11": "false"
 }
 ```
 
@@ -59,7 +61,8 @@
     "FFlagDebugGraphicsDisableDirect3D11": "true",
     "FFlagDebugGraphicsPreferVulkan": "true",
     "FFlagGraphicsVulkanBonusMemory": "true",
-    "FFlagRenderEnableGlobalInstancingVulkan": "true"
+    "FFlagRenderEnableGlobalInstancingVulkan": "true",
+    "FFlagRenderEnableGlobalInstancingD3D11": "false"
 }
 ```
 
@@ -68,7 +71,8 @@
 > **Note!: MacOS Only**
 ```json
 {
-    "FFlagDebugGraphicsPreferMetal": "true"
+    "FFlagDebugGraphicsPreferMetal": "true",
+    "FFlagRenderEnableGlobalInstancingMetal": "true"
 }
 ```
 
@@ -121,6 +125,16 @@
 {
     "FFlagTextureUseACR3": "true",
     "FIntTextureUseACRHundredthPercent": "10000"
+}
+```
+### Disable Frame Time Std Dev
+> [!NOTE]
+> **Default = True**
+>
+> **False = more smooth and less latency but i dont recommended ur use it in pvp/battleground game**
+```json
+{
+   "DFFlagFrameTimeStdDev": "false"
 }
 ```
 ### Modify Graphics Frame Time Target Ms
