@@ -121,14 +121,18 @@
     "DFIntRuntimeConcurrency": "your core+1"
 }
 ```
-### Mesh x Texture Preloading
+### Fast Preloading Everything 🌟
 > [!NOTE]
 > **This improves loading time speeds for games**
 ```json
 {
     "DFFlagEnableMeshPreloading2": "true",
     "DFFlagEnableMeshPreloading": "true",
-    "DFFlagEnableTexturePreloading": "true"
+    "DFFlagEnableTexturePreloading": "true",
+    "DFFlagEnableSoundPreloading": "true",
+    "FFlagAssetPreloadingIXP": "true",
+    "DFIntAssetPreloading": "9999999",
+    "DFIntNumAssetsMaxToPreload": "9999999"
 }
 ```
 ### Removes Only Roblox Texture
@@ -512,13 +516,6 @@ High
 ```json
 {
     "FIntRenderShadowmapBias": "-1"
-}
-```
-### Faster preloading 🌟
-``` json
-{
-    "DFIntAssetPreloading": "9999999",
-    "DFIntNumAssetsMaxToPreload": "9999999"
 }
 ```
 ### Disable Reduce avatar item particles in first person
