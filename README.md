@@ -61,6 +61,7 @@
     "FFlagDebugGraphicsDisableDirect3D11": "true",
     "FFlagDebugGraphicsPreferVulkan": "true",
     "FFlagGraphicsVulkanBonusMemory": "true",
+    "FFlagSupportHeadlessDeviceVulkan": "true",
     "FFlagRenderEnableGlobalInstancingVulkan": "true",
     "FFlagRenderEnableGlobalInstancingD3D11": "false"
 }
@@ -118,6 +119,16 @@
 ```json
 {
     "DFIntRuntimeConcurrency": "your core+1"
+}
+```
+### Mesh x Texture Preloading
+> [!NOTE]
+> **This improves loading time speeds for games**
+```json
+{
+    "DFFlagEnableMeshPreloading2": "true",
+    "DFFlagEnableMeshPreloading": "true",
+    "DFFlagEnableTexturePreloading": "true"
 }
 ```
 ### Removes Only Roblox Texture
@@ -240,7 +251,7 @@
 ```json
 {
     "FIntTaskSchedulerThreadMin": "0",
-    "FIntRuntimeMaxNumOfThreads": "1600"
+    "FIntRuntimeMaxNumOfThreads": "1800"
 }
 ```
 ### Disable HyperThreading
@@ -576,6 +587,8 @@ High
 ##### Optimization, latency, delay FFlag
 ``` json
 {
+    "FFlagSimDcdEnableDelta2": "true",
+    "FFlagSimDcdRefactorDelta3": "true",
     "DFIntBufferCompressionLevel": "0",
     "DFIntBufferCompressionThreshold": "100",
     "DFIntPerformanceControlFrameTimeMax": "1",
