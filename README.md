@@ -7,6 +7,9 @@
 ![image](https://github.com/returnrqt/bloxstrap/raw/main/Images/Bloxstrap-full-dark.png#gh-dark-mode-only)
 # [Fishtrap Download >>>>>](https://github.com/returnrqt/fishstrap/releases/)
 
+![image](https://github.com/AppleBlox/appleblox/raw/main/.github/assets/logo.png)
+# [AppleBlox (MacOS Only) Download >>>>>](https://github.com/AppleBlox/appleblox/tags)
+
 ## How to Fix 403 in <2.5.4 Bloxstrap
 ![image](http://web.archive.org/web/20240705210210im_/https://private-user-images.githubusercontent.com/166893422/340889199-e1f50b6f-8d62-434c-a95b-4ff535127c09.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjAyMTM2MzAsIm5iZiI6MTcyMDIxMzMzMCwicGF0aCI6Ii8xNjY4OTM0MjIvMzQwODg5MTk5LWUxZjUwYjZmLThkNjItNDM0Yy1hOTViLTRmZjUzNTEyN2MwOS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwNzA1JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDcwNVQyMTAyMTBaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0zYTEzNGY1OThiNjIzMmRmNjFjMTE2MmNkOTY3ZTEzNzNlOGQzNWM4NzZjZDEwMjY3NWVmNzE3NDE4M2QzYjcxJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.kBc2QqZGcGxbp_bn2gRBxD1vbrPZ04nZGJfzGW_FVsc)
 #### 1. `%localappdata%\Bloxstrap\Settings.json` or `%appdata%\Bloxstrap\Settings.json`
@@ -138,7 +141,7 @@
 ### Removes Only Roblox Texture
 ```json
 {
-    "FFlagTextureUseACR3": "true",
+    "FFlagTextureUseACR4": "true",
     "FIntTextureUseACRHundredthPercent": "10000"
 }
 ```
@@ -152,13 +155,71 @@
    "DFFlagFrameTimeStdDev": "false"
 }
 ```
-### Modify Graphics Frame Time Target Ms
+### Configure FRM Refresh Rate
 > [!NOTE]
-> **Not Recommended For Low-End PC**
+> **60HZ or FPS Only**
 ```json
 {
-    "DFIntGraphicsOptimizationModeMinFrameTimeTargetMs": "10",
-    "DFIntGraphicsOptimizationModeMaxFrameTimeTargetMs": "25"
+    "DFIntGraphicsOptimizationModeFRMFrameRateTarget ": "60"
+    "DFIntGraphicsOptimizationModeMinFrameTimeTargetMs": "16",
+    "DFIntGraphicsOptimizationModeMaxFrameTimeTargetMs": "33"
+}
+```
+> [!NOTE]
+> **120HZ or FPS**
+```json
+{
+    "DFIntGraphicsOptimizationModeFRMFrameRateTarget ": "120"
+    "DFIntGraphicsOptimizationModeMinFrameTimeTargetMs": "9",
+    "DFIntGraphicsOptimizationModeMaxFrameTimeTargetMs": "16"
+}
+```
+> [!NOTE]
+> **144HZ or FPS**
+```json
+    "DFIntGraphicsOptimizationModeFRMFrameRateTarget ": "144"
+    "DFIntGraphicsOptimizationModeMinFrameTimeTargetMs": "7",
+    "DFIntGraphicsOptimizationModeMaxFrameTimeTargetMs": "9"
+}
+```
+> [!NOTE]
+> **165HZ or FPS**
+```json
+    "DFIntGraphicsOptimizationModeFRMFrameRateTarget ": "165"
+    "DFIntGraphicsOptimizationModeMinFrameTimeTargetMs": "6",
+    "DFIntGraphicsOptimizationModeMaxFrameTimeTargetMs": "7"
+}
+```
+> [!NOTE]
+> **240HZ or FPS**
+```json
+    "DFIntGraphicsOptimizationModeFRMFrameRateTarget ": "240"
+    "DFIntGraphicsOptimizationModeMinFrameTimeTargetMs": "5",
+    "DFIntGraphicsOptimizationModeMaxFrameTimeTargetMs": "6"
+}
+```
+> [!NOTE]
+> **360HZ or FPS**
+```json
+    "DFIntGraphicsOptimizationModeFRMFrameRateTarget ": "360"
+    "DFIntGraphicsOptimizationModeMinFrameTimeTargetMs": "3",
+    "DFIntGraphicsOptimizationModeMaxFrameTimeTargetMs": "4"
+}
+```
+> [!NOTE]
+> **480HZ or FPS**
+```json
+    "DFIntGraphicsOptimizationModeFRMFrameRateTarget ": "480"
+    "DFIntGraphicsOptimizationModeMinFrameTimeTargetMs": "2",
+    "DFIntGraphicsOptimizationModeMaxFrameTimeTargetMs": "3"
+}
+```
+> [!NOTE]
+> **520HZ or FPS**
+```json
+    "DFIntGraphicsOptimizationModeFRMFrameRateTarget ": "520"
+    "DFIntGraphicsOptimizationModeMinFrameTimeTargetMs": "2",
+    "DFIntGraphicsOptimizationModeMaxFrameTimeTargetMs": "2"
 }
 ```
 ### Disable Render Shadow Huge Radius
@@ -225,12 +286,6 @@
 ```json
 {
     "FFlagDebugSSAOForce": "true"
-}
-```
-### More brighter
-```json
-{
-    "FFlagRenderFixFog": "true"
 }
 ```
 ### Smoother Terrain❗
@@ -396,7 +451,7 @@ High
 ```json
 {
     "FFlagDebugSkyGray": "true",
-    "FIntCameraFarZPlane" "600"
+    "FIntCameraFarZPlane": "600"
 }
 ```
 ### Pause Voxelizer/Disable Baked Shadows
@@ -595,7 +650,7 @@ High
     "DFIntNumFramesAllowedToBeAboveError": "0",
     "DFIntVisibilityCheckRayCastLimitPerFrame": "10",
     "DFIntNetworkSchemaCompressionRatio": "50",
-    "DFIntTimeBetweenSendConnectionAttemptsMS": "50",
+    "DFIntTimeBetweenSendConnectionAttemptsMS": "50"
 }
 ```
 ### Network Cpu RSS tweaks
@@ -819,7 +874,7 @@ High
 ```json
 {
     "FFlagUserShowGuiHideToggles": "true",
-    "GuiHidingApiSupport2": "true"
+    "FFlagGuiHidingApiSupport2": "true"
 }
 ```
 ### Hide guis
@@ -854,12 +909,6 @@ Instructions: Replace "ID" with any group ID that you are in.
 ```json
 {
     "DFFlagDebugDisableTimeoutDisconnect": "true"
-}
-```
-### Automatically unmutes your mic on join (VC)
-```json
-{
-    "FFlagDebugDefaultChannelStartMuted": "false"
 }
 ```
 ### Smoother/Faster Input 🌟
@@ -1216,7 +1265,7 @@ Instructions: Replace "ID" with any group ID that you are in.
 ### Disable centered experience details page
 ```json
 {
-    "FFlagUIBloxMoveDetailsPageToLuaApps": "false"
+    "FFlagLuaAppEdpSingleColumnIxp": "false"
 }
 ```
 ### No opacity to Chrome UI
@@ -1260,22 +1309,6 @@ Instructions: Replace "ID" with any group ID that you are in.
 ```json
 {
     "FFlagEnableNavBarLabels3": "false"
-}
-```
-### Chrome UI TopBar
-```json
-{
-    "FFlagEnableReportAbuseMenuRoactABTest2": "true",
-    "FFlagEnableInGameMenuChromeABTest2": "true",
-    "FFlagEnableInGameMenuChromeABTest3": "true"
-}
-```
-### Chrome UI Topbar Removal
-```json
-{
-    "FFlagEnableInGameMenuChromeABTest2": "false",
-    "FFlagEnableReportAbuseMenuRoactABTest2": "false",
-    "FFlagEnableInGameMenuChromeABTest3": "false"
 }
 ```
 ### Hide playerlist close button on Chrome UI
@@ -1382,7 +1415,7 @@ Instructions: Replace "ID" with any group ID that you are in.
 ##### This flag controls the keyboard input latency in milliseconds.By setting this value to 1, it minimizes the delay between key presses and the game's recognition of the input, effectively improving keyboard responsiveness. However, such a low value might cause excessively frequent key registration, which can lead to issues like repeated actions during key holds. The default value is 500 milliseconds, providing a balance between input responsiveness and preventing unintentional key repetition.
 ``` json
 {
-  "FIntActivatedCountTimerMSKeyboard": "100"
+    "FIntActivatedCountTimerMSKeyboard": "100"
 }
 ```
 ### Mouse Latency 🌟
@@ -1390,7 +1423,7 @@ Instructions: Replace "ID" with any group ID that you are in.
 ##### This flag determines the mouse input delay in milliseconds. A lower value (such as 1) will reduce the latency between mouse movement or clicks and the game's response, making the mouse feel more responsive. However, setting the value too low could result in excessively sensitive mouse input, potentially leading to issues like unintended multiple clicks or overly sensitive pointer movements. The default value of 500 milliseconds provides a balance between responsiveness and control, reducing the risk of input errors.
 ``` json
 {
-  "FIntActivatedCountTimerMSMouse": "100"
+    "FIntActivatedCountTimerMSMouse": "100"
 }
 ```
 ### Gamepad Latency 🌟
@@ -1398,14 +1431,14 @@ Instructions: Replace "ID" with any group ID that you are in.
 ##### This flag determines the gamepad input delay in milliseconds. A lower value (such as 1) will reduce the latency between gamepad movement or button and the game's response, making the gamepad feel more responsive. However, setting the value too low could result in excessively sensitive gamepad input, potentially leading to issues like unintended multiple button or overly sensitive pointer movements. The default value of 500 milliseconds provides a balance between responsiveness and control, reducing the risk of input errors.
 ``` json
 {
-  "FIntActivatedCountTimerMSGamepad": "100"
+    "FIntActivatedCountTimerMSGamepad": "100"
 }
 ```
 ### Touch Latency 🌟
 ##### Default value: 500 > > Lower value = more responsive touch
 ``` json
 {
-  "FIntActivatedCountTimerMSTouch": "100"
+    "FIntActivatedCountTimerMSTouch": "100"
 }
 ```
 ### Zero Delay with Mouse
@@ -1425,9 +1458,9 @@ Instructions: Replace "ID" with any group ID that you are in.
 ```json
 
 {
-   "DFIntBulletContactBreakOrthogonalThresholdActivatePercent": 2147483647,
-   "DFIntBulletContactBreakThresholdPercent": -2147483648,
-   "DFIntBulletContactBreakOrthogonalThresholdPercent": -2147483648
+    "DFIntBulletContactBreakOrthogonalThresholdActivatePercent": 2147483647,
+    "DFIntBulletContactBreakThresholdPercent": -2147483648,
+    "DFIntBulletContactBreakOrthogonalThresholdPercent": -2147483648
 }
 ```
 ### Mesh Noclip V3 (Combined)
@@ -1448,9 +1481,9 @@ Instructions: Replace "ID" with any group ID that you are in.
 ```
 ### Wall Glide
 ```json
- {
-     "DFIntMaximumUnstickForceInGs": "-10"
- }
+{
+    "DFIntMaximumUnstickForceInGs": "-10"
+}
 ```
 ### Fling you or a part that is below you
 ```json
@@ -1484,8 +1517,8 @@ Instructions: Replace "ID" with any group ID that you are in.
 ### Well known speed fflag (Buggy)
 ```json
 {
-     "DFIntMaximumUnstickForceInGs": "-1",
-     "DFIntRaycastMaxDistance": "0"
+    "DFIntMaximumUnstickForceInGs": "-1",
+    "DFIntRaycastMaxDistance": "0"
 }
 ```
 ### You dont have animations for the server but you do for your client
@@ -1511,8 +1544,8 @@ Instructions: Replace "ID" with any group ID that you are in.
 ##### In slap battles its bannable (USE AT YOUR OWN RISK)
 ```json
 {
-   "DFIntGameNetLocalSpaceMaxSendIndex": "100000",
-   "DFIntPhysicsImprovedCyclicExecutiveThrottleThresholdTenth": "0"
+    "DFIntGameNetLocalSpaceMaxSendIndex": "100000",
+    "DFIntPhysicsImprovedCyclicExecutiveThrottleThresholdTenth": "0"
 }
 ```
 ### Spin
@@ -1548,7 +1581,7 @@ Instructions: Replace "ID" with any group ID that you are in.
 ###### Changes how long a Message can be, doesn't give you the ability to exceed the 16k Message Length Limit
 ```Json
 {
-  "FIntStandardOutputMaximumCharacterLength": "1"
+    "FIntStandardOutputMaximumCharacterLength": "1"
 }
 ```
 ### Dev Console Log Count
