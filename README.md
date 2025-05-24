@@ -10,14 +10,6 @@
 ![image](https://github.com/AppleBlox/appleblox/raw/main/.github/assets/logo.png)
 # [AppleBlox (MacOS Only) Download >>>>>](https://github.com/AppleBlox/appleblox/tags)
 
-## How to Fix 403 in <2.5.4 Bloxstrap
-![image](http://web.archive.org/web/20240705210210im_/https://private-user-images.githubusercontent.com/166893422/340889199-e1f50b6f-8d62-434c-a95b-4ff535127c09.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjAyMTM2MzAsIm5iZiI6MTcyMDIxMzMzMCwicGF0aCI6Ii8xNjY4OTM0MjIvMzQwODg5MTk5LWUxZjUwYjZmLThkNjItNDM0Yy1hOTViLTRmZjUzNTEyN2MwOS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwNzA1JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDcwNVQyMTAyMTBaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0zYTEzNGY1OThiNjIzMmRmNjFjMTE2MmNkOTY3ZTEzNzNlOGQzNWM4NzZjZDEwMjY3NWVmNzE3NDE4M2QzYjcxJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.kBc2QqZGcGxbp_bn2gRBxD1vbrPZ04nZGJfzGW_FVsc)
-#### 1. `%localappdata%\Bloxstrap\Settings.json` or `%appdata%\Bloxstrap\Settings.json`
-#### 2. Inside the contents of the file you will find `"Channel": "example"`
-#### 3. Now change that to `"Channel": "LIVE"`
-#### 4. Your configuration is complete!
-## Why does this happen?: Because the channel you are assigned to is a common channel.
-
 > [!CAUTION]
 > **Note!: Fast Flags are extremely powerful, being that they are intended to only be used by Roblox engineers. While they can be very useful, they can cause issues with stability and functionality if you don't know what you're doing.**
 
@@ -34,7 +26,7 @@
 }
 ```
 
-### Direct X 10
+### Direct X 10 🌟
 > [!NOTE]
 > **FOR POTATO DESKTOP**
 ```json
@@ -46,7 +38,7 @@
 }
 ```
 
-### OpenGL
+### OpenGL 
 ```json
 {
     "FFlagDebugGraphicsDisableDirect3D11": "true",
@@ -56,7 +48,7 @@
 }
 ```
 
-### Vulkan❗
+### Vulkan ❗
 > [!CAUTION]
 > **Note!: Visual Crashes**
 ```json
@@ -70,7 +62,7 @@
 }
 ```
 
-### Metal
+### Metal ❗
 > [!WARNING]
 > **Note!: MacOS Only**
 ```json
@@ -112,7 +104,7 @@
 <h1 align="center">Graphical Settings</h1>
 
 
-### Multithreading Improvement
+### Multithreading Improvement 🌟
 > [!NOTE]
 > **Basically makes roblox use as many threads as u put there (+1 because of main/render thread) HOWEVER this is poorly made (L roblox) it actually just switches between the threads really quickly causing overhead**
 > 
@@ -138,7 +130,7 @@
     "DFIntNumAssetsMaxToPreload": "9999999"
 }
 ```
-### Removes Only Roblox Texture
+### Removes Only Roblox Texture 🌟
 ```json
 {
     "FFlagTextureUseACR4": "true",
@@ -155,14 +147,14 @@
    "DFFlagFrameTimeStdDev": "false"
 }
 ```
-### Configure FRM Refresh Rate
+### Configure FRM Refresh Rate 🌟
 > [!NOTE]
 > **60HZ or FPS Only**
 ```json
 {
     "DFIntGraphicsOptimizationModeFRMFrameRateTarget ": "60"
     "DFIntGraphicsOptimizationModeMinFrameTimeTargetMs": "16",
-    "DFIntGraphicsOptimizationModeMaxFrameTimeTargetMs": "33"
+    "DFIntGraphicsOptimizationModeMaxFrameTimeTargetMs": "50"
 }
 ```
 > [!NOTE]
@@ -177,6 +169,7 @@
 > [!NOTE]
 > **144HZ or FPS**
 ```json
+{
     "DFIntGraphicsOptimizationModeFRMFrameRateTarget ": "144"
     "DFIntGraphicsOptimizationModeMinFrameTimeTargetMs": "7",
     "DFIntGraphicsOptimizationModeMaxFrameTimeTargetMs": "9"
@@ -185,6 +178,7 @@
 > [!NOTE]
 > **165HZ or FPS**
 ```json
+{
     "DFIntGraphicsOptimizationModeFRMFrameRateTarget ": "165"
     "DFIntGraphicsOptimizationModeMinFrameTimeTargetMs": "6",
     "DFIntGraphicsOptimizationModeMaxFrameTimeTargetMs": "7"
@@ -193,6 +187,7 @@
 > [!NOTE]
 > **240HZ or FPS**
 ```json
+{
     "DFIntGraphicsOptimizationModeFRMFrameRateTarget ": "240"
     "DFIntGraphicsOptimizationModeMinFrameTimeTargetMs": "5",
     "DFIntGraphicsOptimizationModeMaxFrameTimeTargetMs": "6"
@@ -201,6 +196,7 @@
 > [!NOTE]
 > **360HZ or FPS**
 ```json
+{
     "DFIntGraphicsOptimizationModeFRMFrameRateTarget ": "360"
     "DFIntGraphicsOptimizationModeMinFrameTimeTargetMs": "3",
     "DFIntGraphicsOptimizationModeMaxFrameTimeTargetMs": "4"
@@ -209,6 +205,7 @@
 > [!NOTE]
 > **480HZ or FPS**
 ```json
+{
     "DFIntGraphicsOptimizationModeFRMFrameRateTarget ": "480"
     "DFIntGraphicsOptimizationModeMinFrameTimeTargetMs": "2",
     "DFIntGraphicsOptimizationModeMaxFrameTimeTargetMs": "3"
@@ -217,6 +214,7 @@
 > [!NOTE]
 > **520HZ or FPS**
 ```json
+{
     "DFIntGraphicsOptimizationModeFRMFrameRateTarget ": "520"
     "DFIntGraphicsOptimizationModeMinFrameTimeTargetMs": "2",
     "DFIntGraphicsOptimizationModeMaxFrameTimeTargetMs": "2"
@@ -270,7 +268,7 @@
     "FIntRenderMaxShadowAtlasUsageBeforeDownscale": "-1"
 }
 ```
-### Disable Highlights on Parts
+### Disable Highlights on Parts 🌟
 ```json
 {
    "FFlagRenderHighlightManagerPrepare3": "true"
@@ -288,7 +286,7 @@
     "FFlagDebugSSAOForce": "true"
 }
 ```
-### Smoother Terrain❗
+### Smoother Terrain ❗
 > [!CAUTION]
 > **The particle's speed is based on you FPS**
 ```json
@@ -296,7 +294,7 @@
     "FFlagDebugRenderingSetDeterministic": "true"
 }
 ```
-### Speed up particle emitters❗
+### Speed up particle emitters ❗
 > [!CAUTION]
 > **The particle's speed is based on you FPS**
 ``` json
@@ -441,6 +439,8 @@ High
 > **Only applies to games with the default skybox**
 ```json
 {
+    "FFlagRenderSkyFixAvgIrradiance": "false",
+    "FFlagAlwaysUseNewSkyRemovalBehavior": "false",
     "FFlagDebugSkyGray": "true",
     "FFlagSkyUseRGBEEncoding": "true"
 }
@@ -450,6 +450,8 @@ High
 > **Very Buggy**
 ```json
 {
+    "FFlagRenderSkyFixAvgIrradiance": "false",
+    "FFlagAlwaysUseNewSkyRemovalBehavior": "false",
     "FFlagDebugSkyGray": "true",
     "FIntCameraFarZPlane": "600"
 }
@@ -462,7 +464,7 @@ High
     "DFFlagDebugPauseVoxelizer": "true"
 }
 ```
-### Skip Mesh Voxelizer
+### Skip Mesh Voxelizer 🌟
 ```json
 {
     "DFFlagDebugSkipMeshVoxelizer": "true"
@@ -603,7 +605,7 @@ High
     "FStringAXCategories": "ClassicShirts.ClassicTShirts.ClassicPants"
 }
 ```
-### Quick game launch
+### Quick game launch ❗
 > [!CAUTION]
 > **BUG cant loading fully item avatar**
 ``` json
@@ -611,7 +613,7 @@ High
     "FFlagEnableQuickGameLaunch": "true"
 }
 ```
-### Enable Highlight Outlines on any Rendering API
+### Enable Highlight Outlines on any Rendering API ❗
 > [!WARNING]
 > **lag a bit use if u love highlight**
 ``` json
@@ -625,7 +627,7 @@ High
     "FFlagRenderGpuTextureCompressor": "true"
 }
 ```
-### Enable HSR (Hidden Surface Removal)
+### Enable HSR (Hidden Surface Removal) 🌟
 > [!NOTE]
 > **Its working like occlusion culling**
 ``` json
@@ -635,7 +637,7 @@ High
     "FFlagHSRRemoveDuplicateindices": "true"
 }
 ```
-### Simulation Optimization Flag
+### Simulation Optimization Flag 🌟
 ##### Optimization, latency, delay FFlag
 ``` json
 {
@@ -698,7 +700,7 @@ High
     "FFlagRenderInitShadowmaps": "true"
 }
 ```
-### Raycast Performance Improvements
+### Raycast Performance Improvements 🌟
 ##### [Review](https://create.roblox.com/docs/workspace/raycasting)
 > [!NOTE]
 > **if u dont know just ignore it**
@@ -707,7 +709,7 @@ High
     "FFlagUserRaycastPerformanceImprovements": "true"
 }
 ```
-### Shoe Skip Render Mesh
+### Shoe Skip Render Mesh 🌟
 ```json
 {
     "FFlagShoeSkipRenderMesh": "true"
@@ -737,7 +739,7 @@ High
 ##### Enables an updated rendering system to improve performance and manage render calls.
 ``` json
 {
-  "FFlagRenderCBRefactor2": "true"
+   "FFlagRenderCBRefactor2": "true"
 }
 ```
 ### Directional Attenuation Max Points
@@ -754,7 +756,7 @@ High
    "FIntDirectionalAttenuationMaxPoints": "400"
 }
 ```
-### Simulation Optimization Flag
+### Simulation Optimization Flag 🌟
 > [!NOTE]
 > **Be mindful that while optimization can improve performance, it may also require testing to ensure that the behavior of sets remains consistent and that no necessary details are lost during the optimization process. The DFFlagSimOptimizeSetSize flag is used to optimize the size of sets in simulations. Enabling this flag activates optimization techniques that reduce the size of simulation sets, leading to better performance by decreasing memory usage and potentially improving processing speeds during simulations.**
 ``` json
@@ -785,14 +787,14 @@ High
     "DFIntMaxActiveAnimationTracks": "0"
 }
 ```
-### Remove Bloom
+### Remove Bloom 🌟
 ``` json
 {
   "FIntBloomFrmCutoff": "1654515",
   "FFlagRenderNoLowFrmBloom": "true"
 }
 ```
-### No Clouds/Sky
+### No Clouds/Sky 🌟
 ```json
 {
     "FFlagRenderNoLowFrmBloom": "false",
@@ -1105,7 +1107,7 @@ Instructions: Replace "ID" with any group ID that you are in.
     "FFlagSelfieViewEnabled": "true"
 }
 ```
-### Simple Preferred Text Size Scale
+### Simple Preferred Text Size Scale 
 ##### Enables a font scaler in the escape menu
 ##### Found by Sky (364112742153584640) in Bloxstrap stuff
 ``` json
@@ -1114,7 +1116,7 @@ Instructions: Replace "ID" with any group ID that you are in.
      "FFlagEnablePreferredTextSizeSettingInMenus2": "true"
 }
 ```
-### Preferred Text Size Settings (Fully)
+### Preferred Text Size Settings (Fully) 🌟
 ``` json
 {
   "FFlagEnablePreferredTextSizeGuiService": "true",
@@ -1211,7 +1213,7 @@ Instructions: Replace "ID" with any group ID that you are in.
     "FFlagAlwaysShowVRToggleV3": "false"
 }
 ```
-### Cleaner desktop home page
+### Cleaner desktop home page 🌟
 ```json
 {
     "FIntGameGridFlexFeedItemTileNumPerFeed": "0"
@@ -1262,7 +1264,7 @@ Instructions: Replace "ID" with any group ID that you are in.
 
 <h1 align="center">User Interface/Visuals Experimental</h1>
 
-### Disable centered experience details page
+### Disable centered experience details page 🌟
 ```json
 {
     "FFlagLuaAppEdpSingleColumnIxp": "false"
@@ -1441,7 +1443,7 @@ Instructions: Replace "ID" with any group ID that you are in.
     "FIntActivatedCountTimerMSTouch": "100"
 }
 ```
-### Zero Delay with Mouse
+### Zero Delay with Mouse 🌟
 ##### Default value: 16 > > Lower value = more double click
 ``` json
 {
