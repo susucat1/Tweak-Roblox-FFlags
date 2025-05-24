@@ -74,7 +74,7 @@
 
 <h1 align="center">Lightning Technologies</h1>
 
-### Voxel Lighting (Phase 1)
+### Voxel Lighting (Phase 1) 🌟
 ```json
 {
     "DFFlagDebugRenderForceTechnologyVoxel": "true"
@@ -103,7 +103,15 @@
 ```
 <h1 align="center">Graphical Settings</h1>
 
-
+### Custom Record Video Roblox 🌟
+> [!NOTE]
+> **Default = 30 FPS and 2M bit on 1 video 🤣🤣🤣**
+```json
+{
+    "DFIntCaptureVideoMaxFrameRate": 60,
+    "DFIntCaptureVideoBitrate": 8000000
+}
+```
 ### Multithreading Improvement 🌟
 > [!NOTE]
 > **Basically makes roblox use as many threads as u put there (+1 because of main/render thread) HOWEVER this is poorly made (L roblox) it actually just switches between the threads really quickly causing overhead**
@@ -814,6 +822,7 @@ High
     "FFlagDebugDisableTelemetryV2Counter": "true",
     "FFlagDebugDisableTelemetryV2Event": "true",
     "FFlagDebugDisableTelemetryV2Stat": "true",
+    "FFlagDisableMemoryTracking": "true",
     "FStringTencentAuthPath": "null"
 }
 ```
