@@ -319,11 +319,11 @@
     "FIntRuntimeMaxNumOfThreads": "1800"
 }
 ```
-### Disable HyperThreading
+### HyperThreading 🌟
 ``` json
 {
-    "FFlagDebugCheckRenderThreading": "false",
-    "FFlagRenderDebugCheckThreading2": "false"
+    "FFlagDebugCheckRenderThreading": "true",
+    "FFlagRenderDebugCheckThreading2": "true"
 }
 ```
 ### Disable Player Shadows
@@ -432,6 +432,15 @@ High
 ```json
 {
     "FIntCameraFarZPlane": "60"
+}
+```
+### Disable Feature Sky
+```json
+{
+    "DFFlagThumbnailRestoreSky": "false",
+    "FFlagAlwaysUseNewSkyRemovalBehavior": "false",
+    "FFlagRenderSkyFixAvgIrradiance": "false",
+    "FFlagUseSkyReadyState": "false"
 }
 ```
 ### Gray Sky
@@ -1344,6 +1353,12 @@ Instructions: Replace "ID" with any group ID that you are in.
 
 <h1 align="center">Audio Related</h1>
 
+### Enable Fmod Threading
+```json
+{
+     "FFlagFmodUseRuntimeThreading3": "true"
+}
+```
 ### Voice chat range/volume
 > [!NOTE]
 > **For people that play Roblox on low volume, 10000 is the optimal range/volume but it's a personal opinion so adjust it to your liking and i hope this flag is useful**
