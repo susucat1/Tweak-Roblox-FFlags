@@ -234,12 +234,6 @@
     "DFIntRenderShadowHugeRadius": "0"
 }
 ```
-### Disable Dynamic Resolution Scale
-```json
-{
-    "FFlagRenderDynamicResolutionScale12": "false"
-}
-```
 ### Fast Render
 > [!WARNING]
 > **More Laggy**
@@ -299,6 +293,7 @@
 > **The particle's speed is based on you FPS**
 ```json
 {
+    "FFlagRenderFixParticleDegenCrossProduct": "true",
     "FFlagDebugRenderingSetDeterministic": "true"
 }
 ```
@@ -307,7 +302,8 @@
 > **The particle's speed is based on you FPS**
 ``` json
 {
-  "FFlagDebugDeterministicParticles": "true"
+    "FFlagRenderFixParticleDegenCrossProduct": "true",
+    "FFlagDebugDeterministicParticles": "true"
 }
 ```
 ### Threads
@@ -592,12 +588,6 @@ High
     "FIntRenderShadowmapBias": "-1"
 }
 ```
-### Disable Reduce avatar item particles in first person
-``` json
-{
-    "FFlagUserHideCharacterParticlesInFirstPerson": "false"
-}
-```
 ### Disable Dynamic Heads Animations
 > [!NOTE]
 > **https://roblox.fandom.com/wiki/Dynamic_Head**
@@ -746,17 +736,11 @@ High
     "FFlagEnableVisBugChecks28": "true"
 }
 ```
-### Disable Move Pre-Render Base
-```json
-{
-    "FFlagMovePrerenderV2": "false"
-}
-```
 ### New Version of Render 🌟
 ##### Enables an updated rendering system to improve performance and manage render calls.
 ``` json
 {
-   "FFlagRenderCBRefactor2": "true"
+    "FFlagRenderCBRefactor2": "true"
 }
 ```
 ### Directional Attenuation Max Points
