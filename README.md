@@ -152,7 +152,7 @@
 > **False = more smooth and less latency but i dont recommended ur use it in pvp/battleground game**
 ```json
 {
-    DFFlagFrameTimeStdDev": "false"
+    "DFFlagFrameTimeStdDev": "false"
 }
 ```
 ### Configure FRM Refresh Rate 🌟
