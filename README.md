@@ -152,7 +152,7 @@
 > **False = more smooth and less latency but i dont recommended ur use it in pvp/battleground game**
 ```json
 {
-   "DFFlagFrameTimeStdDev": "false"
+    DFFlagFrameTimeStdDev": "false"
 }
 ```
 ### Configure FRM Refresh Rate 🌟
@@ -506,12 +506,11 @@ High
 }
 ```
 ### Frame Buffer 🌟
-> [!NOTE]
-> **0 makes white screen 1-3 makes other players have laggy movement, 4 is stable has better performance than 10 and less input lag**
 ```json
 {
     "DFIntMaxFrameBufferSize": "4",
     "FIntInterpolationAwareTargetTimeLerpHundredth": "100",
+    "FIntMaquettesFrameRateBufferPercentage": "100",
     "DFIntMaxAverageFrameDelayExceedFactor": "0"
 }
 ```
