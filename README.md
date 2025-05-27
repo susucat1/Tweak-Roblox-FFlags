@@ -26,6 +26,15 @@
 }
 ```
 
+### Directx 11 Support BGRA
+> [!NOTE]
+> **Its still beta but its feature can help u smooth rendering and less lag frame**
+```json
+{
+    "FFlagD3D11SupportBGRA": "true"
+}
+```
+
 ### Direct X 10 🌟
 > [!NOTE]
 > **FOR POTATO DESKTOP**
@@ -142,6 +151,7 @@
 ```json
 {
     "FFlagTextureUseACR4": "true",
+    "FFlagTexturePackUseACR4": "true",
     "FIntTextureUseACRHundredthPercent": "10000"
 }
 ```
@@ -273,6 +283,7 @@
 ### Disable Highlights on Parts 🌟
 ```json
 {
+   "DFFlagRenderHighlightManagerPrepare": "true",
    "FFlagRenderHighlightManagerPrepare3": "true"
 }
 ```
