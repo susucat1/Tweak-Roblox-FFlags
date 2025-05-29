@@ -121,6 +121,14 @@
     "DFIntCaptureVideoBitrate": 8000000
 }
 ```
+### Quaternion Corrections Animations
+> [!NOTE]
+> **Applies quaternion-based corrections to character/object poses, helping ensure smoother and more accurate rotations, particularly during complex animations or movements.**
+```json
+{
+    "FFlagQuaternionPoseCorrection": "true"
+}
+```
 ### Multithreading Improvement 🌟
 > [!NOTE]
 > **Basically makes roblox use as many threads as u put there (+1 because of main/render thread) HOWEVER this is poorly made (L roblox) it actually just switches between the threads really quickly causing overhead**
