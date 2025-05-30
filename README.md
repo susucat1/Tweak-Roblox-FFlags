@@ -71,6 +71,13 @@
 }
 ```
 
+### Allow GPU to use Vulkan even if buggy
+```json
+{
+    "FStringVulkanBuggyRenderpassList": "YOUR_GPU"
+}
+```
+
 ### Metal ❗
 > [!WARNING]
 > **Note!: MacOS Only**
@@ -112,6 +119,12 @@
 ```
 <h1 align="center">Graphical Settings</h1>
 
+### Stop Being Jumpscared
+```json
+{
+    "DFFlagJumpScaresP2": "false"
+}
+```
 ### Custom Record Video Roblox 🌟
 > [!NOTE]
 > **Default = 30 FPS and 2M bit on 1 video 🤣🤣🤣**
@@ -1317,6 +1330,12 @@ Instructions: Replace "ID" with any group ID that you are in.
 ```json
 {
     "FFlagLuaAppEdpSingleColumnIxp": "false"
+}
+```
+### Dont Delay Surface App
+```json
+{
+    "FFlagPerformanceControlDelaySingleSurfaceAppInit": "false"
 }
 ```
 ### No opacity to Chrome UI
