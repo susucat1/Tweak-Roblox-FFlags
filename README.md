@@ -690,7 +690,8 @@ High
 {
     "FFlagDebugForceGenerateHSR": "true",
     "FFlagHSRClusterImprovement": "true",
-    "FFlagHSRRemoveDuplicateindices": "true"
+    "FFlagHSRRemoveDuplicateindices": "true",
+    "FFlagDecodeHSROnLCThread": "true"
 }
 ```
 ### Simulation Optimization Flag 🌟
@@ -1406,7 +1407,7 @@ Instructions: Replace "ID" with any group ID that you are in.
 ### Enable Fmod Threading
 ```json
 {
-     "FFlagFmodUseRuntimeThreading3": "true"
+     "FFlagFmodUseRuntimeThreading4": "true"
 }
 ```
 ### Voice chat range/volume
