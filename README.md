@@ -691,7 +691,8 @@ High
     "FFlagDebugForceGenerateHSR": "true",
     "FFlagHSRClusterImprovement": "true",
     "FFlagHSRRemoveDuplicateindices": "true",
-    "FFlagDecodeHSROnLCThread": "true"
+    "FFlagDecodeHSROnLCThread": "true",
+    "FFlagDeocdeHSROnLCThread": "true"
 }
 ```
 ### Simulation Optimization Flag 🌟
