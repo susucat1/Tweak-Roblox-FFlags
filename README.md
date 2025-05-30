@@ -126,7 +126,8 @@
 > **Applies quaternion-based corrections to character/object poses, helping ensure smoother and more accurate rotations, particularly during complex animations or movements.**
 ```json
 {
-    "FFlagQuaternionPoseCorrection": "true"
+    "FFlagQuaternionPoseCorrection": "true",
+    "FFlagKeyframeSequenceUseRuntimeSyncPrims": "true"
 }
 ```
 ### Multithreading Improvement 🌟
@@ -178,7 +179,7 @@
 > **60HZ or FPS Only**
 ```json
 {
-    "DFIntGraphicsOptimizationModeFRMFrameRateTarget ": "60",
+    "DFIntGraphicsOptimizationModeFRMFrameRateTarget": "60",
     "DFIntGraphicsOptimizationModeMinFrameTimeTargetMs": "16",
     "DFIntGraphicsOptimizationModeMaxFrameTimeTargetMs": "50"
 }
@@ -187,7 +188,7 @@
 > **120HZ or FPS**
 ```json
 {
-    "DFIntGraphicsOptimizationModeFRMFrameRateTarget ": "120",
+    "DFIntGraphicsOptimizationModeFRMFrameRateTarget": "120",
     "DFIntGraphicsOptimizationModeMinFrameTimeTargetMs": "9",
     "DFIntGraphicsOptimizationModeMaxFrameTimeTargetMs": "16"
 }
@@ -196,7 +197,7 @@
 > **144HZ or FPS**
 ```json
 {
-    "DFIntGraphicsOptimizationModeFRMFrameRateTarget ": "144",
+    "DFIntGraphicsOptimizationModeFRMFrameRateTarget": "144",
     "DFIntGraphicsOptimizationModeMinFrameTimeTargetMs": "7",
     "DFIntGraphicsOptimizationModeMaxFrameTimeTargetMs": "9"
 }
@@ -205,7 +206,7 @@
 > **165HZ or FPS**
 ```json
 {
-    "DFIntGraphicsOptimizationModeFRMFrameRateTarget ": "165",
+    "DFIntGraphicsOptimizationModeFRMFrameRateTarget": "165",
     "DFIntGraphicsOptimizationModeMinFrameTimeTargetMs": "6",
     "DFIntGraphicsOptimizationModeMaxFrameTimeTargetMs": "7"
 }
@@ -214,7 +215,7 @@
 > **240HZ or FPS**
 ```json
 {
-    "DFIntGraphicsOptimizationModeFRMFrameRateTarget ": "240",
+    "DFIntGraphicsOptimizationModeFRMFrameRateTarget": "240",
     "DFIntGraphicsOptimizationModeMinFrameTimeTargetMs": "5",
     "DFIntGraphicsOptimizationModeMaxFrameTimeTargetMs": "6"
 }
@@ -223,7 +224,7 @@
 > **360HZ or FPS**
 ```json
 {
-    "DFIntGraphicsOptimizationModeFRMFrameRateTarget ": "360",
+    "DFIntGraphicsOptimizationModeFRMFrameRateTarget": "360",
     "DFIntGraphicsOptimizationModeMinFrameTimeTargetMs": "3",
     "DFIntGraphicsOptimizationModeMaxFrameTimeTargetMs": "4"
 }
@@ -232,7 +233,7 @@
 > **480HZ or FPS**
 ```json
 {
-    "DFIntGraphicsOptimizationModeFRMFrameRateTarget ": "480",
+    "DFIntGraphicsOptimizationModeFRMFrameRateTarget": "480",
     "DFIntGraphicsOptimizationModeMinFrameTimeTargetMs": "2",
     "DFIntGraphicsOptimizationModeMaxFrameTimeTargetMs": "3"
 }
@@ -241,7 +242,7 @@
 > **520HZ or FPS**
 ```json
 {
-    "DFIntGraphicsOptimizationModeFRMFrameRateTarget ": "520",
+    "DFIntGraphicsOptimizationModeFRMFrameRateTarget": "520",
     "DFIntGraphicsOptimizationModeMinFrameTimeTargetMs": "2",
     "DFIntGraphicsOptimizationModeMaxFrameTimeTargetMs": "2"
 }
