@@ -164,6 +164,23 @@
     "FIntTextureUseACRHundredthPercent": "10000"
 }
 ```
+### Improved Object Detail Using Fractal Upsample
+> [!NOTE]
+> **FractalUpsample - Fractal upsampling is a technique used to increase the resolution or detail of an image, texture, or grid by applying fractal algorithms. Unlike traditional upscaling methods that simply stretch the original content, fractal upsampling generates new details based on mathematical fractal patterns. These patterns mimic natural complexity, allowing the upsampled image or grid to retain a more realistic or detailed appearance.**
+```json
+{
+    "FFlagDebugGridForceFractalUpsample": "true"
+}
+```
+### No Unaligned DXT
+> [!NOTE]
+> **DXT (also known as S3TC) is a texture compression format.
+It’s widely supported on most GPUs and helps textures stay compressed while in video memory. This allows users to use more or larger textures. Unaligned DXT can cause performance issues on some low-end or unsupported GPUs.**
+```json
+{
+    "FStringGraphicsDisableUnalignedDxtGPUNameBlacklist": "YOUR_GPU"
+}
+```
 ### Disable Frame Time Std Dev
 > [!NOTE]
 > **Default = True**
@@ -747,14 +764,6 @@ High
     "FFlagShaderLightingRefactor": "false"
 }
 ```
-### Render Occlusion Culling
-##### [@CloneTrooper1019](https://x.com/MaximumADHD/status/1832331711486865769)
-``` json
-{
-    "DFFlagUseVisBugChecks": "true",
-    "FFlagEnableVisBugChecks28": "true"
-}
-```
 ### New Version of Render 🌟
 ##### Enables an updated rendering system to improve performance and manage render calls.
 ``` json
@@ -773,7 +782,7 @@ High
 > Higher values increase lighting accuracy but may slow rendering in complex lighting setups.
 ``` json
 {
-   "FIntDirectionalAttenuationMaxPoints": "400"
+    "FIntDirectionalAttenuationMaxPoints": "400"
 }
 ```
 ### Simulation Optimization Flag 🌟
@@ -781,7 +790,7 @@ High
 > **Be mindful that while optimization can improve performance, it may also require testing to ensure that the behavior of sets remains consistent and that no necessary details are lost during the optimization process. The DFFlagSimOptimizeSetSize flag is used to optimize the size of sets in simulations. Enabling this flag activates optimization techniques that reduce the size of simulation sets, leading to better performance by decreasing memory usage and potentially improving processing speeds during simulations.**
 ``` json
 {
-  "DFFlagSimOptimizeSetSize": "true"
+    "DFFlagSimOptimizeSetSize": "true"
 }
 ```
 
@@ -810,8 +819,8 @@ High
 ### Remove Bloom 🌟
 ``` json
 {
-  "FIntBloomFrmCutoff": "1654515",
-  "FFlagRenderNoLowFrmBloom": "true"
+    "FIntBloomFrmCutoff": "1654515",
+    "FFlagRenderNoLowFrmBloom": "true"
 }
 ```
 ### No Clouds/Sky 🌟
@@ -842,6 +851,25 @@ High
 ```json
 {
     "FFlagAdServiceEnabled": "false"
+}
+```
+### AdBlock In Roblox
+```json
+{
+    "EnableNativeAdsProtocolAndroid3": "false",
+    "NativeAdsProtocolRunInNewThread": "false",
+    "FFlagAdServiceEnabled": "false",
+    "DFFlagADS7645_RBXLOG_MIGRATION": false,
+    "DFFlagAdServiceAccessMarketplaceServiceUnderDMLock": false,
+    "DFFlagAdServiceCallErrorFunctionInsteadOfPrint": false,
+    "DFFlagAdserviceFixRewardedVideoAdPlaySignalLog": false,
+    "DFFlagAdServiceMoveVolumeChangedSignalHandlerToDmThread": false,
+    "DFFlagAdsPreloadInteractivityAssets": false,
+    "DFFlagOnDemandAdsProviderAccessAdServiceUnderDmLock": false,
+    "FFlagAdServiceAdditionalDataModelChecksEnabled": false,
+    "FFlagEnableRewardedVideoInAdService15": false,
+    "FLogAdService": 0,
+    "DFFlagEnableRewardedAdsSessionTrackingFields": false
 }
 ```
 ### Disable In-Game Purchases
