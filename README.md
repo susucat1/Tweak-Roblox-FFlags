@@ -26,15 +26,6 @@
 }
 ```
 
-### Directx 11 Support BGRA
-> [!NOTE]
-> **Its still beta but its feature can help u smooth rendering and less lag frame**
-```json
-{
-    "FFlagD3D11SupportBGRA": "true"
-}
-```
-
 ### Direct X 10 🌟
 > [!NOTE]
 > **FOR POTATO DESKTOP**
@@ -74,7 +65,7 @@
 ### Allow GPU to use Vulkan even if buggy
 ```json
 {
-    "FStringVulkanBuggyRenderpassList": "YOUR_GPU"
+    "FStringVulkanBuggyRenderpassList2": "YOUR_GPU"
 }
 ```
 
@@ -117,12 +108,23 @@
     "FFlagRenderUnifiedLighting12": "true"
 }
 ```
+
 <h1 align="center">Graphical Settings</h1>
 
 ### Stop Being Jumpscared
 ```json
 {
     "DFFlagJumpScaresP2": "false"
+}
+```
+### Improved Object Detail
+> [!NOTE]
+> **FractalUpsample - Fractal upsampling is a technique used to increase the resolution or detail of an image, texture, or grid by applying fractal algorithms. Unlike traditional upscaling methods that simply stretch the original content, fractal upsampling generates new details based on mathematical fractal patterns. These patterns mimic natural complexity, allowing the upsampled image or grid to retain a more realistic or detailed appearance.**
+```json
+{
+    "FFlagDebugGridForceFractalUpsample": "true",
+    "DFFlagRenderLanczosUpsamplingNonRinging2": "true",
+    "DFFlagRenderSmootherStepUpsampling2": "true"
 }
 ```
 ### Custom Record Video Roblox 🌟
@@ -175,14 +177,6 @@
     "FFlagTextureUseACR4": "true",
     "FFlagTexturePackUseACR4": "true",
     "FIntTextureUseACRHundredthPercent": "10000"
-}
-```
-### Improved Object Detail Using Fractal Upsample
-> [!NOTE]
-> **FractalUpsample - Fractal upsampling is a technique used to increase the resolution or detail of an image, texture, or grid by applying fractal algorithms. Unlike traditional upscaling methods that simply stretch the original content, fractal upsampling generates new details based on mathematical fractal patterns. These patterns mimic natural complexity, allowing the upsampled image or grid to retain a more realistic or detailed appearance.**
-```json
-{
-    "FFlagDebugGridForceFractalUpsample": "true"
 }
 ```
 ### No Unaligned DXT
@@ -299,10 +293,18 @@ It’s widely supported on most GPUs and helps textures stay compressed while in
 ```
 ### Pixel Quality Roblox
 > [!NOTE]
-> **This flag makes your graphics pixelated, higher values will show you more pixels**
+> **144p = 37**
+> **240p = 77**
+> **360p = 230**
+> **480p = 410**
+> **720p = 922**
+> **1080p = 2074**
+> **1440p = 3686**
+> **2160p (4k) = 8294**
+> **4320p (8k) = 33178**
 ```json
 {
-    "DFIntDebugDynamicRenderKiloPixels": "1"
+    "DFIntDebugDynamicRenderKiloPixels": "418"
 }
 ```
 ### Remove Rendering Pre Processor
@@ -508,15 +510,25 @@ High
     "FFlagSkyUseRGBEEncoding": "true"
 }
 ```
-### Black Sky
-> [!CAUTION]
-> **Very Buggy**
+### Colorful Sky
 ```json
 {
-    "FFlagRenderSkyFixAvgIrradiance": "false",
-    "FFlagAlwaysUseNewSkyRemovalBehavior": "false",
-    "FFlagDebugSkyGray": "true",
-    "FIntCameraFarZPlane": "600"
+    "DFFlagTextureQualityOverrideEnabled": "true",
+    "DFIntTextureQualityOverride": "0",
+    "FFlagDebugGraphicsPreferVulkan": "true",
+    "FIntDebugFRMOptionalMSAALevelOverride": "0",
+    "FIntVertexSmoothingGroupTolerance": "0",
+    "FIntDebugTextureManagerSkipMips": "8",
+    "FIntDebugForceMSAASamples": "0"
+}
+```
+### Black Sky
+```json
+{
+    "FIntDebugTextureManagerSkipMips": "8",
+    "DFIntTextureQualityOverride": "0",
+    "FIntVertexSmoothingGroupTolerance": "10000",
+    "DFFlagTextureQualityOverrideEnabled": "true"
 }
 ```
 ### Pause Voxelizer/Disable Baked Shadows
@@ -851,13 +863,12 @@ High
 ### Disable Telemetry 🌟
 ```json
 {
-    "FFlagDebugDisableTelemetryEphemeralCounter": "true",
-    "FFlagDebugDisableTelemetryEphemeralStat": "true",
-    "FFlagDebugDisableTelemetryEventIngest": "true",
-    "FFlagDebugDisableTelemetryPoint": "true",
-    "FFlagDebugDisableTelemetryV2Counter": "true",
-    "FFlagDebugDisableTelemetryV2Event": "true",
-    "FFlagDebugDisableTelemetryV2Stat": "true",
+    "DFStringTelemetryV2Url": "0.0.0.0",
+    "FFlagEnableTelemetryProtocol": "false",
+    "FFlagEnableTelemetryService1": "false",
+    "FFlagPropertiesEnableTelemetry": "false",
+    "FFlagOpenTelemetryEnabled2": "false",
+    "FLogRobloxTelemetry": "0",
     "FFlagDisableMemoryTracking": "true",
     "FStringTencentAuthPath": "null"
 }
@@ -1493,7 +1504,7 @@ Instructions: Replace "ID" with any group ID that you are in.
 ##### This flag controls the keyboard input latency in milliseconds.By setting this value to 1, it minimizes the delay between key presses and the game's recognition of the input, effectively improving keyboard responsiveness. However, such a low value might cause excessively frequent key registration, which can lead to issues like repeated actions during key holds. The default value is 500 milliseconds, providing a balance between input responsiveness and preventing unintentional key repetition.
 ``` json
 {
-    "FIntActivatedCountTimerMSKeyboard": "100"
+    "FIntActivatedCountTimerMSKeyboard": "0"
 }
 ```
 ### Mouse Latency 🌟
@@ -1501,7 +1512,7 @@ Instructions: Replace "ID" with any group ID that you are in.
 ##### This flag determines the mouse input delay in milliseconds. A lower value (such as 1) will reduce the latency between mouse movement or clicks and the game's response, making the mouse feel more responsive. However, setting the value too low could result in excessively sensitive mouse input, potentially leading to issues like unintended multiple clicks or overly sensitive pointer movements. The default value of 500 milliseconds provides a balance between responsiveness and control, reducing the risk of input errors.
 ``` json
 {
-    "FIntActivatedCountTimerMSMouse": "100"
+    "FIntActivatedCountTimerMSMouse": "0"
 }
 ```
 ### Gamepad Latency 🌟
@@ -1509,14 +1520,14 @@ Instructions: Replace "ID" with any group ID that you are in.
 ##### This flag determines the gamepad input delay in milliseconds. A lower value (such as 1) will reduce the latency between gamepad movement or button and the game's response, making the gamepad feel more responsive. However, setting the value too low could result in excessively sensitive gamepad input, potentially leading to issues like unintended multiple button or overly sensitive pointer movements. The default value of 500 milliseconds provides a balance between responsiveness and control, reducing the risk of input errors.
 ``` json
 {
-    "FIntActivatedCountTimerMSGamepad": "100"
+    "FIntActivatedCountTimerMSGamepad": "0"
 }
 ```
 ### Touch Latency 🌟
 ##### Default value: 500 > > Lower value = more responsive touch
 ``` json
 {
-    "FIntActivatedCountTimerMSTouch": "100"
+    "FIntActivatedCountTimerMSTouch": "0"
 }
 ```
 ### Zero Delay with Mouse 🌟
@@ -1694,13 +1705,5 @@ Instructions: Replace "ID" with any group ID that you are in.
 ```json
 {
     "FStringDebugShowFlagState": "DFIntTaskSchedulerTargetFps, ChannelName"
-}
-```
-### Useful for bladeball & deathball
-```json
-{
-    "DFFlagPreventReturnOfElevatedPhysicsFPS": "false",
-    "DFFlagReducePhysicsReceiverAllocations": "false",
-    "DFIntPhysicsNOUCountHundredth": "2147483647"
 }
 ```
