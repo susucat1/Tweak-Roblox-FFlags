@@ -50,7 +50,7 @@
 
 ### Vulkan ❗
 > [!CAUTION]
-> **Note!: Visual Crashes**
+> **Visual Crashes**
 ```json
 {
     "FFlagDebugGraphicsDisableDirect3D11": "true",
@@ -174,7 +174,7 @@
 ### Removes Only Roblox Texture 🌟
 ```json
 {
-    "FFlagTextureUseACR4": "true",
+    "FFlagTextureUseACR5": "true",
     "FFlagTexturePackUseACR4": "true",
     "FIntTextureUseACRHundredthPercent": "10000"
 }
@@ -186,16 +186,6 @@ It’s widely supported on most GPUs and helps textures stay compressed while in
 ```json
 {
     "FStringGraphicsDisableUnalignedDxtGPUNameBlacklist": "YOUR_GPU"
-}
-```
-### Disable Frame Time Std Dev
-> [!NOTE]
-> **Default = True**
->
-> **False = more smooth and less latency but i dont recommended ur use it in pvp/battleground game**
-```json
-{
-    "DFFlagFrameTimeStdDev": "false"
 }
 ```
 ### Configure FRM Refresh Rate 🌟
@@ -325,7 +315,7 @@ It’s widely supported on most GPUs and helps textures stay compressed while in
 ```json
 {
    "DFFlagRenderHighlightManagerPrepare": "true",
-   "FFlagRenderHighlightManagerPrepare3": "true"
+   "FFlagRenderHighlightManagerPrepare4": "true"
 }
 ```
 ### Legacy Shadow
@@ -367,7 +357,7 @@ It’s widely supported on most GPUs and helps textures stay compressed while in
     "FIntRuntimeMaxNumOfThreads": "1800"
 }
 ```
-### HyperThreading 🌟
+### Fully Enable HyperThreading 🌟
 ``` json
 {
     "FFlagDebugCheckRenderThreading": "true",
@@ -511,6 +501,8 @@ High
 }
 ```
 ### Colorful Sky
+> [!CAUTION]
+> **Visual Crashes**
 ```json
 {
     "DFFlagTextureQualityOverrideEnabled": "true",
