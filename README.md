@@ -1,5 +1,7 @@
 <h1 align="center">Tweak Roblox FFlags</h1>
 
+# [Check FFlags Discord >>>>>](https://discord.gg/gnAw3xc8s9)
+
 
 ![image](https://github.com/bloxstraplabs/bloxstrap/raw/main/Images/Bloxstrap-full-dark.png#gh-dark-mode-only)
 # [Bloxstrap Download >>>>>](https://github.com/bloxstraplabs/bloxstrap/releases/)
@@ -7,7 +9,7 @@
 ![image](https://github.com/returnrqt/bloxstrap/raw/main/Images/Bloxstrap-full-dark.png#gh-dark-mode-only)
 # [Fishtrap Download >>>>>](https://github.com/returnrqt/fishstrap/releases/)
 
-![image](https://github.com/AppleBlox/appleblox/raw/main/.github/assets/logo.png)
+![image](https://github.com/user-attachments/assets/dd936d36-7929-4bd7-8efd-01b03b46a77d)
 # [AppleBlox (MacOS Only) Download >>>>>](https://github.com/AppleBlox/appleblox/tags)
 
 > [!CAUTION]
@@ -140,6 +142,12 @@
     "DFFlagRenderSmootherStepUpsampling2": "true"
 }
 ```
+### Display Roblox Light Grid Chunks
+```json
+{
+    "FFlagDebugShowLightGridChunks": "true"
+}
+```
 ### Custom Record Video Roblox 🌟
 > [!NOTE]
 > **Default = 30 FPS and 2M bit on 1 video 🤣🤣🤣**
@@ -149,7 +157,7 @@
     "DFIntCaptureVideoBitrate": 8000000
 }
 ```
-### Quaternion Corrections Animations
+### Quaternion Corrections Animations 🌟
 > [!NOTE]
 > **Applies quaternion-based corrections to character/object poses, helping ensure smoother and more accurate rotations, particularly during complex animations or movements.**
 ```json
@@ -192,7 +200,7 @@
     "FIntTextureUseACRHundredthPercent": "10000"
 }
 ```
-### No Unaligned DXT
+### No Unaligned DXT 🌟
 > [!NOTE]
 > **DXT (also known as S3TC) is a texture compression format.
 It’s widely supported on most GPUs and helps textures stay compressed while in video memory. This allows users to use more or larger textures. Unaligned DXT can cause performance issues on some low-end or unsupported GPUs.**
@@ -294,7 +302,7 @@ It’s widely supported on most GPUs and helps textures stay compressed while in
     "FIntRenderMeshOptimizeVertexBuffer": "1"
 }
 ```
-### Pixel Quality Roblox
+### Pixel Quality Roblox 🌟
 > [!NOTE]
 > **144p = 37
 240p = 77
@@ -476,7 +484,7 @@ High
     "FFlagSkyUseRGBEEncoding": "true"
 }
 ```
-### Black Wall
+### Black Wall ❗
 > [!CAUTION]
 > **Very Buggy**
 ```json
@@ -512,7 +520,7 @@ High
     "FFlagSkyUseRGBEEncoding": "true"
 }
 ```
-### Colorful Sky
+### Colorful Sky ❗
 > [!CAUTION]
 > **Buggy**
 ```json
@@ -534,7 +542,7 @@ High
     "DFFlagTextureQualityOverrideEnabled": "true"
 }
 ```
-### Pause Voxelizer/Disable Baked Shadows
+### Pause Voxelizer/Disable Baked Shadows ❗
 > [!WARNING]
 > **If u play hornor game i dont recommend u use it**
 ```json
@@ -562,7 +570,7 @@ High
     "FFlagFastGPULightCulling3": "true"
 }
 ```
-### Lighting Attenuation
+### Lighting Attenuation ❗
 > [!CAUTION]
 > **Weird Lighting**
 ```json
@@ -636,12 +644,13 @@ High
     "FIntGrassMovementReducedMotionFactor": "999"
 }
 ```
-### Force MSAA 
+### Force MSAA 🌟
 > [!NOTE]
 > **1 --> 7**
 ```json
 {
-    "FIntDebugForceMSAASamples": "1"
+    "FIntDebugForceMSAASamples": "1",
+    "FIntDebugFRMOptionalMSAALevelOverride": "1"
 }
 ```
 ### ShadowMap Bias 
@@ -649,7 +658,8 @@ High
 > **[Future & ShadowMap]***
 ```json
 {
-    "FIntRenderShadowmapBias": "-1"
+    "FIntRenderShadowmapBias": "-1",
+    "FIntRenderShadowIntensity": "-1"
 }
 ```
 ### Disable Dynamic Heads Animations
@@ -763,7 +773,7 @@ High
     "FIntVertexSmoothingGroupTolerance": "1000"
 }
 ```
-### Better shadows
+### Better shadows ❗
 > [!WARNING]
 > **Loading will take longer but the shadows are much better**
 ``` json
@@ -832,7 +842,7 @@ High
     "DFIntDebugFRMQualityLevelOverride": "6"
 }
 ```
-### Limits number of animations being played
+### Limits number of animations being played ❗
 ```json
 {
     "DFIntMaxActiveAnimationTracks": "0"
@@ -848,7 +858,7 @@ High
 
 <h1 align="center">Telemetry</h1>
 
-### Disable Telemetry 🌟
+### Disable Telemetry
 ```json
 {
     "DFStringTelemetryV2Url": "0.0.0.0",
@@ -978,7 +988,7 @@ Instructions: Replace "ID" with any group ID that you are in.
     "FFlagLuaAppLegacyInputSettingRefactor": "true"
 }
 ```
-### Enable New Chat Report 🌟
+### Enable New Chat Report
 ``` json
 {
     "DFFlagChatLineAbuseReportAPIEnabled2": "true"
@@ -1215,7 +1225,7 @@ Instructions: Replace "ID" with any group ID that you are in.
     "FFlagDebugEnableNewWebView2DevTool": "true"
 }
 ```
-### Show All Error Strings
+### Show All Error Strings ❗
 ```json
 {
     "FFlagDebugEnableErrorStringTesting": "true"
@@ -1263,7 +1273,7 @@ Instructions: Replace "ID" with any group ID that you are in.
     "FStringNewChatTabExperimentLayerValue": "2024MUSIC"
 }
 ```
-### Disable Toast Notifications
+### Disable Toast Notifications 🌟
 ```json
 {
     "FFlagToastNotificationsProtocolEnabled2": "false"
@@ -1284,7 +1294,7 @@ Instructions: Replace "ID" with any group ID that you are in.
     "FFlagLuaAppEdpSingleColumnIxp": "false"
 }
 ```
-### Dont Delay Surface App
+### Dont Delay Surface App 🌟
 ```json
 {
     "FFlagPerformanceControlDelaySingleSurfaceAppInit": "false"
@@ -1343,7 +1353,7 @@ Instructions: Replace "ID" with any group ID that you are in.
 
 <h1 align="center">Audio Related</h1>
 
-### Enable Fmod Threading
+### Enable Fmod Threading 🌟
 ```json
 {
      "FFlagFmodUseRuntimeThreading4": "true"
@@ -1400,7 +1410,7 @@ Instructions: Replace "ID" with any group ID that you are in.
 
 <h1 align="center">Latency & Abuse</h1>
 
-### Fix layered clothing
+### Fix layered clothing 🌟
 ##### [Info >>>](https://github.com/returnrqt/fishstrap/releases/](https://devforum-uploads.s3.dualstack.us-east-2.amazonaws.com/uploads/original/5X/f/a/5/7/fa576e1b777534a50b0859e2b75e5ad6872dee47.gif)
 ```json
 {
@@ -1425,7 +1435,7 @@ Instructions: Replace "ID" with any group ID that you are in.
     "FFlagDebugUseCustomSimRadius": "true"
 }
 ```
-### WIFI OPTIMIZE????
+### WIFI OPTIMIZE???? ❗
 > [!WARNING]
 > **Note!: if you want just use it. default 100**
 ``` json
@@ -1599,14 +1609,14 @@ Instructions: Replace "ID" with any group ID that you are in.
     "DFIntSimAdaptiveHumanoidPDControllerSubstepMultiplier": "-999999"
 }
 ```
-### Dev Console Logging
+### Dev Console Logging 🌟
 ###### Changes how long a Message can be, doesn't give you the ability to exceed the 16k Message Length Limit
 ```Json
 {
     "FIntStandardOutputMaximumCharacterLength": "1"
 }
 ```
-### Dev Console Log Count
+### Dev Console Log Count 🌟
 ###### Control how many developer console logs can be shown at once, for example if you set the limit to be 100, then 100 different log messages will be shown while any older ones will be deleted when the limit is reached
 ###### @satlybpro
 ``` json
