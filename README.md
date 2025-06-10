@@ -308,7 +308,7 @@ It’s widely supported on most GPUs and helps textures stay compressed while in
 > 
 > **240p = 77**
 > 
-> **360p = 230*
+> **360p = 230**
 > 
 > **480p = 410**
 > 
