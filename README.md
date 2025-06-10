@@ -162,8 +162,8 @@
 > **Applies quaternion-based corrections to character/object poses, helping ensure smoother and more accurate rotations, particularly during complex animations or movements.**
 ```json
 {
-    "FFlagQuaternionPoseCorrection": "true",
-    "FFlagKeyframeSequenceUseRuntimeSyncPrims": "true"
+    "FFlagKeyframeSequenceUseRuntimeSyncPrims": "true",
+    "FFlagQuaternionPoseCorrection": "true"
 }
 ```
 ### Multithreading Improvement 🌟
@@ -211,75 +211,48 @@ It’s widely supported on most GPUs and helps textures stay compressed while in
 ```
 ### Configure FRM Refresh Rate 🌟
 > [!NOTE]
-> **60HZ or FPS Only**
-```json
-{
-    "DFIntGraphicsOptimizationModeFRMFrameRateTarget": "60",
-    "DFIntGraphicsOptimizationModeMinFrameTimeTargetMs": "16",
-    "DFIntGraphicsOptimizationModeMaxFrameTimeTargetMs": "50"
-}
-```
-> [!NOTE]
-> **120HZ or FPS**
+> **120Hz**
 ```json
 {
     "DFIntGraphicsOptimizationModeFRMFrameRateTarget": "120",
-    "DFIntGraphicsOptimizationModeMinFrameTimeTargetMs": "9",
-    "DFIntGraphicsOptimizationModeMaxFrameTimeTargetMs": "16"
+    "DFIntGraphicsOptimizationModeMinFrameTimeTargetMs": "10",
+    "DFIntGraphicsOptimizationModeMaxFrameTimeTargetMs": "17"
 }
 ```
 > [!NOTE]
-> **144HZ or FPS**
+> **144Hz**
 ```json
 {
     "DFIntGraphicsOptimizationModeFRMFrameRateTarget": "144",
+    "DFIntGraphicsOptimizationModeMinFrameTimeTargetMs": "8",
+    "DFIntGraphicsOptimizationModeMaxFrameTimeTargetMs": "10"
+}
+```
+> [!NOTE]
+> **165Hz**
+```json
+{
+    "DFIntGraphicsOptimizationModeFRMFrameRateTarget": "165",
     "DFIntGraphicsOptimizationModeMinFrameTimeTargetMs": "7",
     "DFIntGraphicsOptimizationModeMaxFrameTimeTargetMs": "9"
 }
 ```
 > [!NOTE]
-> **165HZ or FPS**
+> **180Hz**
 ```json
 {
-    "DFIntGraphicsOptimizationModeFRMFrameRateTarget": "165",
+    "DFIntGraphicsOptimizationModeFRMFrameRateTarget": "180",
     "DFIntGraphicsOptimizationModeMinFrameTimeTargetMs": "6",
-    "DFIntGraphicsOptimizationModeMaxFrameTimeTargetMs": "7"
+    "DFIntGraphicsOptimizationModeMaxFrameTimeTargetMs": "8"
 }
 ```
 > [!NOTE]
-> **240HZ or FPS**
+> **240Hz**
 ```json
 {
     "DFIntGraphicsOptimizationModeFRMFrameRateTarget": "240",
     "DFIntGraphicsOptimizationModeMinFrameTimeTargetMs": "5",
     "DFIntGraphicsOptimizationModeMaxFrameTimeTargetMs": "6"
-}
-```
-> [!NOTE]
-> **360HZ or FPS**
-```json
-{
-    "DFIntGraphicsOptimizationModeFRMFrameRateTarget": "360",
-    "DFIntGraphicsOptimizationModeMinFrameTimeTargetMs": "3",
-    "DFIntGraphicsOptimizationModeMaxFrameTimeTargetMs": "4"
-}
-```
-> [!NOTE]
-> **480HZ or FPS**
-```json
-{
-    "DFIntGraphicsOptimizationModeFRMFrameRateTarget": "480",
-    "DFIntGraphicsOptimizationModeMinFrameTimeTargetMs": "2",
-    "DFIntGraphicsOptimizationModeMaxFrameTimeTargetMs": "3"
-}
-```
-> [!NOTE]
-> **520HZ or FPS**
-```json
-{
-    "DFIntGraphicsOptimizationModeFRMFrameRateTarget": "520",
-    "DFIntGraphicsOptimizationModeMinFrameTimeTargetMs": "2",
-    "DFIntGraphicsOptimizationModeMaxFrameTimeTargetMs": "2"
 }
 ```
 ### Disable Render Shadow Huge Radius
@@ -288,7 +261,7 @@ It’s widely supported on most GPUs and helps textures stay compressed while in
     "DFIntRenderShadowHugeRadius": "0"
 }
 ```
-### Fast Render
+### Fast Render ❗
 > [!WARNING]
 > **More Laggy**
 ```json
@@ -346,7 +319,7 @@ It’s widely supported on most GPUs and helps textures stay compressed while in
    "DFFlagRenderHighlightManagerPrepare4": "true"
 }
 ```
-### Legacy Shadow
+### Legacy Shadow 🌟
 ```json
 {
    "FFlagRenderLegacyShadowsQualityRefactor": "true"
@@ -390,6 +363,15 @@ It’s widely supported on most GPUs and helps textures stay compressed while in
 {
     "FFlagDebugCheckRenderThreading": "true",
     "FFlagRenderDebugCheckThreading2": "true"
+}
+```
+### Fully Enable MovePrerender ❗
+> [!WARNING]
+> **lag,stuttering = remove it**
+```json
+{
+    "FFlagMovePrerender": "true",
+    "FFlagMovePrerenderV2": "true"
 }
 ```
 ### Disable Player Shadows
@@ -530,7 +512,7 @@ High
 ```
 ### Colorful Sky ❗
 > [!CAUTION]
-> **Buggy**
+> **Very Buggy**
 ```json
 {
     "DFFlagTextureQualityOverrideEnabled": "true",
@@ -837,9 +819,9 @@ High
 ### Fully dark map
 ``` json
 {
-  "DFIntDebugFRMQualityLevelOverride": "1",
-  "DFIntRenderClampRoughnessMax": "-640000000",
-  "DFIntRenderClampRoughnessMin": "-640000000"
+    "DFIntDebugFRMQualityLevelOverride": "1",
+    "DFIntRenderClampRoughnessMax": "-640000000",
+    "DFIntRenderClampRoughnessMin": "-640000000"
 }
 ```
 ### Makes avatars shiny 
