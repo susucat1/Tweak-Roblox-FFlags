@@ -954,9 +954,7 @@ High
     "FFlagGuiHidingApiSupport2": "true"
 }
 ```
-### Hide guis
-> [!NOTE]
-> **Instructions: Replace "ID" with any group ID that you are in.**
+### Hide Guis
 | Key combination   | Action                                                                    |
 | ----------------- | ------------------------------------------------------------------------- |
 | Ctrl + Shift + B  | Toggles GUIs in 3D space (BillboardGuis, SurfaceGuis, etc)                |
