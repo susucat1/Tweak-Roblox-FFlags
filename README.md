@@ -69,6 +69,19 @@
 }
 ```
 
+### No More Vulkan Blacklist
+```json
+{
+    "FStringGraphicsVulkanFutureGPUNameBlacklist": null,
+    "FStringGraphicsVulkanPVRFutureDeviceBlacklist": null,
+    "FStringGraphicsVulkanPVRFutureDriverBlacklist": null,
+    "FStringGraphicsVulkanMaliFutureDeviceBlacklist": null,
+    "FStringGraphicsVulkanMaliFutureDriverBlacklist": null,
+    "FStringGraphicsVulkanAdrenoFutureDeviceBlacklist": null,
+    "FStringGraphicsVulkanAdrenoFutureDriverBlacklist": null
+}
+```
+
 ### Metal ❗
 > [!WARNING]
 > **Note!: MacOS Only**
@@ -283,18 +296,18 @@ It’s widely supported on most GPUs and helps textures stay compressed while in
 ```
 ### Pixel Quality Roblox
 > [!NOTE]
-> **144p = 37**
-> **240p = 77**
-> **360p = 230**
-> **480p = 410**
-> **720p = 922**
-> **1080p = 2074**
-> **1440p = 3686**
-> **2160p (4k) = 8294**
-> **4320p (8k) = 33178**
+> **144p = 37
+240p = 77
+360p = 230
+480p = 410
+720p = 922
+1080p = 2074
+1440p = 3686
+2160p (4k) = 8294
+4320p (8k) = 33178**
 ```json
 {
-    "DFIntDebugDynamicRenderKiloPixels": "418"
+    "DFIntDebugDynamicRenderKiloPixels": "410"
 }
 ```
 ### Remove Rendering Pre Processor
@@ -314,8 +327,7 @@ It’s widely supported on most GPUs and helps textures stay compressed while in
 ### Disable Highlights on Parts 🌟
 ```json
 {
-   "DFFlagRenderHighlightManagerPrepare": "true",
-   "FFlagRenderHighlightManagerPrepare4": "true"
+   "DFFlagRenderHighlightManagerPrepare4": "true"
 }
 ```
 ### Legacy Shadow
@@ -348,7 +360,7 @@ It’s widely supported on most GPUs and helps textures stay compressed while in
     "FFlagDebugDeterministicParticles": "true"
 }
 ```
-### Threads
+### Custom Threads
 > [!NOTE]
 > **You can use it or roblox default**
 ```json
@@ -428,7 +440,7 @@ High
 }
 ```
 
-### Limits light updates
+### Custom Limits Light Updates
 > [!NOTE]
 > **You can use it or Roblox Default**
 ```json
@@ -502,12 +514,11 @@ High
 ```
 ### Colorful Sky
 > [!CAUTION]
-> **Visual Crashes**
+> **Buggy**
 ```json
 {
     "DFFlagTextureQualityOverrideEnabled": "true",
     "DFIntTextureQualityOverride": "0",
-    "FFlagDebugGraphicsPreferVulkan": "true",
     "FIntDebugFRMOptionalMSAALevelOverride": "0",
     "FIntVertexSmoothingGroupTolerance": "0",
     "FIntDebugTextureManagerSkipMips": "8",
@@ -559,7 +570,7 @@ High
     "FFlagNewLightAttenuation": "true"
 }
 ```
-### Frame Buffer 🌟
+### Custom Frame Buffer 🌟
 ```json
 {
     "DFIntMaxFrameBufferSize": "4",
@@ -694,16 +705,14 @@ High
 {
     "FFlagDebugForceGenerateHSR": "true",
     "FFlagHSRClusterImprovement": "true",
-    "FFlagHSRRemoveDuplicateindices": "true",
-    "FFlagDecodeHSROnLCThread": "true",
-    "FFlagDeocdeHSROnLCThread": "true"
+    "FFlagHSRRemoveDuplicateindices": "true"
 }
 ```
 ### Simulation Optimization Flag 🌟
 ##### Optimization, latency, delay FFlag
 ``` json
 {
-    "FFlagSimDcdEnableDelta2": "true",
+    "FFlagSimDcdEnableLAR": "true",
     "FFlagSimDcdRefactorDelta3": "true",
     "DFIntBufferCompressionLevel": "0",
     "DFIntBufferCompressionThreshold": "100",
@@ -777,12 +786,6 @@ High
     "FFlagShoeSkipRenderMesh": "true"
 }
 ```
-### Enable Old ShaderLighting Roblox
-```json
-{
-    "FFlagShaderLightingRefactor": "false"
-}
-```
 ### New Version of Render 🌟
 ##### Enables an updated rendering system to improve performance and manage render calls.
 ``` json
@@ -840,13 +843,6 @@ High
 {
     "FIntBloomFrmCutoff": "1654515",
     "FFlagRenderNoLowFrmBloom": "true"
-}
-```
-### No Clouds/Sky 🌟
-```json
-{
-    "FFlagRenderNoLowFrmBloom": "false",
-    "FFlagFRMRefactor": "false"
 }
 ```
 
@@ -922,12 +918,6 @@ High
     "FFlagEnableBubbleChatFromChatService": "false"
 }
 ```
-### Disable Autocomplete
-```json
-{
-    "FFlagEnableCommandAutocomplete": "false"
-}
-```
 
 <h1 align="center">Quality of Life</h1>
 
@@ -998,12 +988,6 @@ Instructions: Replace "ID" with any group ID that you are in.
 ```json
 {
    "FFlagLuaAppEnableFoundationColors7": "false"
-}
-```
-### Disable New Debug Menu UI
-```json
-{
-    "FFlagImproveMicroprofilerReadability": "false"
 }
 ```
 ### Stuttery Animation Fix
@@ -1126,12 +1110,6 @@ Instructions: Replace "ID" with any group ID that you are in.
     "FFlagEnableNewInviteMenuIXP2": "false"
 }
 ```
-### Revert spacing on errors
-```json
-{
-    "FFlagErrorPromptResizesHeight": "false"
-}
-```
 ### Remove Disconnect Blur/Loading Blur
 ```json
 {
@@ -1156,12 +1134,6 @@ Instructions: Replace "ID" with any group ID that you are in.
     "FFlagUserClickToMoveSupportAgentCanClimb2": "false"
 }
 ```
-### Disable Drag Detectors
-```json
-{
-    "FFlagDragDetectors1": "false"
-}
-```
 ### Disable Feedback Button in ESC
 ```json
 {
@@ -1174,33 +1146,14 @@ Instructions: Replace "ID" with any group ID that you are in.
     "FFlagSelfieViewEnabled": "true"
 }
 ```
-### Simple Preferred Text Size Scale 
+### Preferred Text Size Scale 🌟
 ##### Enables a font scaler in the escape menu
 ##### Found by Sky (364112742153584640) in Bloxstrap stuff
 ``` json
 {
+     "FFlagEnablePreferredTextSizeGuiService": "true",
      "FFlagEnablePreferredTextSizeScale": "true",
      "FFlagEnablePreferredTextSizeSettingInMenus2": "true"
-}
-```
-### Preferred Text Size Settings (Fully) 🌟
-``` json
-{
-  "FFlagEnablePreferredTextSizeGuiService": "true",
-  "FFlagEnablePreferredTextSizeScale": "true",
-  "FFlagEnablePreferredTextSizeScalePerLayerCollector": "true",
-  "FFlagEnablePreferredTextSizeSettingInMenus2": "true",
-  "FFlagEnablePreferredTextSizeStyleFixesInCaptureMenu": "true",
-  "FFlagEnablePreferredTextSizeStyleFixesInExperienceMenu": "true",
-  "FFlagEnablePreferredTextSizeStyleFixesInPlayerList": "true",
-  "FFlagPreferredTextSizeSettingBetaFeature": "true",
-  "FIntPreferredTextSizeSettingBetaFeatureRolloutPercent": "100",
-  "FFlagEnablePreferredTextSizeConnection": "true",
-  "FFlagEnablePreferredTextSizeStyleFixesAddFriends": "true",
-  "FFlagEnablePreferredTextSizeStyleFixesGameTile": "true",
-  "FFlagEnablePreferredTextSizeStyleFixesInAppShell3": "true",
-  "FFlagEnablePreferredTextSizeStyleFixesInPurchasePrompt": "true",
-  "FFlagEnablePreferredTextSizeStyleFixesInReportMenu": "true"
 }
 ```
 ### Disable Better Haptics
@@ -1298,12 +1251,6 @@ Instructions: Replace "ID" with any group ID that you are in.
     "FFlagLuaAppsEnableParentalControlsTab": "false"
 }
 ```
-### Legacy Search
-```json
-{
-    "FFlagAXSearchLandingPageIXPEnabled4": "false"
-}
-```
 ### Disable Profile Picture Customization
 ```json
 {
@@ -1356,12 +1303,6 @@ Instructions: Replace "ID" with any group ID that you are in.
    "FFlagAXEnableMultiTryOnUI": "true"
 }
 ```
-### Reset Character instead of Respawn in Experience Menu
-```json
-{
-    "FFlagInExperienceMenuResetButtonTextToRespawn": "false"
-}
-```
 ### Break Collectible Icon
 ```json
 {
@@ -1390,12 +1331,6 @@ Instructions: Replace "ID" with any group ID that you are in.
 ```json
 {
     "FFlagDisablePlayerListDisplayCloseBtn": "true"
-}
-```
-### Pin Chat on Chrome UI
-```json
-{
-    "FFlagEnableChromePinnedChat": "true"
 }
 ```
 ### Red font
@@ -1465,6 +1400,20 @@ Instructions: Replace "ID" with any group ID that you are in.
 
 <h1 align="center">Latency & Abuse</h1>
 
+### Fix layered clothing
+##### [Info >>>](https://github.com/returnrqt/fishstrap/releases/](https://devforum-uploads.s3.dualstack.us-east-2.amazonaws.com/uploads/original/5X/f/a/5/7/fa576e1b777534a50b0859e2b75e5ad6872dee47.gif)
+```json
+{
+    "FIntRigidityOuterLayerWeightPct": "45",
+    "FIntOuterCageResOver100": "22",
+    "FFlagWrappedGridFixCLI148409": "true",
+    "FFlagUseBothCagesForRBFDeformer": "true",
+    "FFlagMergeBodyCageByR15Connectivity": "true",
+    "FFlagEnableLinearCageDeformer2": "true",
+    "FFlagRigidityControl": "true",
+    "FFlagCheckDuplicateCagePoints": "true"
+}
+```
 ### Network Ownership
 ###### Better [Network Ownership](https://create.roblox.com/docs/physics/network-ownership) of parts
 ``` json
@@ -1489,6 +1438,12 @@ Instructions: Replace "ID" with any group ID that you are in.
 ``` json
 {
     "DFFlagUserAnimateScaleRun ": "true"
+}
+```
+### Preferred Input (Smooth Controller and Better Input) 🌟
+```json
+{
+    "FFlagPreferredInput": "true"
 }
 ```
 ### Keyboard Latency 🌟
@@ -1602,12 +1557,6 @@ Instructions: Replace "ID" with any group ID that you are in.
     "DFIntRaycastMaxDistance": "0"
 }
 ```
-### You dont have animations for the server but you do for your client
-```json
-{
-    "DFIntReplicatorAnimationTrackLimitPerAnimator": "-1"
-}
-```
 ### Max raycast distance
 ##### breaks leg collision and some games under 3
 ```json
@@ -1627,14 +1576,6 @@ Instructions: Replace "ID" with any group ID that you are in.
 {
     "DFIntGameNetLocalSpaceMaxSendIndex": "100000",
     "DFIntPhysicsImprovedCyclicExecutiveThrottleThresholdTenth": "0"
-}
-```
-### Spin
-```json
-{
-    "FFlagSimAdaptiveTimesteppingDefault2": "true",
-    "DFIntSimAdaptiveHumanoidPDControllerSubstepMultiplier": "-999999",
-    "DFFlagSimHumanoidTimestepModelUpdate": "true"
 }
 ```
 ### Drive vehicles slow
