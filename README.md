@@ -304,15 +304,23 @@ It’s widely supported on most GPUs and helps textures stay compressed while in
 ```
 ### Pixel Quality Roblox 🌟
 > [!NOTE]
-> **144p = 37
-240p = 77
-360p = 230
-480p = 410
-720p = 922
-1080p = 2074
-1440p = 3686
-2160p (4k) = 8294
-4320p (8k) = 33178**
+> **144p = 37**
+> 
+> **240p = 77**
+> 
+> **360p = 230*
+> 
+> **480p = 410**
+> 
+> **720p = 922**
+> 
+> **1080p = 2074**
+> 
+> **1440p = 3686**
+> 
+> **2160p (4k) = 8294**
+> 
+> **4320p (8k) = 33178**
 ```json
 {
     "DFIntDebugDynamicRenderKiloPixels": "410"
@@ -947,7 +955,14 @@ High
 }
 ```
 ### Hide guis
-Instructions: Replace "ID" with any group ID that you are in.
+> [!NOTE]
+> **Instructions: Replace "ID" with any group ID that you are in.**
+| Key combination   | Action                                                                    |
+| ----------------- | ------------------------------------------------------------------------- |
+| Ctrl + Shift + B  | Toggles GUIs in 3D space (BillboardGuis, SurfaceGuis, etc)                |
+| Ctrl + Shift + C  | Toggles game-defined ScreenGuis                                           |
+| Ctrl + Shift + G  | Toggles Roblox CoreGuis                                                   |
+| Ctrl + Shift + N  | Toggles player names, and other BillboardGuis that show up above a player |
 ```json
 {
     "DFIntCanHideGuiGroupId": "ID"
