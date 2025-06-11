@@ -645,11 +645,10 @@ High
 ```
 ### ShadowMap Bias 
 > [!NOTE]
-> **[Future & ShadowMap]***
+> **[Future & ShadowMap]**
 ```json
 {
-    "FIntRenderShadowmapBias": "-1",
-    "FIntRenderShadowIntensity": "-1"
+    "FIntRenderShadowmapBias": "-1"
 }
 ```
 ### Disable Dynamic Heads Animations
