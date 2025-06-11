@@ -126,6 +126,12 @@
 
 <h1 align="center">Graphical Settings</h1>
 
+### Better Sound Possibly
+```json
+{
+    "FFlagSimplifySoundLoading2": "false"
+}
+```
 ### Stop Being Jumpscared
 ```json
 {
@@ -1007,7 +1013,8 @@ High
 }
 ```
 ### Surf the web inside of Roblox
-###### Click the Beta badge or the 13+ badge to open the webview browser.
+> [!NOTE]
+> **Click the Beta badge or the 13+ badge to open the webview browser.**
 ```json
 {
     "FFlagTopBarUseNewBadge": "true",
@@ -1016,8 +1023,8 @@ High
 }
 ```
 ### Adjust Default Timeout Time
-###### 1 second = 1000
-###### @dis_spencer
+> [!NOTE]
+> **1 second = 1000**
 ```json
 {
     "DFIntDefaultTimeoutTimeMs": "10000"
@@ -1160,8 +1167,6 @@ High
 }
 ```
 ### Preferred Text Size Scale 🌟
-##### Enables a font scaler in the escape menu
-##### Found by Sky (364112742153584640) in Bloxstrap stuff
 ``` json
 {
      "FFlagEnablePreferredTextSizeGuiService": "true",
@@ -1222,7 +1227,8 @@ High
 }
 ```
 ### Desktop App Dev Tools
-##### only works on web view windows like profiles, ctrl + shift + I
+> [!WARNING]
+> **Only works on web view windows like profiles, ctrl + shift + I**
 ```json
 {
     "FFlagDebugEnableNewWebView2DevTool": "true"
@@ -1310,7 +1316,8 @@ High
 }
 ```
 ### Multi Try On
-##### Allows you to try on multiple things in the catalog and buy everything at once
+> [!NOTE]
+> **Allows you to try on multiple things in the catalog and buy everything at once**
 ```json
 {
    "FFlagAXEnableMultiTryOnUI": "true"
@@ -1347,7 +1354,8 @@ High
 }
 ```
 ### Red font
-###### You need to use Default Roblox Font to activate this. Also it can be glitchy in the settings menu
+> [!NOTE]
+> **You need to use Default Roblox Font to activate this. Also it can be glitchy in the settings menu.**
 ```json
 {
     "FStringDebugHighlightSpecificFont": "rbxasset://fonts/families/BuilderSans.json"
@@ -1371,7 +1379,8 @@ High
 }
 ```
 ### Allows you to change voice chat distance 
-###### default: [Min 7 Max 80]
+> [!NOTE]
+> **Default: [Min 7 Max 80]**
 ```json
 {
     "DFIntVoiceChatRollOffMinDistance": "7",
@@ -1379,7 +1388,8 @@ High
 }
 ```
 ### Sounds use physical velocity and become distorted
-###### <2017
+> [!NOTE]
+> **<2017 but still work**
 ```json
 {
     "FFlagSoundsUsePhysicalVelocity": "true"
@@ -1398,7 +1408,8 @@ High
 }
 ```
 ### Mess with voice chat volume
-###### default 1000
+> [!NOTE]
+> **Default = 1000**
 ```json
 {
     "DFIntVoiceChatVolumeThousandths": "100000"
@@ -1442,14 +1453,17 @@ High
 ```
 ### WIFI OPTIMIZE???? ❗
 > [!WARNING]
-> **Note!: if you want just use it. default 100**
+> **If didnt know everything dont use it.**
+>
+> **Default = 100**
 ``` json
 {
     "DFIntTrackCountryRegionAPIHundredthsPercent": "10000"
 }
 ```
 ### Walk Speed Scale Based
-##### Taller characters have a slower walking animation.
+> [!NOTE]
+> **Taller characters have a slower walking animation.**
 ``` json
 {
     "DFFlagUserAnimateScaleRun ": "true"
@@ -1462,7 +1476,8 @@ High
 }
 ```
 ### Keyboard,Mouse,Gamepad,Touch Latency 🌟
-##### Default value: 500 >> Lower value = more responsive keyboard.
+> [!NOTE]
+> **Default value: 500 >> Lower value = more responsive.**
 ``` json
 {
     "FIntActivatedCountTimerMSKeyboard": "0",
@@ -1472,7 +1487,8 @@ High
 }
 ```
 ### Zero Delay with Mouse 🌟
-##### Default value: 16 >> Lower value = more double click
+> [!NOTE]
+> **Default value: 16 >> Lower value = more double click.**
 ``` json
 {
     "FIntCLI20390_2": "0"
@@ -1594,22 +1610,22 @@ High
 }
 ```
 ### Dev Console Logging 🌟
-###### Changes how long a Message can be, doesn't give you the ability to exceed the 16k Message Length Limit
+> [!NOTE]
+> **Changes how long a Message can be, doesn't give you the ability to exceed the 16k Message Length Limit.**
 ```Json
 {
     "FIntStandardOutputMaximumCharacterLength": "1"
 }
 ```
 ### Dev Console Log Count 🌟
-###### Control how many developer console logs can be shown at once, for example if you set the limit to be 100, then 100 different log messages will be shown while any older ones will be deleted when the limit is reached
-###### @satlybpro
+> [!NOTE]
+> **Control how many developer console logs can be shown at once, for example if you set the limit to be 100, then 100 different log messages will be shown while any older ones will be deleted when the limit is reached.**
 ``` json
 {
     "FIntNewDevConsoleMaxLogCount": "2"
 }
 ```
 ### Replace all Decals with a Test Image
-###### Source:@.rbx.bloxy
 ```json
 {
     "FFlagDebugTestImageDrawItem": "true"
