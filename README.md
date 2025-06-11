@@ -316,13 +316,13 @@ It’s widely supported on most GPUs and helps textures stay compressed while in
 ### Disable Highlights on Parts 🌟
 ```json
 {
-   "DFFlagRenderHighlightManagerPrepare4": "true"
+    "DFFlagRenderHighlightManagerPrepare4": "true"
 }
 ```
 ### Legacy Shadow 🌟
 ```json
 {
-   "FFlagRenderLegacyShadowsQualityRefactor": "true"
+    "FFlagRenderLegacyShadowsQualityRefactor": "true"
 }
 ```
 ### SSAO (Screen-Space Ambient Occlusion)
@@ -554,7 +554,7 @@ High
 ```
 ### Enable GPULightCulling
 > [!NOTE]
-> **Combine with [Lighting Attenuation](https://FastFlags/FastFlags-Collective/?tab=readme-ov-file#lighting-attenuation) for better vision**
+> **Combine with [Lighting Attenuation] for better vision**
 ```json
 {
     "FFlagFastGPULightCulling3": "true"
@@ -579,7 +579,7 @@ High
 ```
 ### Low Quallity Terrain Textures
 > [!NOTE]
-> **0 --> 4 for less quality 16, 32, 64 for higher quality**
+> **0 -> 4 for less quality 16, 32, 64 for higher quality**
 ```json
 {
     "FIntTerrainArraySliceSize": "0"
@@ -587,7 +587,7 @@ High
 ```
 ### High Quality Textures 
 > [!NOTE]
-> **1 --> 3**
+> **1 -> 3**
 ```json
 {
     "DFFlagTextureQualityOverrideEnabled": "True",
@@ -636,7 +636,7 @@ High
 ```
 ### Force MSAA 🌟
 > [!NOTE]
-> **1 --> 7**
+> **1 -> 7**
 ```json
 {
     "FIntDebugForceMSAASamples": "1",
@@ -815,7 +815,7 @@ High
 }
 ```
 
-### Fully dark map
+### Fully Dark Map
 ``` json
 {
     "DFIntDebugFRMQualityLevelOverride": "1",
@@ -823,8 +823,7 @@ High
     "DFIntRenderClampRoughnessMin": "-640000000"
 }
 ```
-### Makes avatars shiny 
-##### [everything goes black on <3] ***[DFIntDebugFRMQualityLevelOverride is there to set your graphics to 10, You can change it to anything above 3: [Click here to view](https://github.com/luafv/rbxflags/tree/master?tab=readme-ov-file#frm-levels) ]***
+### Makes Avatars Shiny 
 ```json
 {
     "DFIntRenderClampRoughnessMax": "-640000000",
