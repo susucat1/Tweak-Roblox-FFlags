@@ -126,12 +126,6 @@
 
 <h1 align="center">Graphical Settings</h1>
 
-### Better Sound Possibly
-```json
-{
-    "FFlagSimplifySoundLoading2": "false"
-}
-```
 ### Stop Being Jumpscared
 ```json
 {
@@ -1297,6 +1291,16 @@ High
 
 <h1 align="center">User Interface/Visuals Experimental</h1>
 
+### Network Menu Update Rate
+> [!NOTE]
+> **This fast flag configures how often the network stats menu (Shift + F3) updates its information. By default, it refreshes the information every 1 second.**
+>
+> **If the value is set to max negative (-2147483647), the information is updated very quickly.**
+```json
+{
+    "FIntNetworkStatRefreshRate": "1"
+}
+```
 ### Disable centered experience details page 🌟
 ```json
 {
@@ -1364,6 +1368,12 @@ High
 
 <h1 align="center">Audio Related</h1>
 
+### Better Sound Possibly
+```json
+{
+    "FFlagSimplifySoundLoading2": "false"
+}
+```
 ### Enable Fmod Threading 🌟
 ```json
 {
