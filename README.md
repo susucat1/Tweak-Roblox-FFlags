@@ -120,7 +120,7 @@
 ### Unified Lighting (LightGrid - Beta)
 ```json
 {
-    "FFlagRenderUnifiedLighting12": "true"
+    "FFlagRenderUnifiedLighting13": "true"
 }
 ```
 
@@ -1363,6 +1363,24 @@ High
 ```json
 {
     "FStringDebugHighlightSpecificFont": "rbxasset://fonts/families/BuilderSans.json"
+}
+```
+### ps-ps (Pseudolocalisation)
+```json
+{
+    "FFlagDebugEnablePseudolocalization": "true",
+    "FFlagEnablePseudolocalizationApi2": "true",
+    "FFlagDebugEnableCoreScriptPseudolocalization": "true"
+}
+```
+### Change How Much Letters In Text
+> [!NOTE]
+> **This fastflag basically spams every other letter on ROBLOX CoreGUI and the game's GUI but it doesn't affect some parts of the games.**
+>
+> **Default Value: [7]**
+```json
+{
+    "FIntDebugTextElongationFactor": "999999"
 }
 ```
 
