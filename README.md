@@ -846,17 +846,30 @@ High
 
 <h1 align="center">Telemetry</h1>
 
-### Disable Telemetry
+### Zero Telemetry
 ```json
 {
     "DFStringTelemetryV2Url": "0.0.0.0",
+    "DFStringTelegrafAddress": "0.0.0.0",
+    "DFStringAltTelegrafAddress": "0.0.0.0",
+    "DFStringHttpPointsReporterUrl": "https://opt-out.roblox.com/",
+    "DFStringTelegrafHTTPTransportUrl": "0.0.0.0",
+    "FFlagInsertServiceMenuTelemetry": "false",
+    "FFlagEnableServiceInitBreakdownTelemetry": "false",
+    "DFFlagReportReplicatorStatsToTelemetryV22": "false",
+    "DFFlagDebugDisableTelemetryAfterTest": "true",
     "FFlagEnableTelemetryProtocol": "false",
     "FFlagEnableTelemetryService1": "false",
     "FFlagPropertiesEnableTelemetry": "false",
     "FFlagOpenTelemetryEnabled2": "false",
     "FLogRobloxTelemetry": "0",
+    "FFlagTimeAndNewJoinDataTelemetry": "false",
     "FFlagDisableMemoryTracking": "true",
-    "FStringTencentAuthPath": "null"
+    "FStringTencentAuthPath": "null",
+    "DFFlagClientRolloutPhaseTelemetry": false,
+    "DFFlagAnalyticsServiceEnabled": "false",
+    "DFStringRobloxAnalyticsURL": "https://opt-out.roblox.com/",
+    "DFFlagSessionTaskAnalyticsEnabled": "false"
 }
 ```
 ### Disable In-game Advertisements 🌟
@@ -882,6 +895,13 @@ High
     "FFlagEnableRewardedVideoInAdService15": false,
     "FLogAdService": 0,
     "DFFlagEnableRewardedAdsSessionTrackingFields": false
+}
+```
+### Disable events tab/change its url
+```json
+{
+    "FFlagPlatformEventEnabled2": "false",
+    "FStringPlatformEventUrl": "https://www.google.com/"
 }
 ```
 ### Disable In-Game Purchases
