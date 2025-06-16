@@ -103,6 +103,13 @@
 }
 ```
 
+### Feature VoxelGrid
+```json
+{
+    "FFlagVoxelGridNew6": "true"
+}
+```
+
 ### Shadowmap Lighting (Phase 2)
 ```json
 {
@@ -872,6 +879,16 @@ High
     "DFFlagSessionTaskAnalyticsEnabled": "false"
 }
 ```
+### Don't Give Roblox Info On Your Device
+```json
+{
+    "DFIntReportDeviceInfoRate": 0,
+    "DFIntReportOutputDeviceInfoEventRateHundredthsPercentage": 0,
+    "DFIntReportOutputDeviceInfoRateHundredthsPercentage": 0,
+    "DFIntReportRecordingDeviceInfoEventRateHundredthsPercentage": 0,
+    "DFIntReportRecordingDeviceInfoRateHundredthsPercentage": 0
+}
+```
 ### Disable In-game Advertisements 🌟
 ```json
 {
@@ -1333,6 +1350,14 @@ High
     "FFlagPerformanceControlDelaySingleSurfaceAppInit": "false"
 }
 ```
+### No more homepage/infinite scrolling 🌟
+> [!NOTE]
+> **Default = 30**
+```json
+{
+    "FIntTooltipHitboxMinSize": "2147483647"
+}
+```
 ### No opacity to Chrome UI
 ```json
 {
@@ -1515,6 +1540,12 @@ High
 ``` json
 {
     "DFFlagUserAnimateScaleRun ": "true"
+}
+```
+### Enable CoalesceInput (Smooth Multi Responsive)🌟
+```json
+{
+    "FFlagCoalesceInput": "true"
 }
 ```
 ### Preferred Input (Smooth Controller and Better Input) 🌟
