@@ -133,6 +133,15 @@
 
 <h1 align="center">Graphical Settings</h1>
 
+### Optimize CFrame Update 🌟
+> [!NOTE]
+> **Reduces CPU and GPU usage**
+```json
+{
+    "FFlagOptimizeCFrameUpdates4": "true",
+    "FFlagOptimizeCFrameUpdatesIC4": "true"
+}
+```
 ### Stop Being Jumpscared
 ```json
 {
@@ -1548,7 +1557,7 @@ High
     "FFlagCoalesceInput": "true"
 }
 ```
-### Preferred Input (Smooth Controller and Better Input) 🌟
+### Preferred Input (Prioritize Input) 🌟
 ```json
 {
     "FFlagPreferredInput": "true"
