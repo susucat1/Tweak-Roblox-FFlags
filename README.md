@@ -103,7 +103,9 @@
 }
 ```
 
-### Feature VoxelGrid
+### Feature VoxelGrid ❗
+> [!CAUTION]
+> **Visual Crashes & Buggy**
 ```json
 {
     "FFlagVoxelGridNew6": "true"
