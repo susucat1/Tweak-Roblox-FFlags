@@ -1339,6 +1339,12 @@ High
 
 <h1 align="center">User Interface/Visuals Experimental</h1>
 
+### Draggable Capture Button
+```json
+{
+    "FFlagEnableUpdatedCaptureControls_v7": "true"
+}
+```
 ### Network Menu Update Rate
 > [!NOTE]
 > **This fast flag configures how often the network stats menu (Shift + F3) updates its information. By default, it refreshes the information every 1 second.**
@@ -1442,6 +1448,12 @@ High
 
 <h1 align="center">Audio Related</h1>
 
+### Uncap Sound Limit
+```json
+{
+    "DFIntDebugAudioMaxDecibels": "2147483647"
+}
+```
 ### Better Sound Possibly
 ```json
 {
@@ -1451,7 +1463,7 @@ High
 ### Enable Fmod Threading 🌟
 ```json
 {
-     "FFlagFmodUseRuntimeThreading4": "true"
+    "FFlagFmodUseRuntimeThreading4": "true"
 }
 ```
 ### Voice chat range/volume
@@ -1560,6 +1572,8 @@ High
 }
 ```
 ### Preferred Input (Prioritize Input) 🌟
+> [!NOTE]
+> **https://devforum.roblox.com/t/client-beta-introducing-preferredinput-and-improved-touch-capabilities/3750890/1**
 ```json
 {
     "FFlagPreferredInput": "true"
