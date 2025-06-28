@@ -721,6 +721,7 @@ High
 ``` json
 {
     "FFlagDebugForceGenerateHSR": "true",
+    "FFlagDebugApplyHSRForTransparentMesh": "true",
     "FFlagHSRClusterImprovement": "true",
     "FFlagHSRRemoveDuplicateindices": "true"
 }
