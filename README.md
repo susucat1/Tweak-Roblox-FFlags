@@ -1036,10 +1036,10 @@ High
     "FFlagLuaAppLegacyInputSettingRefactor": "true"
 }
 ```
-### Enable New Chat Report
+### Disable New Chat Report
 ``` json
 {
-    "DFFlagChatLineAbuseReportAPIEnabled2": "true"
+    "DFFlagChatLineAbuseReportAPIEnabled2": "false"
 }
 ```
 ### Disable Blue Button
@@ -1069,7 +1069,7 @@ High
 > **1 second = 1000**
 ```json
 {
-    "DFIntDefaultTimeoutTimeMs": "10000"
+    "DFIntDefaultTimeoutTimeMs": "5000"
 }
 ```
 ### Automatically unmutes your mic on join (VC)
@@ -1562,10 +1562,22 @@ High
 > **Taller characters have a slower walking animation.**
 ``` json
 {
-    "DFFlagUserAnimateScaleRun ": "true"
+    "DFFlagUserAnimateScaleRun": "true"
+}
+```
+### Enable SmoothInputOffset
+> [!NOTE]
+> **"Smooth Input Offset" helps deliberately slow down or filter input signals, making mouse or controller movements smoother and preventing sudden stuttering or jittering.**
+>
+> **game smooths out the movement by averaging or slightly delaying the input, creating a more fluid control experience — even if it means sacrificing a bit of precision or immediate responsiveness.**
+```json
+{
+    "FFlagSmoothInputOffset": "true"
 }
 ```
 ### Enable CoalesceInput (Smooth Multi Responsive)🌟
+> [!NOTE]
+> **A feature or input processing technique that combines multiple control signals into a smoother and faster-responding. It is commonly used to improve sensitivity and accuracy when players interact with the game using a keyboard, mouse, controller, or touch input.**
 ```json
 {
     "FFlagCoalesceInput": "true"
