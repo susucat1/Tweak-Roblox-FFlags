@@ -1003,7 +1003,7 @@ High
     "FIntFullscreenTitleBarTriggerDelayMillis": "3600000"
 }
 ```
-### Spammed letters
+### Spammed letters ❗
 > [!WARNING]
 > **This fflag basically spams every other letter on roblox coregui and the game's gui but it doesn't affect some parts of the games!**
 > 
@@ -1013,7 +1013,11 @@ High
     "FIntDebugTextElongationFactor": "999999"
 }
 ```
-### MTU
+### MTU ❗
+> [!WARNING]
+> **700 -> 1500**
+>
+> **Risks caused by yourself**
 ```json
 {
     "DFIntConnectionMTUSize": "MTU_HERE"
@@ -1110,7 +1114,8 @@ High
 ### Subscriptions Page
 ```json
 {
-    "FFlagLuaAppDevSubsEnabled": "true"
+    "FFlagLuaAppDevSubsEnabled": "true",
+    "DFFlagDeveloperSubscriptionsEnabled": "true"
 }
 ```
 ### Adjust Scroll Speed
