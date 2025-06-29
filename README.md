@@ -955,6 +955,12 @@ High
     "DFFlagVoiceChat4": "false"
 }
 ```
+### Log chat yourself
+```json
+{
+    "FFlagDebugShowTextBounds": "true"
+}
+```
 ### Overlay that shows what you type
 ``` json
 {
