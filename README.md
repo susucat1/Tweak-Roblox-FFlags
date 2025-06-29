@@ -1466,12 +1466,6 @@ High
     "DFIntDebugAudioMaxDecibels": "2147483647"
 }
 ```
-### Better Sound Possibly
-```json
-{
-    "FFlagSimplifySoundLoading2": "false"
-}
-```
 ### Enable Fmod Threading 🌟
 ```json
 {
