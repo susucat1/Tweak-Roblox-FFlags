@@ -704,7 +704,8 @@ High
 > **lag a bit use if u love highlight**
 ``` json
 {
-    "FFlagHighlightOutlinesOnMobile": "true"
+    "FFlagHighlightOutlinesOnMobile": "true",
+    "DFFlagVisBugHighlightImprovement": "true"
 }
 ```
 ### Enable Gpu Texture Compressor
