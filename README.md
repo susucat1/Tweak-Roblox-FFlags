@@ -1348,7 +1348,7 @@ High
 ### Draggable Capture Button
 ```json
 {
-    "FFlagEnableUpdatedCaptureControls_v7": "true"
+    "FFlagEnableUpdatedCaptureControls_v8": "true"
 }
 ```
 ### Network Menu Update Rate
