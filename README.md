@@ -133,6 +133,13 @@
 }
 ```
 
+### Unified Lighting Blend Zone
+``` json
+{
+     "FIntUnifiedLightingBlendZone": "400"
+}
+```
+
 <h1 align="center">Graphical Settings</h1>
 
 ### Optimize CFrame Update 🌟
@@ -746,20 +753,6 @@ High
     "DFIntMegaReplicatorNumParallelTasks": "20"
 }
 ```
-### Unified Lighting Blend Zone
-> [!WARNING]
-> Smaller value = FPS boost > Bigger value = FPS loss
-> 
-> Explanation: Controls the distance over which light transitions blend.
-> 
-> Lower values create sharper transitions.
-> 
-> Higher values make transitions smoother.
-``` json
-{
-     "FIntUnifiedLightingBlendZone": "400"
-}
-```
 ### Vertex Smoothing Group Tolerance
 > [!WARNING]
 > The FIntVertexSmoothingGroupTolerance flag controls the tolerance level for vertex smoothing groups in 3D graphics.
@@ -1007,12 +1000,6 @@ High
 ``` json
 {
     "DFFlagChatLineAbuseReportAPIEnabled2": "false"
-}
-```
-### Disable Blue Button
-```json
-{
-   "FFlagLuaAppEnableFoundationColors7": "false"
 }
 ```
 ### Stuttery Animation Fix
@@ -1298,12 +1285,6 @@ High
     "FFlagToastNotificationsProtocolEnabled2": "false"
 }
 ```
-### Rename Communications to Voice Enabled
-```json
-{
-    "FFlagGameDetailsDecoupledCommunication": "false"
-}
-```
 
 <h1 align="center">User Interface/Visuals Experimental</h1>
 
@@ -1399,7 +1380,6 @@ High
 ```json
 {
     "FFlagDebugEnablePseudolocalization": "true",
-    "FFlagEnablePseudolocalizationApi2": "true",
     "FFlagDebugEnableCoreScriptPseudolocalization": "true"
 }
 ```
@@ -1519,12 +1499,10 @@ High
     "DFIntTrackCountryRegionAPIHundredthsPercent": "10000"
 }
 ```
-### Walk Speed Scale Based
-> [!NOTE]
-> **Taller characters have a slower walking animation.**
+### Disable Walk Speed Scale Based
 ``` json
 {
-    "DFFlagUserAnimateScaleRun": "true"
+    "DFFlagUserAnimateScaleRun": "false"
 }
 ```
 ### Enable SmoothInputOffset
