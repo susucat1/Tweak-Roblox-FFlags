@@ -1250,12 +1250,6 @@ High
     "FFlagAlwaysShowVRToggleV3": "false"
 }
 ```
-### Cleaner desktop home page 🌟
-```json
-{
-    "FIntGameGridFlexFeedItemTileNumPerFeed": "0"
-}
-```
 ### Mini webview
 ```json
 {
@@ -1284,6 +1278,12 @@ High
 ```json
 {
     "FFlagToastNotificationsProtocolEnabled2": "false"
+}
+```
+### Cleaner desktop home page 🌟
+```json
+{
+    "FIntGameGridFlexFeedItemTileNumPerFeed": "0"
 }
 ```
 
@@ -1551,119 +1551,12 @@ High
     "FIntCLI20390_2": "0"
 }
 ```
-### Mesh Noclip V1
-```json
-{
-    "DFIntPhysicsDecompForceUpgradeVersion": "1500"
-}
-```
-### Mesh Noclip V2
-```json
-
-{
-    "DFIntBulletContactBreakOrthogonalThresholdActivatePercent": 2147483647,
-    "DFIntBulletContactBreakThresholdPercent": -2147483648,
-    "DFIntBulletContactBreakOrthogonalThresholdPercent": -2147483648
-}
-```
-### Mesh Noclip V3 (Combined)
-```json
-{
-   "DFIntPhysicsDecompForceUpgradeVersion": "1500",
-   "DFIntBulletContactBreakOrthogonalThresholdActivatePercent": 2147483647,
-   "DFIntBulletContactBreakThresholdPercent": -2147483648,
-   "DFIntBulletContactBreakOrthogonalThresholdPercent": -2147483648
-}
-```
 ### Better serversided character position
-##### 100 makes your serversided character closer to your client
+> [!NOTE]
+> **100 makes your serversided character closer to your client**
 ```json
 {
     "DFIntS2PhysicsSenderRate": "100"
-}
-```
-### Wall Glide
-```json
-{
-    "DFIntMaximumUnstickForceInGs": "-10"
-}
-```
-### Fling you or a part that is below you
-```json
-{
-    "DFIntSolidFloorMassMultTenth": "-2147483647",
-    "DFIntSolidFloorPercentForceApplication": "-450",
-    "DFIntNonSolidFloorPercentForceApplication": "-3200"
-}
-```
-### Fling Parts v2
-```json
-{
-    "DFIntSolidFloorPercentForceApplication": "-1000",
-    "DFIntNonSolidFloorPercentForceApplication": "-5000"
-}
-```
-### Invisible 1 (Freezes you in place)
-```json
-{
-    "DFIntGameNetOptimizeParallelPhysicsSendAssemblyBatch": "-1",
-    "DFIntGameNetPVHeaderTranslationZeroCutoffExponent": "-1"
-}
-```
-### Invisible 2 (restricts the client from moving through the server)
-```json
-{
-    "DFIntPhysicsSenderMaxBandwidthBps": "1",
-    "DFIntPhysicsSenderMaxBandwidthBpsScaling": "0"
-}
-```
-### Well known speed fflag (Buggy)
-```json
-{
-    "DFIntMaximumUnstickForceInGs": "-1",
-    "DFIntRaycastMaxDistance": "0"
-}
-```
-### Max raycast distance
-##### breaks leg collision and some games under 3
-```json
-{
-    "DFIntRaycastMaxDistance": "3"
-}
-```
-### No animations
-```json
-{
-    "DFIntReplicatorAnimationTrackLimitPerAnimator": "-1"
-}
-```
-### No knockback in certain games
-##### In slap battles its bannable (USE AT YOUR OWN RISK)
-```json
-{
-    "DFIntGameNetLocalSpaceMaxSendIndex": "100000",
-    "DFIntPhysicsImprovedCyclicExecutiveThrottleThresholdTenth": "0"
-}
-```
-### Drive vehicles slow
-```json
-{
-    "DFIntPhysicsImprovedCyclicExecutiveThrottleThresholdTenth": "0"
-}
-```
-### Drunk
-```json
-{
-    "FFlagSimAdaptiveTimesteppingDefault2": "true",
-    "DFIntSimAdaptiveHumanoidPDControllerSubstepMultiplier": "-999999"
-}
-```
-### Even funnier drunk fflag
-```json
-{
-    "DFIntMaxAltitudePDHipHeightPercent": "-10000",
-    "DFIntNewPDAltitudeNoForceZonePercent": "14673",
-    "DFIntSimAdaptiveHumanoidPDControllerSubstepMultiplier": "-999999"
 }
 ```
 ### Dev Console Logging 🌟
@@ -1688,7 +1581,11 @@ High
     "FFlagDebugTestImageDrawItem": "true"
 }
 ```
-### Allows you to edit the DataModel Patch 🌟
+### Allows you to edit the DataModel Patch ❗
+> [!WARNING]
+> **ur can get banned by roblox with modifying**
+>
+> **risk by yourself**
 ```json
 {
     "FFlagDataModelPatcherForceLocal": "true"
