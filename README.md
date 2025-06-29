@@ -721,7 +721,7 @@ High
 ##### Optimization, latency, delay FFlag
 ``` json
 {
-    "FFlagSimDcdEnableLAR": "true",
+    "FFlagSimDcdEnableLAR2": "true",
     "FFlagSimDcdRefactorDelta3": "true",
     "DFIntBufferCompressionLevel": "0",
     "DFIntBufferCompressionThreshold": "100",
@@ -824,15 +824,6 @@ High
     "DFFlagSimOptimizeSetSize": "true"
 }
 ```
-
-### Fully Dark Map
-``` json
-{
-    "DFIntDebugFRMQualityLevelOverride": "1",
-    "DFIntRenderClampRoughnessMax": "-640000000",
-    "DFIntRenderClampRoughnessMin": "-640000000"
-}
-```
 ### Makes Avatars Shiny 
 ```json
 {
@@ -860,26 +851,18 @@ High
 ```json
 {
     "DFStringTelemetryV2Url": "0.0.0.0",
-    "DFStringTelegrafAddress": "0.0.0.0",
-    "DFStringAltTelegrafAddress": "0.0.0.0",
     "DFStringHttpPointsReporterUrl": "https://opt-out.roblox.com/",
-    "DFStringTelegrafHTTPTransportUrl": "0.0.0.0",
-    "FFlagInsertServiceMenuTelemetry": "false",
     "FFlagEnableServiceInitBreakdownTelemetry": "false",
     "DFFlagReportReplicatorStatsToTelemetryV22": "false",
     "DFFlagDebugDisableTelemetryAfterTest": "true",
     "FFlagEnableTelemetryProtocol": "false",
     "FFlagEnableTelemetryService1": "false",
-    "FFlagPropertiesEnableTelemetry": "false",
     "FFlagOpenTelemetryEnabled2": "false",
     "FLogRobloxTelemetry": "0",
     "FFlagTimeAndNewJoinDataTelemetry": "false",
     "FFlagDisableMemoryTracking": "true",
     "FStringTencentAuthPath": "null",
-    "DFFlagClientRolloutPhaseTelemetry": false,
-    "DFFlagAnalyticsServiceEnabled": "false",
-    "DFStringRobloxAnalyticsURL": "https://opt-out.roblox.com/",
-    "DFFlagSessionTaskAnalyticsEnabled": "false"
+    "DFStringRobloxAnalyticsURL": "https://opt-out.roblox.com/"
 }
 ```
 ### Don't Give Roblox Info On Your Device
@@ -895,26 +878,8 @@ High
 ### Disable In-game Advertisements 🌟
 ```json
 {
-    "FFlagAdServiceEnabled": "false"
-}
-```
-### AdBlock In Roblox
-```json
-{
-    "EnableNativeAdsProtocolAndroid3": "false",
-    "NativeAdsProtocolRunInNewThread": "false",
     "FFlagAdServiceEnabled": "false",
-    "DFFlagADS7645_RBXLOG_MIGRATION": false,
-    "DFFlagAdServiceAccessMarketplaceServiceUnderDMLock": false,
-    "DFFlagAdServiceCallErrorFunctionInsteadOfPrint": false,
-    "DFFlagAdserviceFixRewardedVideoAdPlaySignalLog": false,
-    "DFFlagAdServiceMoveVolumeChangedSignalHandlerToDmThread": false,
-    "DFFlagAdsPreloadInteractivityAssets": false,
-    "DFFlagOnDemandAdsProviderAccessAdServiceUnderDmLock": false,
-    "FFlagAdServiceAdditionalDataModelChecksEnabled": false,
-    "FFlagEnableRewardedVideoInAdService15": false,
-    "FLogAdService": 0,
-    "DFFlagEnableRewardedAdsSessionTrackingFields": false
+    "FLogAdService": 0
 }
 ```
 ### Disable events tab/change its url
