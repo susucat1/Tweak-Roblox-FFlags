@@ -160,12 +160,6 @@
     "DFFlagRenderSmootherStepUpsampling2": "true"
 }
 ```
-### Display Roblox Light Grid Chunks
-```json
-{
-    "FFlagDebugShowLightGridChunks": "true"
-}
-```
 ### Custom Record Video Roblox 🌟
 > [!NOTE]
 > **Default = 30 FPS and 2M bit on 1 video 🤣🤣🤣**
@@ -503,10 +497,9 @@ High
 ### Disable Feature Sky
 ```json
 {
-    "DFFlagThumbnailRestoreSky": "false",
-    "FFlagAlwaysUseNewSkyRemovalBehavior": "false",
-    "FFlagRenderSkyFixAvgIrradiance": "false",
-    "FFlagUseSkyReadyState": "false"
+    "FFlagAdvSkyUsesRuntime": "false",
+    "FFlagSkyboxOrientation": "false",
+    "DFFlagFixSkyBoxTextureBlurrines": "false"
 }
 ```
 ### Gray Sky
@@ -518,12 +511,10 @@ High
 }
 ```
 ### White Sky
-> [!NOTE]
+> [!WARNING]
 > **Only applies to games with the default skybox**
 ```json
 {
-    "FFlagRenderSkyFixAvgIrradiance": "false",
-    "FFlagAlwaysUseNewSkyRemovalBehavior": "false",
     "FFlagDebugSkyGray": "true",
     "FFlagSkyUseRGBEEncoding": "true"
 }
