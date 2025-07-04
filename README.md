@@ -841,11 +841,18 @@ High
 
 <h1 align="center">Telemetry</h1>
 
+### Remove Minimum required Memory For Roblox
+```json
+{
+    "FIntMininumRequiredMemoryInGB": "0",
+    "FIntMininumRequiredMemoryInMB": "0"
+}
+```
 ### Zero Telemetry
 ```json
 {
     "DFStringTelemetryV2Url": "0.0.0.0",
-    "DFStringHttpPointsReporterUrl": "https://opt-out.roblox.com/",
+    "DFStringHttpPointsReporterUrl": "null",
     "FFlagEnableServiceInitBreakdownTelemetry": "false",
     "DFFlagReportReplicatorStatsToTelemetryV22": "false",
     "DFFlagDebugDisableTelemetryAfterTest": "true",
@@ -855,8 +862,23 @@ High
     "FLogRobloxTelemetry": "0",
     "FFlagTimeAndNewJoinDataTelemetry": "false",
     "FFlagDisableMemoryTracking": "true",
+    "DFStringRobloxAnalyticsURL": "null",
+    "FFlagLuaAppDesktopMediaGalleryTelemetry": "false",
+    "FFlagMediaAccordionAndFullTelemetry": "false",
+    "DFStringRobloxTelemetryReliabilityCountAllowList": "null"
+}
+```
+### Disable Telemetry by China and VNG
+```json
+{
+    "FFlagEnableVNGNewAppAvailableModal": "false",
+    "FFlagLuaAppHomeVngAppUpsell": "false",
+    "FFlagVngTOSRevisedEnabled": "false",
+    "FStringVNGWebshopUrl": "null",
     "FStringTencentAuthPath": "null",
-    "DFStringRobloxAnalyticsURL": "https://opt-out.roblox.com/"
+    "FLogTencentAuthPath": "false",
+    "FStringDevPublishChinaRequirementsLink": "null",
+    "FLogDevPublishChinaRequirementsLink": "false"
 }
 ```
 ### Don't Give Roblox Info On Your Device
