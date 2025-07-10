@@ -12,12 +12,11 @@
 ![image](https://github.com/user-attachments/assets/dd936d36-7929-4bd7-8efd-01b03b46a77d)
 # [AppleBlox (MacOS Only) Download >>>>>](https://github.com/AppleBlox/appleblox/tags)
 
-> [!CAUTION]
-> **Note!: Fast Flags are extremely powerful, being that they are intended to only be used by Roblox engineers. While they can be very useful, they can cause issues with stability and functionality if you don't know what you're doing.**
-
 ## How To Use BloxsTrap:
 ![newbie](http://web.archive.org/web/20240803170418im_/https://raw.githubusercontent.com/luafv/rbxflags/master/assets/tutorial260.gif)
 
+> [!CAUTION]
+> **Fast Flags are extremely powerful, being that they are intended to only be used by Roblox engineers. While they can be very useful, they can cause issues with stability and functionality if you don't know what you're doing.**
 
 <h1 align="center">Rendering API</h1>
 
@@ -129,7 +128,7 @@
 ### Unified Lighting (LightGrid - Beta)
 ```json
 {
-    "FFlagRenderUnifiedLighting14": "true"
+    "FFlagRenderUnifiedLighting15": "true"
 }
 ```
 
@@ -142,6 +141,14 @@
 
 <h1 align="center">Graphical Settings</h1>
 
+### Reset Cache On Game Leave 🌟
+> [!NOTE]
+> **In game engines, a cache is a temporary storage location for frequently accessed data, designed to speed up game performance by reducing the time it takes to retrieve information. Clearing the cache can improve game performance, fix loading errors, and resolve connectivity problems.**
+```json
+{
+    "FFlagResetCacheOnLeaveGame": "true"
+}
+```
 ### Optimize CFrame Update 🌟
 > [!NOTE]
 > **Reduces CPU and GPU usage**
@@ -1308,13 +1315,34 @@ High
     "FIntGameGridFlexFeedItemTileNumPerFeed": "0"
 }
 ```
+### Disable Take A Screenshot of This
+```json
+{
+    "FFlagTakeAScreenshotOfThis": "false"
+}
+```
+### Do not trace ping
+```json
+{
+    "DFFlagDataPingTrace": "false",
+    "DFFlagRakNetPingTrace": "false"
+}
+```
+### Max delay for layout updates
+> [!NOTE]
+> **basically the things that are changing on an ui for example loading a new page**
+```json
+{
+    "DFIntMaxAcceptableUpdateDelay": "15"
+}
+```
 
 <h1 align="center">User Interface/Visuals Experimental</h1>
 
 ### Draggable Capture Button
 ```json
 {
-    "FFlagEnableUpdatedCaptureControls_v8": "true"
+    "FFlagEnableUpdatedCaptureControls_v9": "true"
 }
 ```
 ### Network Menu Update Rate
@@ -1538,6 +1566,17 @@ High
     "FFlagSmoothInputOffset": "true"
 }
 ```
+### Faster Precise Time 🌟
+> [!NOTE]
+> **Faster response**: Helps actions like jumping, shooting, or moving become more precise and instantaneous.**
+>
+> **Smoother visual effects**: Effects like lighting and physics-based movements are updated more accurately in real time.**
+```json
+{
+    "FFlagFasterPreciseTime4": "true"
+}
+```
+If you're translating this for a README file or project documentation, I can help you make it sound even more polished or technical. Just let me know how you'd like to use it!
 ### Enable CoalesceInput (Smooth Multi Responsive)🌟
 > [!NOTE]
 > **A feature or input processing technique that combines multiple control signals into a smoother and faster-responding. It is commonly used to improve sensitivity and accuracy when players interact with the game using a keyboard, mouse, controller, or touch input.**
@@ -1579,6 +1618,18 @@ High
 ```json
 {
     "DFIntS2PhysicsSenderRate": "100"
+}
+```
+### Stop Shrinking Simulation Radius 🌟
+> [!NOTE]
+> **Normally, DFIntS2PhysicsSenderRate controls how much physical data is being sent and increases synchronization with the server, but the simulation radius (the area around you where physics are actively processed) gets reduced over time.**
+>
+> **Enabling this flag stops that shrinking behavior meaning the simulation radius stays large and consistent.**
+>
+> **This helps keep physics interactions responsive across a wider area around your character, especially useful in games with vehicles or moving parts that go beyond the default radius.**
+```json
+{
+    "DFFlagDebugPhysicsSenderDoesNotShrinkSimRadius": "true"
 }
 ```
 ### Dev Console Logging 🌟
