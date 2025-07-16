@@ -1,35 +1,25 @@
-<h1 align="center">Tweak Roblox FFlags</h1>
+## [Looking For Check/Find FFlags? Join it >>>>>](https://discord.gg/q5DYxgE4Bt)
 
-# [Check FFlags Discord >>>>>](https://discord.gg/gnAw3xc8s9)
-
-
-![image](https://github.com/bloxstraplabs/bloxstrap/raw/main/Images/Bloxstrap-full-dark.png#gh-dark-mode-only)
-# [Bloxstrap Download >>>>>](https://github.com/bloxstraplabs/bloxstrap/releases/)
-
-![image](https://github.com/returnrqt/bloxstrap/raw/main/Images/Bloxstrap-full-dark.png#gh-dark-mode-only)
-# [Fishtrap Download >>>>>](https://github.com/returnrqt/fishstrap/releases/)
-
-![image](https://github.com/user-attachments/assets/dd936d36-7929-4bd7-8efd-01b03b46a77d)
-# [AppleBlox (MacOS Only) Download >>>>>](https://github.com/AppleBlox/appleblox/tags)
-
-## How To Use BloxsTrap:
-![newbie](http://web.archive.org/web/20240803170418im_/https://raw.githubusercontent.com/luafv/rbxflags/master/assets/tutorial260.gif)
 
 > [!CAUTION]
 > **Fast Flags are extremely powerful, being that they are intended to only be used by Roblox engineers. While they can be very useful, they can cause issues with stability and functionality if you don't know what you're doing.**
 
+
+
 <h1 align="center">Rendering API</h1>
 
-### Direct X 11 🌟
+
+
+### Direct X 11
 ```json
 {
     "FFlagDebugGraphicsPreferD3D11": "true"
 }
 ```
 
-### Direct X 10 🌟
+### Direct X 10
 > [!NOTE]
-> **FOR POTATO DESKTOP**
+> **FOR POTATO WINDOWS**
 ```json
 {
     "FFlagDebugGraphicsPreferD3D11FL10": "true",
@@ -39,22 +29,22 @@
 }
 ```
 
-### OpenGL 
+### OpenGL
+> [!NOTE]
+> **Better with Android/Linux**
 ```json
 {
-    "FFlagDebugGraphicsDisableDirect3D11": "true",
     "FFlagDebugGraphicsPreferOpenGL": "true",
     "FFlagGraphicsGLEnableHQShadersExclusion": "true",
     "FFlagGraphicsGLEnableSuperHQShadersExclusion": "true"
 }
 ```
 
-### Vulkan ❗
-> [!CAUTION]
-> **Visual Crashes**
+### Vulkan
+> [!WARNING]
+> **Better with Android/Linux and MacOS**
 ```json
 {
-    "FFlagDebugGraphicsDisableDirect3D11": "true",
     "FFlagDebugGraphicsPreferVulkan": "true",
     "FFlagGraphicsVulkanBonusMemory": "true",
     "FFlagSupportHeadlessDeviceVulkan": "true",
@@ -83,9 +73,9 @@
 }
 ```
 
-### Metal ❗
+### Metal
 > [!WARNING]
-> **Note!: MacOS Only**
+> **MacOS Only**
 ```json
 {
     "FFlagDebugGraphicsPreferMetal": "true",
@@ -139,7 +129,11 @@
 }
 ```
 
+
+
 <h1 align="center">Graphical Settings</h1>
+
+
 
 ### Reset Cache On Game Leave 🌟
 > [!NOTE]
@@ -149,21 +143,14 @@
     "FFlagResetCacheOnLeaveGame": "true"
 }
 ```
-### Optimize CFrame Update 🌟
-> [!NOTE]
-> **Reduces CPU and GPU usage**
-```json
-{
-    "FFlagOptimizeCFrameUpdates4": "true",
-    "FFlagOptimizeCFrameUpdatesIC4": "true"
-}
-```
+
 ### Stop Being Jumpscared
 ```json
 {
     "DFFlagJumpScaresP2": "false"
 }
 ```
+
 ### Improved Object Detail
 > [!NOTE]
 > **FractalUpsample - Fractal upsampling is a technique used to increase the resolution or detail of an image, texture, or grid by applying fractal algorithms. Unlike traditional upscaling methods that simply stretch the original content, fractal upsampling generates new details based on mathematical fractal patterns. These patterns mimic natural complexity, allowing the upsampled image or grid to retain a more realistic or detailed appearance.**
@@ -174,15 +161,17 @@
     "DFFlagRenderSmootherStepUpsampling2": "true"
 }
 ```
+
 ### Custom Record Video Roblox 🌟
 > [!NOTE]
-> **Default = 30 FPS and 2M bit on 1 video 🤣🤣🤣**
+> **Default = 30 FPS and 2M bit**
 ```json
 {
     "DFIntCaptureVideoMaxFrameRate": 60,
     "DFIntCaptureVideoBitrate": 8000000
 }
 ```
+
 ### Quaternion Corrections Animations 🌟
 > [!NOTE]
 > **Applies quaternion-based corrections to character/object poses, helping ensure smoother and more accurate rotations, particularly during complex animations or movements.**
@@ -192,6 +181,7 @@
     "FFlagQuaternionPoseCorrection": "true"
 }
 ```
+
 ### Multithreading Improvement 🌟
 > [!NOTE]
 > **Basically makes roblox use as many threads as u put there (+1 because of main/render thread) HOWEVER this is poorly made (L roblox) it actually just switches between the threads really quickly causing overhead**
@@ -204,6 +194,7 @@
     "DFIntRuntimeConcurrency": "your core+1"
 }
 ```
+
 ### Fast Preloading Everything 🌟
 > [!NOTE]
 > **This improves loading time speeds for games**
@@ -218,14 +209,7 @@
     "DFIntNumAssetsMaxToPreload": "9999999"
 }
 ```
-### Removes Only Roblox Texture 🌟
-```json
-{
-    "FFlagTextureUseACR5": "true",
-    "FFlagTexturePackUseACR4": "true",
-    "FIntTextureUseACRHundredthPercent": "10000"
-}
-```
+
 ### No Unaligned DXT 🌟
 > [!NOTE]
 > **DXT (also known as S3TC) is a texture compression format.
@@ -235,6 +219,7 @@ It’s widely supported on most GPUs and helps textures stay compressed while in
     "FStringGraphicsDisableUnalignedDxtGPUNameBlacklist": "YOUR_GPU"
 }
 ```
+
 ### Configure FRM Refresh Rate 🌟
 > [!NOTE]
 > **120Hz**
@@ -281,12 +266,7 @@ It’s widely supported on most GPUs and helps textures stay compressed while in
     "DFIntGraphicsOptimizationModeMaxFrameTimeTargetMs": "6"
 }
 ```
-### Disable Render Shadow Huge Radius
-```json
-{
-    "DFIntRenderShadowHugeRadius": "0"
-}
-```
+
 ### Fast Render ❗
 > [!WARNING]
 > **More Laggy**
@@ -295,12 +275,21 @@ It’s widely supported on most GPUs and helps textures stay compressed while in
      "FIntRenderFastCluster": "255"
 }
 ```
+
+### Disable Render Shadow Huge Radius
+```json
+{
+    "DFIntRenderShadowHugeRadius": "0"
+}
+```
+
 ### Render Mesh Optimize
 ```json
 {
     "FIntRenderMeshOptimizeVertexBuffer": "1"
 }
 ```
+
 ### Pixel Quality Roblox 🌟
 > [!NOTE]
 > **144p = 37**
@@ -322,15 +311,17 @@ It’s widely supported on most GPUs and helps textures stay compressed while in
 > **4320p (8k) = 33178**
 ```json
 {
-    "DFIntDebugDynamicRenderKiloPixels": "410"
+    "DFIntDebugDynamicRenderKiloPixels": "922"
 }
 ```
+
 ### Remove Rendering Pre Processor
 ```json
 {
     "FFlagRemovedRbxRenderingPreProcessor": "true"
 }
 ```
+
 ### Max Shadow Atlas Usage Before Downscale
 > [!NOTE]
 > **You can change number and work with Unified Lighting**
@@ -339,24 +330,28 @@ It’s widely supported on most GPUs and helps textures stay compressed while in
     "FIntRenderMaxShadowAtlasUsageBeforeDownscale": "-1"
 }
 ```
+
 ### Disable Highlights on Parts 🌟
 ```json
 {
     "DFFlagRenderHighlightManagerPrepare4": "true"
 }
 ```
+
 ### Legacy Shadow 🌟
 ```json
 {
     "FFlagRenderLegacyShadowsQualityRefactor": "true"
 }
 ```
+
 ### SSAO (Screen-Space Ambient Occlusion)
 ```json
 {
     "FFlagDebugSSAOForce": "true"
 }
 ```
+
 ### Smoother Terrain ❗
 > [!CAUTION]
 > **The particle's speed is based on you FPS**
@@ -366,6 +361,7 @@ It’s widely supported on most GPUs and helps textures stay compressed while in
     "FFlagDebugRenderingSetDeterministic": "true"
 }
 ```
+
 ### Speed up particle emitters ❗
 > [!CAUTION]
 > **The particle's speed is based on you FPS**
@@ -375,6 +371,7 @@ It’s widely supported on most GPUs and helps textures stay compressed while in
     "FFlagDebugDeterministicParticles": "true"
 }
 ```
+
 ### Custom Threads
 > [!NOTE]
 > **You can use it or roblox default**
@@ -384,6 +381,7 @@ It’s widely supported on most GPUs and helps textures stay compressed while in
     "FIntRuntimeMaxNumOfThreads": "1800"
 }
 ```
+
 ### Fully Enable HyperThreading 🌟
 ``` json
 {
@@ -391,6 +389,7 @@ It’s widely supported on most GPUs and helps textures stay compressed while in
     "FFlagRenderDebugCheckThreading2": "true"
 }
 ```
+
 ### Fully Enable MovePrerender ❗
 > [!WARNING]
 > **lag,stuttering = remove it**
@@ -400,18 +399,33 @@ It’s widely supported on most GPUs and helps textures stay compressed while in
     "FFlagMovePrerenderV2": "true"
 }
 ```
-### Disable Player Shadows
-```json
-{
-    "FIntRenderShadowIntensity": "0"
-}
-```
+
 ### Preserve rendering quality with display setting
 ```json
 {
     "DFFlagDisableDPIScale": "true"
 }
 ```
+
+### FRM Levels
+```json
+Low
+
+1 = 3
+2 = 2
+3 = 6
+
+High
+
+4 = 7
+5 = 11
+6 = 14
+7 = 15 
+8 = 17
+9 = 18
+10 = 21
+```
+
 ### Force Graphics Quality Level 
 > [!NOTE]
 > **Note: 1-21**
@@ -438,24 +452,6 @@ It’s widely supported on most GPUs and helps textures stay compressed while in
     "DFIntDebugRestrictGCDistance": "1"
 }
 ```
-### FRM Levels
-```json
-Low
-
-1 = 3
-2 = 2
-3 = 6
-
-High
-
-4 = 7
-5 = 11
-6 = 14
-7 = 15 
-8 = 17
-9 = 18
-10 = 21
-```
 
 ### Disables fade in and fade out animation every light update
 ```json
@@ -474,6 +470,13 @@ High
 }
 ```
 
+### Disable Player Shadows
+```json
+{
+    "FIntRenderShadowIntensity": "0"
+}
+```
+
 ### Disable PostFX
 ```json
 {
@@ -483,8 +486,6 @@ High
 
 ### Force LOD on Meshes 🌟
 > [!NOTE]
-> **Not Recommend for Evade Player**
->
 > **Weird Map**
 ```json
 {
@@ -494,12 +495,14 @@ High
     "DFIntCSGLevelOfDetailSwitchingDistanceL34": "0"
 }
 ```
+
 ### White Everything
 ```json
 {
     "FFlagSkyUseRGBEEncoding": "true"
 }
 ```
+
 ### Black Wall ❗
 > [!CAUTION]
 > **Very Buggy**
@@ -508,6 +511,7 @@ High
     "FIntCameraFarZPlane": "60"
 }
 ```
+
 ### Disable Feature Sky
 ```json
 {
@@ -516,6 +520,7 @@ High
     "DFFlagFixSkyBoxTextureBlurrines": "false"
 }
 ```
+
 ### Gray Sky
 > [!NOTE]
 > **You can use it or Roblox Default**
@@ -524,6 +529,7 @@ High
     "FFlagDebugSkyGray": "true"
 }
 ```
+
 ### White Sky
 > [!WARNING]
 > **Only applies to games with the default skybox**
@@ -533,6 +539,7 @@ High
     "FFlagSkyUseRGBEEncoding": "true"
 }
 ```
+
 ### Colorful Sky ❗
 > [!CAUTION]
 > **Very Buggy**
@@ -546,6 +553,7 @@ High
     "FIntDebugForceMSAASamples": "0"
 }
 ```
+
 ### Black Sky
 ```json
 {
@@ -555,6 +563,7 @@ High
     "DFFlagTextureQualityOverrideEnabled": "true"
 }
 ```
+
 ### Pause Voxelizer/Disable Baked Shadows ❗
 > [!WARNING]
 > **If u play hornor game i dont recommend u use it**
@@ -563,18 +572,21 @@ High
     "DFFlagDebugPauseVoxelizer": "true"
 }
 ```
+
 ### Skip Mesh Voxelizer 🌟
 ```json
 {
     "DFFlagDebugSkipMeshVoxelizer": "true"
 }
 ```
+
 ### Enable CPULightCulling
 ```json
 {
     "FFlagDebugForceFSMCPULightCulling": "true"
 }
 ```
+
 ### Enable GPULightCulling
 > [!NOTE]
 > **Combine with [Lighting Attenuation] for better vision**
@@ -583,6 +595,7 @@ High
     "FFlagFastGPULightCulling3": "true"
 }
 ```
+
 ### Lighting Attenuation ❗
 > [!CAUTION]
 > **Weird Lighting**
@@ -591,6 +604,7 @@ High
     "FFlagNewLightAttenuation": "true"
 }
 ```
+
 ### Custom Frame Buffer 🌟
 ```json
 {
@@ -600,6 +614,7 @@ High
     "DFIntMaxAverageFrameDelayExceedFactor": "0"
 }
 ```
+
 ### Low Quallity Terrain Textures
 > [!NOTE]
 > **0 -> 4 for less quality 16, 32, 64 for higher quality**
@@ -608,6 +623,7 @@ High
     "FIntTerrainArraySliceSize": "0"
 }
 ```
+
 ### High Quality Textures 
 > [!NOTE]
 > **1 -> 3**
@@ -617,18 +633,21 @@ High
     "DFIntTextureQualityOverride": "3"
 }
 ```
+
 ### Lower Quality Textures
 ```json
 {
     "DFIntPerformanceControlTextureQualityBestUtility": "-1"
 }
 ```
+
 ### No avatar textures
 ```json
 {
     "DFIntTextureCompositorActiveJobs": "0"
 }
 ```
+
 ### Texture Manager
 > [!NOTE]
 > **1-4 Blurry, 5-7 low quality also removes studs, 8-10 Removes almost everything (this is better)**
@@ -637,6 +656,7 @@ High
     "FIntDebugTextureManagerSkipMips": "10"
 }
 ```
+
 ### Remove Grass
 ```json
 {
@@ -645,18 +665,21 @@ High
     "FIntRenderGrassDetailStrands": "0"
 }
 ```
+
 ### No Grass Motion
 ```json
 {
     "FIntGrassMovementReducedMotionFactor": "0"
 }
 ```
+
 ### Increased Grass Motion
 ```json
 {
     "FIntGrassMovementReducedMotionFactor": "999"
 }
 ```
+
 ### Force MSAA 🌟
 > [!NOTE]
 > **1 -> 7**
@@ -666,6 +689,7 @@ High
     "FIntDebugFRMOptionalMSAALevelOverride": "1"
 }
 ```
+
 ### ShadowMap Bias 
 > [!NOTE]
 > **[Future & ShadowMap]**
@@ -674,6 +698,7 @@ High
     "FIntRenderShadowmapBias": "-1"
 }
 ```
+
 ### Disable Dynamic Heads Animations
 > [!NOTE]
 > **https://roblox.fandom.com/wiki/Dynamic_Head**
@@ -684,6 +709,7 @@ High
     "DFIntAnimationLodFacsVisibilityDenominator": "0"
 }
 ```
+
 ### Remove head roll limit for face tracking
 > [!NOTE]
 > **Server Sided Only**
@@ -692,12 +718,14 @@ High
     "DFIntAvatarFaceChatHeadRollLimitDegrees": "360"
 }
 ```
+
 ### Remove layered clothing related for searching in lua app catalog
 ```json
 {
     "FStringAXCategories": "ClassicShirts.ClassicTShirts.ClassicPants"
 }
 ```
+
 ### Quick game launch ❗
 > [!CAUTION]
 > **BUG cant loading fully item avatar**
@@ -706,6 +734,7 @@ High
     "FFlagEnableQuickGameLaunch": "true"
 }
 ```
+
 ### Enable Highlight Outlines on any Rendering API ❗
 > [!WARNING]
 > **lag a bit use if u love highlight**
@@ -715,28 +744,30 @@ High
     "DFFlagVisBugHighlightImprovement": "true"
 }
 ```
+
 ### Enable Gpu Texture Compressor
 ``` json
 {
     "FFlagRenderGpuTextureCompressor": "true"
 }
 ```
+
 ### Enable HSR (Hidden Surface Removal) 🌟
 > [!NOTE]
 > **Its working like occlusion culling**
 ``` json
 {
     "FFlagDebugForceGenerateHSR": "true",
-    "FFlagDebugApplyHSRForTransparentMesh": "true",
     "FFlagHSRClusterImprovement": "true",
     "FFlagHSRRemoveDuplicateindices": "true"
 }
 ```
 ### Simulation Optimization Flag 🌟
-##### Optimization, latency, delay FFlag
+> [!NOTE]
+> **Optimization, latency, delay FFlag**
 ``` json
 {
-    "FFlagSimDcdEnableLAR2": "true",
+    "FFlagSimDcdEnableLAR3": "true",
     "FFlagSimDcdRefactorDelta3": "true",
     "DFIntBufferCompressionLevel": "0",
     "DFIntBufferCompressionThreshold": "100",
@@ -747,7 +778,7 @@ High
     "DFIntNumFramesAllowedToBeAboveError": "0",
     "DFIntVisibilityCheckRayCastLimitPerFrame": "10",
     "DFIntNetworkSchemaCompressionRatio": "50",
-    "DFIntTimeBetweenSendConnectionAttemptsMS": "50"
+    "DFIntTimeBetweenSendConnectionAttemptsMS": "100"
 }
 ```
 ### Network Cpu RSS tweaks
@@ -763,16 +794,32 @@ High
 ```
 ### Vertex Smoothing Group Tolerance
 > [!WARNING]
-> The FIntVertexSmoothingGroupTolerance flag controls the tolerance level for vertex smoothing groups in 3D graphics.
+> **The FIntVertexSmoothingGroupTolerance flag controls the tolerance level for vertex smoothing groups in 3D graphics.**
 > 
-> Lower values result in lower smoothing quality as more errors are tolerated, making models appear more angular and less smooth.
+> **Lower values result in lower smoothing quality as more errors are tolerated, making models appear more angular and less smooth.**
 > 
-> Higher values increase the smoothing accuracy, leading to smoother, more visually appealing models with fewer artifacts.
+> **Higher values increase the smoothing accuracy, leading to smoother, more visually appealing models with fewer artifacts.**
 ``` json
 {
     "FIntVertexSmoothingGroupTolerance": "1000"
 }
 ```
+
+### Directional Attenuation Max Points
+> [!WARNING]
+> **Lower values: May improve performance but reduce lighting accuracy. > Higher values: Increase lighting accuracy at the cost of performance, potentially leading to slower rendering, especially in scenes with complex lighting setups.**
+> 
+> **Explanation: Limits the maximum number of sample points for calculating directional light attenuation.**
+> 
+> **Lower values improve performance but may reduce lighting accuracy.**
+> 
+> **Higher values increase lighting accuracy but may slow rendering in complex lighting setups.**
+``` json
+{
+    "FIntDirectionalAttenuationMaxPoints": "400"
+}
+```
+
 ### Better shadows ❗
 > [!WARNING]
 > **Loading will take longer but the shadows are much better**
@@ -781,6 +828,7 @@ High
     "FFlagRenderInitShadowmaps": "true"
 }
 ```
+
 ### Raycast Performance Improvements 🌟
 > [!NOTE]
 > **https://create.roblox.com/docs/workspace/raycasting**
@@ -789,12 +837,14 @@ High
     "FFlagUserRaycastPerformanceImprovements": "true"
 }
 ```
+
 ### Shoe Skip Render Mesh 🌟
 ```json
 {
     "FFlagShoeSkipRenderMesh": "true"
 }
 ```
+
 ### New Version of Render 🌟
 > [!NOTE]
 > **Enables an updated rendering system to improve performance and manage render calls.**
@@ -803,20 +853,7 @@ High
     "FFlagRenderCBRefactor2": "true"
 }
 ```
-### Directional Attenuation Max Points
-> [!WARNING]
-> Lower values: May improve performance but reduce lighting accuracy. > Higher values: Increase lighting accuracy at the cost of performance, potentially leading to slower rendering, especially in scenes with complex lighting setups.
-> 
-> Explanation: Limits the maximum number of sample points for calculating directional light attenuation.
-> 
-> Lower values improve performance but may reduce lighting accuracy.
-> 
-> Higher values increase lighting accuracy but may slow rendering in complex lighting setups.
-``` json
-{
-    "FIntDirectionalAttenuationMaxPoints": "400"
-}
-```
+
 ### Simulation Optimization Flag 🌟
 > [!NOTE]
 > **Be mindful that while optimization can improve performance, it may also require testing to ensure that the behavior of sets remains consistent and that no necessary details are lost during the optimization process. The DFFlagSimOptimizeSetSize flag is used to optimize the size of sets in simulations. Enabling this flag activates optimization techniques that reduce the size of simulation sets, leading to better performance by decreasing memory usage and potentially improving processing speeds during simulations.**
@@ -825,6 +862,7 @@ High
     "DFFlagSimOptimizeSetSize": "true"
 }
 ```
+
 ### Makes Avatars Shiny 
 ```json
 {
@@ -832,17 +870,18 @@ High
     "DFIntDebugFRMQualityLevelOverride": "6"
 }
 ```
+
 ### Limits number of animations being played ❗
 ```json
 {
     "DFIntMaxActiveAnimationTracks": "0"
 }
 ```
+
 ### Remove Bloom 🌟
 ``` json
 {
-    "FIntBloomFrmCutoff": "1654515",
-    "FFlagRenderNoLowFrmBloom": "true"
+    "FIntBloomFrmCutoff": "1654515"
 }
 ```
 
@@ -855,6 +894,7 @@ High
     "FIntMininumRequiredMemoryInMB": "0"
 }
 ```
+
 ### Zero Telemetry
 ```json
 {
@@ -875,6 +915,7 @@ High
     "DFStringRobloxTelemetryReliabilityCountAllowList": "null"
 }
 ```
+
 ### Disable Telemetry by China and VNG
 ```json
 {
@@ -888,6 +929,7 @@ High
     "FLogDevPublishChinaRequirementsLink": "false"
 }
 ```
+
 ### Don't Give Roblox Info On Your Device
 ```json
 {
@@ -898,6 +940,7 @@ High
     "DFIntReportRecordingDeviceInfoRateHundredthsPercentage": 0
 }
 ```
+
 ### Disable In-game Advertisements 🌟
 ```json
 {
@@ -905,6 +948,7 @@ High
     "FLogAdService": 0
 }
 ```
+
 ### Disable events tab/change its url
 ```json
 {
@@ -912,18 +956,21 @@ High
     "FStringPlatformEventUrl": "https://www.google.com/"
 }
 ```
+
 ### Disable In-Game Purchases
 ```json
 {
     "DFFlagOrder66": "true"
 }
 ```
+
 ### Disable Chat
 ```json
 {
     "FFlagDebugForceChatDisabled": "true"
 }
 ```
+
 ### Disable Voicechat
 > [!NOTE]
 > **Setting this to True will not do anything**
@@ -934,18 +981,21 @@ High
     "DFFlagVoiceChat4": "false"
 }
 ```
+
 ### Log chat yourself
 ```json
 {
     "FFlagDebugShowTextBounds": "true"
 }
 ```
+
 ### Overlay that shows what you type
 ``` json
 {
     "FFlagDebugTextBoxServiceShowOverlay": "true"
 }
 ```
+
 ### Disable Bubble Chat
 ``` json
 {
