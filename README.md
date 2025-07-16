@@ -1870,11 +1870,11 @@ High
 
 
 
-### [Bloxstrap Official>>>>>](https://github.com/bloxstraplabs/bloxstrap/releases/)
-### [Fishstrap>>>>>](https://github.com/fishstrap/fishstrap/releases/)
-### [Lunastrap>>>>>](https://github.com/lunastraplabs/lunastrap/releases/)
-### [Voidstrap>>>>>](https://github.com/voidstrap/Voidstrap/releases/)
-### [Plexity>>>>>](https://github.com/KloBraticc/Plexity/releases/)
+## [Bloxstrap Official>>>>>](https://github.com/bloxstraplabs/bloxstrap/releases/)
+## [Fishstrap>>>>>](https://github.com/fishstrap/fishstrap/releases/)
+## [Lunastrap>>>>>](https://github.com/lunastraplabs/lunastrap/releases/)
+## [Voidstrap>>>>>](https://github.com/voidstrap/Voidstrap/releases/)
+## [Plexity>>>>>](https://github.com/KloBraticc/Plexity/releases/)
 
 
 
@@ -1882,7 +1882,7 @@ High
 
 
 
-### [Appleblox>>>>>](https://github.com/AppleBlox/appleblox/tags)
+## [Appleblox>>>>>](https://github.com/AppleBlox/appleblox/tags)
 
 
 
@@ -1890,7 +1890,7 @@ High
 
 
 
-### [Rober>>>>>](https://sober.vinegarhq.org/)
+## [Rober>>>>>](https://sober.vinegarhq.org/)
 
 
 
@@ -1898,4 +1898,4 @@ High
 
 
 
-### [Chevstrap>>>>>](https://github.com/FrosSky/Chevstrap/releases)
+## [Chevstrap>>>>>](https://github.com/FrosSky/Chevstrap/releases)
