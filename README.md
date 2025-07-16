@@ -1,8 +1,9 @@
-## [Looking For Check/Find FFlags? Join it >>>>>](https://discord.gg/q5DYxgE4Bt)
-
-
 > [!CAUTION]
 > **Fast Flags are extremely powerful, being that they are intended to only be used by Roblox engineers. While they can be very useful, they can cause issues with stability and functionality if you don't know what you're doing.**
+
+
+
+# [[Looking For Check/Find FFlags?] Join >>>>>>>](https://discord.gg/q5DYxgE4Bt)
 
 
 
@@ -61,6 +62,8 @@
 ```
 
 ### No More Vulkan Blacklist
+> [!NOTE]
+> **Mostly for mobile devices**
 ```json
 {
     "FStringGraphicsVulkanFutureGPUNameBlacklist": null,
@@ -83,7 +86,11 @@
 }
 ```
 
+
+
 <h1 align="center">Lightning Technologies</h1>
+
+
 
 ### Voxel Lighting (Phase 1) 🌟
 ```json
@@ -135,12 +142,44 @@
 
 
 
+### Disable Async Lightgrid 🌟
+> [!NOTE]
+> **Undesyncing on low quality**
+```json
+{
+    "FFlagUpdateAsyncLightGrid10": "false"
+}
+```
+
 ### Reset Cache On Game Leave 🌟
 > [!NOTE]
-> **In game engines, a cache is a temporary storage location for frequently accessed data, designed to speed up game performance by reducing the time it takes to retrieve information. Clearing the cache can improve game performance, fix loading errors, and resolve connectivity problems.**
+> **Clearing the cache can improve game performance, fix loading errors, and resolve connectivity problems.**
 ```json
 {
     "FFlagResetCacheOnLeaveGame": "true"
+}
+```
+
+### Shapecasts
+> [!NOTE]
+> **https://devforum.roblox.com/t/introducing-shapecasts/2320655**
+```json
+{
+    "DFIntShapecastMaxDistance": "1024",
+    "DFIntShapecastMaxSize": "512"
+}
+```
+
+### Inverse Kinematics
+> [!NOTE]
+> **https://devforum.roblox.com/t/r15-inverse-kinematics-character/3555958**
+```json
+{
+    "FFlagAnimationLodIkEnabled": "true",
+    "DFFlagIkControlDeepProfile": "true",
+    "DFFlagAnimatorPostProcessIK": "true",
+    "DFFlagIkTwoBoneBetterSolver": "true",
+    "DFFlagIKSolverValidateChain2": "true"
 }
 ```
 
@@ -226,8 +265,8 @@ It’s widely supported on most GPUs and helps textures stay compressed while in
 ```json
 {
     "DFIntGraphicsOptimizationModeFRMFrameRateTarget": "120",
-    "DFIntGraphicsOptimizationModeMinFrameTimeTargetMs": "10",
-    "DFIntGraphicsOptimizationModeMaxFrameTimeTargetMs": "17"
+    "DFIntGraphicsOptimizationModeMinFrameTimeTargetMs": "12",
+    "DFIntGraphicsOptimizationModeMaxFrameTimeTargetMs": "18"
 }
 ```
 > [!NOTE]
@@ -235,8 +274,8 @@ It’s widely supported on most GPUs and helps textures stay compressed while in
 ```json
 {
     "DFIntGraphicsOptimizationModeFRMFrameRateTarget": "144",
-    "DFIntGraphicsOptimizationModeMinFrameTimeTargetMs": "8",
-    "DFIntGraphicsOptimizationModeMaxFrameTimeTargetMs": "10"
+    "DFIntGraphicsOptimizationModeMinFrameTimeTargetMs": "10",
+    "DFIntGraphicsOptimizationModeMaxFrameTimeTargetMs": "12"
 }
 ```
 > [!NOTE]
@@ -244,8 +283,8 @@ It’s widely supported on most GPUs and helps textures stay compressed while in
 ```json
 {
     "DFIntGraphicsOptimizationModeFRMFrameRateTarget": "165",
-    "DFIntGraphicsOptimizationModeMinFrameTimeTargetMs": "7",
-    "DFIntGraphicsOptimizationModeMaxFrameTimeTargetMs": "9"
+    "DFIntGraphicsOptimizationModeMinFrameTimeTargetMs": "8",
+    "DFIntGraphicsOptimizationModeMaxFrameTimeTargetMs": "10"
 }
 ```
 > [!NOTE]
@@ -323,8 +362,6 @@ It’s widely supported on most GPUs and helps textures stay compressed while in
 ```
 
 ### Max Shadow Atlas Usage Before Downscale
-> [!NOTE]
-> **You can change number and work with Unified Lighting**
 ```json
 {
     "FIntRenderMaxShadowAtlasUsageBeforeDownscale": "-1"
@@ -428,7 +465,7 @@ High
 
 ### Force Graphics Quality Level 
 > [!NOTE]
-> **Note: 1-21**
+> **1 -> 21**
 ```json
 {
     "FIntRomarkStartWithGraphicQualityLevel": "1"
@@ -437,7 +474,7 @@ High
 
 ### Low Graphics Quality w/ Max Render Distance/FRM Quality Levels 🌟
 > [!NOTE]
-> **Explanation: 1-6 Are low graphics, Above 6 are high graphics. Like the 1-21 graphics slider**
+> **1-6 Are low graphics, Above 6 are high graphics. Like the 1-21 graphics slider**
 ```json
 {
     "DFIntDebugFRMQualityLevelOverride": "1"
@@ -496,7 +533,9 @@ High
 }
 ```
 
-### White Everything
+### White Everything ❗
+> [!CAUTION]
+> **Cant See Anything**
 ```json
 {
     "FFlagSkyUseRGBEEncoding": "true"
@@ -512,7 +551,7 @@ High
 }
 ```
 
-### Disable Feature Sky
+### Disable Feature Sky 🌟
 ```json
 {
     "FFlagAdvSkyUsesRuntime": "false",
@@ -728,7 +767,7 @@ High
 
 ### Quick game launch ❗
 > [!CAUTION]
-> **BUG cant loading fully item avatar**
+> **Very Buggy**
 ``` json
 {
     "FFlagEnableQuickGameLaunch": "true"
@@ -752,9 +791,7 @@ High
 }
 ```
 
-### Enable HSR (Hidden Surface Removal) 🌟
-> [!NOTE]
-> **Its working like occlusion culling**
+### Enable HSR
 ``` json
 {
     "FFlagDebugForceGenerateHSR": "true",
@@ -762,6 +799,7 @@ High
     "FFlagHSRRemoveDuplicateindices": "true"
 }
 ```
+
 ### Simulation Optimization Flag 🌟
 > [!NOTE]
 > **Optimization, latency, delay FFlag**
@@ -781,6 +819,7 @@ High
     "DFIntTimeBetweenSendConnectionAttemptsMS": "100"
 }
 ```
+
 ### Network Cpu RSS tweaks
 ``` json
 {
@@ -792,6 +831,7 @@ High
     "DFIntMegaReplicatorNumParallelTasks": "20"
 }
 ```
+
 ### Vertex Smoothing Group Tolerance
 > [!WARNING]
 > **The FIntVertexSmoothingGroupTolerance flag controls the tolerance level for vertex smoothing groups in 3D graphics.**
@@ -885,7 +925,11 @@ High
 }
 ```
 
+
+
 <h1 align="center">Telemetry</h1>
+
+
 
 ### Remove Minimum required Memory For Roblox
 ```json
@@ -1003,7 +1047,36 @@ High
 }
 ```
 
+
+
 <h1 align="center">Quality of Life</h1>
+
+
+
+### Smoother/Faster Input 🌟
+> [!NOTE]
+> **When enabled the game will use an updated implementation for processing user input, which may lead to smoother and more responsive interactions. This flag controls the refactoring of the legacy input handling system in Roblox.**
+``` json
+{
+    "FFlagLuaAppLegacyInputSettingRefactor": "true"
+}
+```
+
+### Stuttery Animation Fix
+```json
+{
+    "DFIntTimestepArbiterThresholdCFLThou": "300"
+}
+```
+
+### Adjust Default Timeout Time
+> [!NOTE]
+> **1 second = 1000**
+```json
+{
+    "DFIntDefaultTimeoutTimeMs": "5000"
+}
+```
 
 ### Unlimited FPS Unlocker
 ```json
@@ -1013,6 +1086,7 @@ High
     "DFIntTaskSchedulerTargetFps": "9999"
 }
 ```
+
 ### GUI Hiding Toggles
 ```json
 {
@@ -1020,6 +1094,7 @@ High
     "FFlagGuiHidingApiSupport2": "true"
 }
 ```
+
 ### Hide Guis
 | Key combination   | Action                                                                    |
 | ----------------- | ------------------------------------------------------------------------- |
@@ -1032,12 +1107,14 @@ High
     "DFIntCanHideGuiGroupId": "ID"
 }
 ```
+
 ### Disable Fullscreen Title Bar
 ```json
 {
     "FIntFullscreenTitleBarTriggerDelayMillis": "3600000"
 }
 ```
+
 ### Spammed letters ❗
 > [!WARNING]
 > **This fflag basically spams every other letter on roblox coregui and the game's gui but it doesn't affect some parts of the games!**
@@ -1048,6 +1125,7 @@ High
     "FIntDebugTextElongationFactor": "999999"
 }
 ```
+
 ### MTU ❗
 > [!WARNING]
 > **700 -> 1500**
@@ -1058,6 +1136,7 @@ High
     "DFIntConnectionMTUSize": "MTU_HERE"
 }
 ```
+
 ### No Internet Disconnect ❗
 > [!CAUTION]
 > **You will still be kicked but the message wont show.**
@@ -1066,28 +1145,14 @@ High
     "DFFlagDebugDisableTimeoutDisconnect": "true"
 }
 ```
-### Smoother/Faster Input 🌟
-> [!NOTE]
-> **Tip: When enabled the game will use an updated implementation for processing user input, which may lead to smoother and more responsive interactions. This flag controls the refactoring of the legacy input handling system in Roblox.**
-> 
-> **Recommendation: Test your game thoroughly after enabling this flag to ensure that everything functions as expected.**
-``` json
-{
-    "FFlagLuaAppLegacyInputSettingRefactor": "true"
-}
-```
+
 ### Disable New Chat Report
 ``` json
 {
     "DFFlagChatLineAbuseReportAPIEnabled2": "false"
 }
 ```
-### Stuttery Animation Fix
-```json
-{
-    "DFIntTimestepArbiterThresholdCFLThou": "300"
-}
-```
+
 ### Surf the web inside of Roblox
 > [!NOTE]
 > **Click the Beta badge or the 13+ badge to open the webview browser.**
@@ -1098,20 +1163,14 @@ High
     "FStringVoiceBetaBadgeLearnMoreLink": "https://google.com/"
 }
 ```
-### Adjust Default Timeout Time
-> [!NOTE]
-> **1 second = 1000**
-```json
-{
-    "DFIntDefaultTimeoutTimeMs": "5000"
-}
-```
+
 ### Automatically unmutes your mic on join (VC)
 ```json
 {
     "FFlagDebugDefaultChannelStartMuted": "false"
 }
 ```
+
 ### Lets you change the zoom out limit
 > [!NOTE]
 > **Only applies to games that has not changed the default zoom limit**
@@ -1120,18 +1179,21 @@ High
     "FIntCameraMaxZoomDistance": "9999"
 }
 ```
+
 ### Exclusive Fullscreen
 ```json
 {
     "FFlagHandleAltEnterFullscreenManually": "false"
 }
 ```
+
 ### Remove translated supported message on join
 ``` json
 {
     "FFlagChatTranslationEnableSystemMessage": "false"
 }
 ```
+
 ### Always display Render Stats
 > [!NOTE]
 > **Pretty self explanatory fflag, you can't disable them using the hotkey**
@@ -1140,6 +1202,7 @@ High
     "FFlagDebugAlwaysDisplayRenderStats": "true"
 }
 ```
+
 ### Subscriptions Page
 ```json
 {
@@ -1147,20 +1210,14 @@ High
     "DFFlagDeveloperSubscriptionsEnabled": "true"
 }
 ```
+
 ### Adjust Scroll Speed
 ```json
 {
     "FIntScrollWheelDeltaAmount": "140"
 }
 ```
-### Capture posts
-> [!NOTE]
-> **Twitter x Roblox edition**
-```json
-{
-    "FFlagCapturesPostEnabledForAll_v4": "true"
-}
-```
+
 ### Custom MicroProfiler Scale
 ```json
 {
@@ -1168,7 +1225,20 @@ High
 }
 ```
 
+### Capture posts
+> [!NOTE]
+> **Twitter x Roblox Edition**
+```json
+{
+    "FFlagCapturesPostEnabledForAll_v4": "true"
+}
+```
+
+
+
 <h1 align="center">User Interface/Visuals</h1>
+
+
 
 ### Custom Disconnect Message
 ```json
@@ -1177,98 +1247,105 @@ High
     "FStringReconnectDisabledReason": "You're stupid and I hate you"
 }
 ```
+
 ### Verified Badge
 ```json
 {
     "FStringWhitelistVerifiedUserId": "UserID"
 }
 ```
+
 ### Verified Badge on everyone
 ```json
 {
     "FFlagOverridePlayerVerifiedBadge": "true"
 }
 ```
+
 ### Display FPS
 ```json
 {
     "FFlagDebugDisplayFPS": "true"
 }
 ```
+
 ### Applies rainbow colors to stuff
 ```json
 {
     "FFlagDebugDisplayUnthemedInstances": "true"
 }
 ```
+
 ### Revert new invite menu
 ```json
 {
     "FFlagEnableNewInviteMenuIXP2": "false"
 }
 ```
+
 ### Remove Disconnect Blur/Loading Blur
 ```json
 {
     "FIntRobloxGuiBlurIntensity": "0"
 }
 ```
+
 ### Disable New Chat Translation Settings
 ```json
 {
     "FFlagChatTranslationSettingEnabled3": "false"
 }
 ```
+
 ### Enable New Camera Mode
 ``` json
 {
     "FFlagNewCameraControls": "true"
 }
 ```
+
 ### Disable CTM Climbing
 ```json
 {
     "FFlagUserClickToMoveSupportAgentCanClimb2": "false"
 }
 ```
+
 ### Disable Feedback Button in ESC
 ```json
 {
     "FFlagDisableFeedbackSoothsayerCheck": "false"
 }
 ```
+
 ### Disable Camera & Selfview
 ``` json
 {
     "FFlagSelfieViewEnabled": "true"
 }
 ```
-### Preferred Text Size Scale 🌟
-``` json
-{
-     "FFlagEnablePreferredTextSizeGuiService": "true",
-     "FFlagEnablePreferredTextSizeScale": "true",
-     "FFlagEnablePreferredTextSizeSettingInMenus2": "true"
-}
-```
+
 ### Disable Better Haptics
 ``` json
 {
     "FFlagEnableBetterHapticsResultHandling": "false"
 }
 ```
+
 ### New Report Menu
 ```json
 {
     "FStringSelectInSceneReportMenuOverrideUserIds": "UserID"
 }
 ```
+
 ### Removes the Experience Language option in settings
 ```json
 {
     "FIntV1MenuLanguageSelectionFeaturePerMillageRollout": "0"
 }
 ```
+
 ### Remove VC Beta Badge
 ```json
 {
@@ -1279,30 +1356,35 @@ High
     "FStringVoiceBetaBadgeLearnMoreLink": "null"
 }
 ```
+
 ### VR Controller transparency
 ```json
 {
     "FIntVRTouchControllerTransparency": "0"
 }
 ```
+
 ### Disable VR Collision Fade
 ```json
 {
     "FFlagViewCollisionFadeToBlackInVR": "false"
 }
 ```
+
 ### Limit Videos Playing
 ```json
 {
     "DFIntVideoMaxNumberOfVideosPlaying": "0"
 }
 ```
+
 ### Disable DSA Reporting In-game
 ```json
 {
     "FFlagDSAIllegalContentReporting2": "false"
 }
 ```
+
 ### Desktop App Dev Tools
 > [!WARNING]
 > **Only works on web view windows like profiles, ctrl + shift + I**
@@ -1311,66 +1393,86 @@ High
     "FFlagDebugEnableNewWebView2DevTool": "true"
 }
 ```
+
 ### Show All Error Strings ❗
 ```json
 {
     "FFlagDebugEnableErrorStringTesting": "true"
 }
 ```
+
 ### Customize chat translation settings
 ```json
 {
     "FStringChatTranslationEnabledLocales": "es_es,fr_fr,pt_br,de_de,it_it,ja_jp,ko_kr,id_id,tr_tr,zh_cn,zh_tw,th_th,pl_pl,vi_vn,ru_ru,"
 }
 ```
+
 ### Remove the vr toggle
 ```json
 {
     "FFlagAlwaysShowVRToggleV3": "false"
 }
 ```
+
 ### Mini webview
 ```json
 {
     "FFlagWebViewProtocol": "false"
 }
 ```
+
 ### Remove Parental Controls Tab
 ```json
 {
     "FFlagLuaAppsEnableParentalControlsTab": "false"
 }
 ```
+
 ### Disable Profile Picture Customization
 ```json
 {
     "FFlagAXDefaultAvatarToShopEnabled3": "false"
 }
 ```
+
 ### old luaapp chat button
 ```json
 {
     "FStringNewChatTabExperimentLayerValue": "2024MUSIC"
 }
 ```
+
+### Preferred Text Size Scale 🌟
+``` json
+{
+     "FFlagEnablePreferredTextSizeGuiService": "true",
+     "FFlagEnablePreferredTextSizeScale": "true",
+     "FFlagEnablePreferredTextSizeSettingInMenus2": "true"
+}
+```
+
 ### Disable Toast Notifications 🌟
 ```json
 {
     "FFlagToastNotificationsProtocolEnabled2": "false"
 }
 ```
+
 ### Cleaner desktop home page 🌟
 ```json
 {
     "FIntGameGridFlexFeedItemTileNumPerFeed": "0"
 }
 ```
-### Disable Take A Screenshot of This
+
+### Disable Take A Screenshot of This 🌟
 ```json
 {
     "FFlagTakeAScreenshotOfThis": "false"
 }
 ```
+
 ### Do not trace ping
 ```json
 {
@@ -1378,16 +1480,21 @@ High
     "DFFlagRakNetPingTrace": "false"
 }
 ```
+
 ### Max delay for layout updates
 > [!NOTE]
 > **basically the things that are changing on an ui for example loading a new page**
 ```json
 {
-    "DFIntMaxAcceptableUpdateDelay": "15"
+    "DFIntMaxAcceptableUpdateDelay": "60"
 }
 ```
 
+
+
 <h1 align="center">User Interface/Visuals Experimental</h1>
+
+
 
 ### Draggable Capture Button
 ```json
@@ -1395,6 +1502,7 @@ High
     "FFlagEnableUpdatedCaptureControls_v9": "true"
 }
 ```
+
 ### Network Menu Update Rate
 > [!NOTE]
 > **This fast flag configures how often the network stats menu (Shift + F3) updates its information. By default, it refreshes the information every 1 second.**
@@ -1405,18 +1513,21 @@ High
     "FIntNetworkStatRefreshRate": "1"
 }
 ```
+
 ### Disable centered experience details page 🌟
 ```json
 {
     "FFlagLuaAppEdpSingleColumnIxp": "false"
 }
 ```
+
 ### Dont Delay Surface App 🌟
 ```json
 {
     "FFlagPerformanceControlDelaySingleSurfaceAppInit": "false"
 }
 ```
+
 ### No more homepage/infinite scrolling 🌟
 > [!NOTE]
 > **Default = 30**
@@ -1425,12 +1536,14 @@ High
     "FIntTooltipHitboxMinSize": "2147483647"
 }
 ```
+
 ### No opacity to Chrome UI
 ```json
 {
     "FFlagChromeUsePreferredTransparency": "false"
 }
 ```
+
 ### Multi Try On
 > [!NOTE]
 > **Allows you to try on multiple things in the catalog and buy everything at once**
@@ -1439,36 +1552,42 @@ High
    "FFlagAXEnableMultiTryOnUI": "true"
 }
 ```
+
 ### Break Collectible Icon
 ```json
 {
     "FFlagDisplayCollectiblesIcon": "false"
 }
 ```
+
 ### Changes some tiny things about Party
 ```json
 {
     "FFlagAppChatAddConnectUnibarForActiveSquad": "false"
 }
 ```
+
 ### Renames Party back to Roblox Chat
 ```json
 {
     "FFlagAppChatRebrandStringUpdates": "false"
 }
 ```
+
 ### Disable Sidebar Text (Default: True)
 ```json
 {
     "FFlagEnableNavBarLabels3": "false"
 }
 ```
+
 ### Hide playerlist close button on Chrome UI
 ```json
 {
     "FFlagDisablePlayerListDisplayCloseBtn": "true"
 }
 ```
+
 ### Red font
 > [!NOTE]
 > **You need to use Default Roblox Font to activate this. Also it can be glitchy in the settings menu.**
@@ -1477,6 +1596,7 @@ High
     "FStringDebugHighlightSpecificFont": "rbxasset://fonts/families/BuilderSans.json"
 }
 ```
+
 ### ps-ps (Pseudolocalisation)
 ```json
 {
@@ -1484,6 +1604,7 @@ High
     "FFlagDebugEnableCoreScriptPseudolocalization": "true"
 }
 ```
+
 ### Change How Much Letters In Text
 > [!NOTE]
 > **This fastflag basically spams every other letter on ROBLOX CoreGUI and the game's GUI but it doesn't affect some parts of the games.**
@@ -1495,7 +1616,11 @@ High
 }
 ```
 
-<h1 align="center">Audio Related</h1>
+
+
+<h1 align="center">Audio & Sound</h1>
+
+
 
 ### Uncap Sound Limit
 ```json
@@ -1503,12 +1628,14 @@ High
     "DFIntDebugAudioMaxDecibels": "2147483647"
 }
 ```
-### Enable Fmod Threading 🌟
+
+### Enable Fmod Threading
 ```json
 {
     "FFlagFmodUseRuntimeThreading4": "true"
 }
 ```
+
 ### Voice chat range/volume
 > [!NOTE]
 > **For people that play Roblox on low volume, 10000 is the optimal range/volume but it's a personal opinion so adjust it to your liking and i hope this flag is useful**
@@ -1517,6 +1644,7 @@ High
      "DFIntVoiceChatVolumeThousandths": "10000"
 }
 ```
+
 ### Allows you to change voice chat distance 
 > [!NOTE]
 > **Default: [Min 7 Max 80]**
@@ -1526,6 +1654,7 @@ High
     "DFIntVoiceChatRollOffMaxDistance": "80"
 }
 ```
+
 ### Sounds use physical velocity and become distorted
 > [!NOTE]
 > **<2017 but still work**
@@ -1534,18 +1663,21 @@ High
     "FFlagSoundsUsePhysicalVelocity": "true"
 }
 ```
+
 ### Audio Occlusion 🌟
 ```json
 {
     "FFlagDebugEnableDirectAudioOcclusion2": "true"
 }
 ```
+
 ### Limit audios that are being played
 ```json
 {
     "DFIntMaxLoadableAudioChannelCount": "1"
 }
 ```
+
 ### Mess with voice chat volume
 > [!NOTE]
 > **Default = 1000**
@@ -1554,6 +1686,7 @@ High
     "DFIntVoiceChatVolumeThousandths": "100000"
 }
 ```
+
 ### No sounds
 ```json
 {
@@ -1561,7 +1694,11 @@ High
 }
 ```
 
-<h1 align="center">Latency & Abuse</h1>
+
+
+<h1 align="center">Latency & Other</h1>
+
+
 
 ### Fix layered clothing 🌟
 > [!NOTE]
@@ -1578,6 +1715,7 @@ High
     "FFlagCheckDuplicateCagePoints": "true"
 }
 ```
+
 ### Network Ownership
 > [!NOTE]
 > **https://create.roblox.com/docs/physics/network-ownership**
@@ -1590,59 +1728,43 @@ High
     "FFlagDebugUseCustomSimRadius": "true"
 }
 ```
-### WIFI OPTIMIZE???? ❗
-> [!WARNING]
-> **If didnt know everything dont use it.**
->
-> **Default = 100**
-``` json
-{
-    "DFIntTrackCountryRegionAPIHundredthsPercent": "10000"
-}
-```
+
 ### Disable Walk Speed Scale Based
 ``` json
 {
     "DFFlagUserAnimateScaleRun": "false"
 }
 ```
+
 ### Enable SmoothInputOffset
 > [!NOTE]
 > **"Smooth Input Offset" helps deliberately slow down or filter input signals, making mouse or controller movements smoother and preventing sudden stuttering or jittering.**
->
-> **game smooths out the movement by averaging or slightly delaying the input, creating a more fluid control experience — even if it means sacrificing a bit of precision or immediate responsiveness.**
 ```json
 {
     "FFlagSmoothInputOffset": "true"
 }
 ```
+
 ### Faster Precise Time 🌟
 > [!NOTE]
-> **Faster response**: Helps actions like jumping, shooting, or moving become more precise and instantaneous.**
+> **Faster response: Helps actions like jumping, shooting, or moving become more precise and instantaneous.**
 >
-> **Smoother visual effects**: Effects like lighting and physics-based movements are updated more accurately in real time.**
+> **Smoother visual effects: Effects like lighting and physics-based movements are updated more accurately in real time.**
 ```json
 {
     "FFlagFasterPreciseTime4": "true"
 }
 ```
-If you're translating this for a README file or project documentation, I can help you make it sound even more polished or technical. Just let me know how you'd like to use it!
+
 ### Enable CoalesceInput (Smooth Multi Responsive)🌟
 > [!NOTE]
-> **A feature or input processing technique that combines multiple control signals into a smoother and faster-responding. It is commonly used to improve sensitivity and accuracy when players interact with the game using a keyboard, mouse, controller, or touch input.**
+> **Feature or input processing technique that combines multiple control signals into a smoother and faster-responding. It is commonly used to improve sensitivity and accuracy when players interact with the game using a keyboard, mouse, controller, or touch input.**
 ```json
 {
     "FFlagCoalesceInput": "true"
 }
 ```
-### Preferred Input (Prioritize Input) 🌟
-> [!NOTE]
-> **https://devforum.roblox.com/t/client-beta-introducing-preferredinput-and-improved-touch-capabilities/3750890/1**
-```json
-{
-    "FFlagPreferredInput": "true"
-}
-```
+
 ### Keyboard,Mouse,Gamepad,Touch Latency 🌟
 > [!NOTE]
 > **Default value: 500 >> Lower value = more responsive.**
@@ -1654,6 +1776,7 @@ If you're translating this for a README file or project documentation, I can hel
     "FIntActivatedCountTimerMSTouch": "0"
 }
 ```
+
 ### Zero Delay with Mouse 🌟
 > [!NOTE]
 > **Default value: 16 >> Lower value = more double click.**
@@ -1662,6 +1785,14 @@ If you're translating this for a README file or project documentation, I can hel
     "FIntCLI20390_2": "0"
 }
 ```
+
+### Roblox Input Runtime
+```json
+{
+    "FFlagRobloxInputUsesRuntime": "true"
+}
+```
+
 ### Better serversided character position
 > [!NOTE]
 > **100 makes your serversided character closer to your client**
@@ -1670,18 +1801,16 @@ If you're translating this for a README file or project documentation, I can hel
     "DFIntS2PhysicsSenderRate": "100"
 }
 ```
+
 ### Stop Shrinking Simulation Radius 🌟
 > [!NOTE]
 > **Normally, DFIntS2PhysicsSenderRate controls how much physical data is being sent and increases synchronization with the server, but the simulation radius (the area around you where physics are actively processed) gets reduced over time.**
->
-> **Enabling this flag stops that shrinking behavior meaning the simulation radius stays large and consistent.**
->
-> **This helps keep physics interactions responsive across a wider area around your character, especially useful in games with vehicles or moving parts that go beyond the default radius.**
 ```json
 {
     "DFFlagDebugPhysicsSenderDoesNotShrinkSimRadius": "true"
 }
 ```
+
 ### Dev Console Logging 🌟
 > [!NOTE]
 > **Changes how long a Message can be, doesn't give you the ability to exceed the 16k Message Length Limit.**
@@ -1690,6 +1819,7 @@ If you're translating this for a README file or project documentation, I can hel
     "FIntStandardOutputMaximumCharacterLength": "1"
 }
 ```
+
 ### Dev Console Log Count 🌟
 > [!NOTE]
 > **Control how many developer console logs can be shown at once, for example if you set the limit to be 100, then 100 different log messages will be shown while any older ones will be deleted when the limit is reached.**
@@ -1698,15 +1828,17 @@ If you're translating this for a README file or project documentation, I can hel
     "FIntNewDevConsoleMaxLogCount": "2"
 }
 ```
+
 ### Replace all Decals with a Test Image
 ```json
 {
     "FFlagDebugTestImageDrawItem": "true"
 }
 ```
+
 ### Allows you to edit the DataModel Patch ❗
 > [!WARNING]
-> **ur can get banned by roblox with modifying**
+> **Low chance get banned by roblox**
 >
 > **risk by yourself**
 ```json
@@ -1714,6 +1846,7 @@ If you're translating this for a README file or project documentation, I can hel
     "FFlagDataModelPatcherForceLocal": "true"
 }
 ```
+
 ### Shows the state of a flag
 ```json
 {
@@ -1727,3 +1860,42 @@ If you're translating this for a README file or project documentation, I can hel
     "FStringDebugShowFlagState": "DFIntTaskSchedulerTargetFps, ChannelName"
 }
 ```
+
+
+# [BloxsTrap Any Version]
+
+
+
+<h1 align="center">Windows</h1>
+
+
+
+### [Bloxstrap Official>>>](https://github.com/bloxstraplabs/bloxstrap/releases/)
+### [Fishstrap >>>](https://github.com/fishstrap/fishstrap/releases/)
+### [Lunastrap >>>](https://github.com/lunastraplabs/lunastrap/releases/)
+### [Voidstrap >>>](https://github.com/voidstrap/Voidstrap/releases/)
+### [Plexity >>>](https://github.com/KloBraticc/Plexity/releases/)
+
+
+
+<h1 align="center">MacOS</h1>
+
+
+
+### [Appleblox >>>](https://github.com/AppleBlox/appleblox/tags)
+
+
+
+<h1 align="center">Linux</h1>
+
+
+
+### [Rober >>>](https://sober.vinegarhq.org/)
+
+
+
+<h1 align="center">Android</h1>
+
+
+
+### [Chevstrap >>>](https://github.com/FrosSky/Chevstrap/releases)
