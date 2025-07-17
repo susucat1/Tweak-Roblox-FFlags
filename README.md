@@ -1,9 +1,9 @@
+## [[Looking For Check/Find FFlags] Join>>>>>>>](https://discord.gg/q5DYxgE4Bt)
+
+
+
 > [!CAUTION]
 > **Fast Flags are extremely powerful, being that they are intended to only be used by Roblox engineers. While they can be very useful, they can cause issues with stability and functionality if you don't know what you're doing.**
-
-
-
-# [[Looking For Check/Find FFlags] Join>>>>>>>](https://discord.gg/q5DYxgE4Bt)
 
 
 
@@ -151,6 +151,13 @@
 }
 ```
 
+### Skip Disk Cache Check 🌟
+```json
+{
+    "DFFlagAlwaysSkipDiskCache": "true"
+}
+```
+
 ### Reset Cache On Game Leave 🌟
 > [!NOTE]
 > **Clearing the cache can improve game performance, fix loading errors, and resolve connectivity problems.**
@@ -249,6 +256,15 @@
 }
 ```
 
+### Preferred GPU 🌟
+> [!NOTE]
+> **Choose GPU u want use to play roblox**
+```json
+{
+    "FStringDebugGraphicsPreferredGPUName": "YOUR_GPU"
+}
+```
+
 ### No Unaligned DXT 🌟
 > [!NOTE]
 > **DXT (also known as S3TC) is a texture compression format.
@@ -256,6 +272,18 @@ It’s widely supported on most GPUs and helps textures stay compressed while in
 ```json
 {
     "FStringGraphicsDisableUnalignedDxtGPUNameBlacklist": "YOUR_GPU"
+}
+```
+
+### Enable Garbage Collection (GC) 🌟
+> [!NOTE]
+> **When enabled, memory cleanup can occur in parallel with rendering.**
+```json
+{
+    "DFFlagGCRemovalTimeLimitStats": "true",
+    "FFlagGcInParallelWithRenderPrepare3": "true",
+    "FIntLuaGcParallelMinMultiTasks": "true",
+    "DFFlagGCJobMoreScopesAndLabels2": "true"
 }
 ```
 
@@ -312,6 +340,22 @@ It’s widely supported on most GPUs and helps textures stay compressed while in
 ```json
 {
      "FIntRenderFastCluster": "255"
+}
+```
+
+### Fine Grain Culling 🌟
+> [!NOTE]
+> **Allows the system to remove objects more accurately, improving rendering efficiency.**
+```json
+{
+    "FFlagFineGrainCull": "true"
+}
+```
+
+### Skip High Resolution Texture 🌟
+```json
+{
+    "DFFlagSkipHighResolutiontextureMipsOnLowMemoryDevices2": "true"
 }
 ```
 
@@ -1062,7 +1106,7 @@ High
 }
 ```
 
-### Stuttery Animation Fix
+### Stuttery Animation Fix 🌟
 ```json
 {
     "DFIntTimestepArbiterThresholdCFLThou": "300"
@@ -1873,8 +1917,9 @@ High
 ## [Bloxstrap Official>>>>>](https://github.com/bloxstraplabs/bloxstrap/releases/)
 ## [Fishstrap>>>>>](https://github.com/fishstrap/fishstrap/releases/)
 ## [Lunastrap>>>>>](https://github.com/lunastraplabs/lunastrap/releases/)
+## [Froststrap>>>>>](https://github.com/Meddsam/Froststrap/releases/)
 ## [Voidstrap>>>>>](https://github.com/voidstrap/Voidstrap/releases/)
-## [Plexity>>>>>](https://github.com/KloBraticc/Plexity/releases/)
+## [Plexity (Beta)>>>>>](https://github.com/KloBraticc/Plexity/releases/)
 
 
 
