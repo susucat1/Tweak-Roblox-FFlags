@@ -61,6 +61,15 @@
 }
 ```
 
+### Stabilizes Vulkan via memory telemetry 🌟
+> [!NOTE]
+> **Enables memory telemetry for Vulkan to help reduce crashes, bugs, and instability on Vulkan-based systems.**
+```json
+{
+    "FFlagAllocatorVulkanMemoryTelemetry2": "true"
+}
+```
+
 ### No More Vulkan Blacklist
 > [!NOTE]
 > **Mostly for mobile devices**
@@ -122,10 +131,10 @@
 }
 ```
 
-### Unified Lighting (LightGrid - Beta)
+### Disable Unified Lighting (LightGrid - Beta)
 ```json
 {
-    "FFlagRenderUnifiedLighting15": "true"
+    "FFlagRenderUnifiedLighting16": "false"
 }
 ```
 
@@ -141,6 +150,63 @@
 <h1 align="center">Graphical Settings</h1>
 
 
+
+### Favor Performance Over Quality
+```json
+{
+    "DFIntGraphicsOptimizationModePerformanceBiasPercent": 100,
+    "FStringIXPGraphicsOptimizationModePerformanceBias": "performanceBias",
+    "FStringIXPGraphicsOptimizationModeBalancedBias": "null",
+    "FStringIXPGraphicsOptimizationModeQualityBias": "null"
+}
+```
+### Enhanced Out-of-Memory (OOM) Handling 🌟
+> [!NOTE]
+> **Automatically reduces system load when running low on RAM, preventing lag spikes and crashes. Optimizes engine performance under memory constraints.**
+```json
+{
+    "FFlagPerformanceControlEnableBoostedOomModelExecution2": "false"
+}
+```
+
+### Dynamic Graphics Adjustment 🌟
+> [!NOTE]
+> **Automatically optimizes visual quality to maintain smooth performance based on your system's capabilities.**
+```json
+{
+    "FFlagPerformanceControlAveragedQuality3": "false"
+}
+```
+
+### Alternative Runtime Algorithm 🌟
+```json
+{
+    "FFlagTaskThreadUsesRuntime2": "true"
+}
+```
+
+### Enable Performance Mode 🌟
+```json
+{
+    "DFFlagDebugPerfMode": "true",
+    "FFlagDebugPerfMode": "true",
+    "DFFlagEnableIASPerfStats": "true"
+}
+```
+
+### Optimize Collision Crash 🌟
+```json
+{
+    "DFFlagOptimizeNoCollisionPrimitiveInMidphaseCrash": "true"
+}
+```
+
+### New Framerate Performance System (Beta) 🌟
+```json
+{
+    "FFlagEnableFPSAndFrameTime": "true"
+}
+```
 
 ### Disable Async Lightgrid 🌟
 > [!NOTE]
@@ -203,8 +269,7 @@
 ```json
 {
     "FFlagDebugGridForceFractalUpsample": "true",
-    "DFFlagRenderLanczosUpsamplingNonRinging2": "true",
-    "DFFlagRenderSmootherStepUpsampling2": "true"
+    "DFFlagRenderLanczosUpsamplingNonRinging2": "true"
 }
 ```
 
@@ -282,7 +347,6 @@ It’s widely supported on most GPUs and helps textures stay compressed while in
 {
     "DFFlagGCRemovalTimeLimitStats": "true",
     "FFlagGcInParallelWithRenderPrepare3": "true",
-    "FIntLuaGcParallelMinMultiTasks": "true",
     "DFFlagGCJobMoreScopesAndLabels2": "true"
 }
 ```
@@ -349,13 +413,6 @@ It’s widely supported on most GPUs and helps textures stay compressed while in
 ```json
 {
     "FFlagFineGrainCull": "true"
-}
-```
-
-### Skip High Resolution Texture 🌟
-```json
-{
-    "DFFlagSkipHighResolutiontextureMipsOnLowMemoryDevices2": "true"
 }
 ```
 
@@ -438,7 +495,6 @@ It’s widely supported on most GPUs and helps textures stay compressed while in
 > **The particle's speed is based on you FPS**
 ```json
 {
-    "FFlagRenderFixParticleDegenCrossProduct": "true",
     "FFlagDebugRenderingSetDeterministic": "true"
 }
 ```
@@ -448,7 +504,6 @@ It’s widely supported on most GPUs and helps textures stay compressed while in
 > **The particle's speed is based on you FPS**
 ``` json
 {
-    "FFlagRenderFixParticleDegenCrossProduct": "true",
     "FFlagDebugDeterministicParticles": "true"
 }
 ```
@@ -459,7 +514,7 @@ It’s widely supported on most GPUs and helps textures stay compressed while in
 ```json
 {
     "FIntTaskSchedulerThreadMin": "0",
-    "FIntRuntimeMaxNumOfThreads": "1800"
+    "FIntRuntimeMaxNumOfThreads": "2400"
 }
 ```
 
@@ -828,7 +883,7 @@ High
 }
 ```
 
-### Enable Gpu Texture Compressor
+### Enable Gpu Texture Compressor 🌟
 ``` json
 {
     "FFlagRenderGpuTextureCompressor": "true"
@@ -855,24 +910,11 @@ High
     "DFIntBufferCompressionThreshold": "100",
     "DFIntPerformanceControlFrameTimeMax": "1",
     "DFIntPerformanceControlFrameTimeMaxUtility": "-1",
-    "FFlagPushFrameTimeToHarmony": "true",
     "DFIntAnimatorThrottleMaxFramesToSkip": "0",
     "DFIntNumFramesAllowedToBeAboveError": "0",
     "DFIntVisibilityCheckRayCastLimitPerFrame": "10",
     "DFIntNetworkSchemaCompressionRatio": "50",
     "DFIntTimeBetweenSendConnectionAttemptsMS": "100"
-}
-```
-
-### Network Cpu RSS tweaks
-``` json
-{
-    "DFIntPhysicsReceiveNumParallelTasks": "20",
-    "DFIntPhysicsAnalyticsHighFrequencyIntervalSec": "20",
-    "FIntSimWorldTaskQueueParallelTasks": "20",
-    "FIntSmoothClusterTaskQueueMaxParallelTasks": "20",
-    "DFIntReplicationDataCacheNumParallelTasks": "20",
-    "DFIntMegaReplicatorNumParallelTasks": "20"
 }
 ```
 
@@ -1008,6 +1050,7 @@ High
 ```json
 {
     "FFlagEnableVNGNewAppAvailableModal": "false",
+    "FFlagVngLogoutGlobalAppSessionsOnConversion": "false",
     "FFlagLuaAppHomeVngAppUpsell": "false",
     "FFlagVngTOSRevisedEnabled": "false",
     "FStringVNGWebshopUrl": "null",
@@ -1135,7 +1178,7 @@ High
 ```json
 {
     "FFlagUserShowGuiHideToggles": "true",
-    "FFlagGuiHidingApiSupport2": "true"
+    "FFlagUserShowGuiHideToggles2": "true"
 }
 ```
 
@@ -1194,24 +1237,6 @@ High
 ``` json
 {
     "DFFlagChatLineAbuseReportAPIEnabled2": "false"
-}
-```
-
-### Surf the web inside of Roblox
-> [!NOTE]
-> **Click the Beta badge or the 13+ badge to open the webview browser.**
-```json
-{
-    "FFlagTopBarUseNewBadge": "true",
-    "FStringTopBarBadgeLearnMoreLink": "https://google.com/",
-    "FStringVoiceBetaBadgeLearnMoreLink": "https://google.com/"
-}
-```
-
-### Automatically unmutes your mic on join (VC)
-```json
-{
-    "FFlagDebugDefaultChannelStartMuted": "false"
 }
 ```
 
@@ -1362,13 +1387,6 @@ High
 }
 ```
 
-### Disable Camera & Selfview
-``` json
-{
-    "FFlagSelfieViewEnabled": "true"
-}
-```
-
 ### Disable Better Haptics
 ``` json
 {
@@ -1393,11 +1411,8 @@ High
 ### Remove VC Beta Badge
 ```json
 {
-    "FFlagVoiceBetaBadge": "false",
     "FFlagTopBarUseNewBadge": "false",
-    "FFlagBetaBadgeLearnMoreLinkFormview": "false",
-    "FFlagControlBetaBadgeWithGuac": "false",
-    "FStringVoiceBetaBadgeLearnMoreLink": "null"
+    "FFlagControlBetaBadgeWithGuac": "false"
 }
 ```
 
@@ -1540,10 +1555,18 @@ High
 
 
 
+### Turn on VC in Party (requires VC obviously)
+```json
+{
+    "FFlagEnablePartyVoiceOnlyForUnfilteredThreads": "false",
+    "FFlagEnablePartyVoiceOnlyForEligibleUsers": "false"
+}
+```
+
 ### Draggable Capture Button
 ```json
 {
-    "FFlagEnableUpdatedCaptureControls_v9": "true"
+    "FFlagEnableUpdatedCaptureControls_v8": "true"
 }
 ```
 
@@ -1744,22 +1767,6 @@ High
 
 
 
-### Fix layered clothing 🌟
-> [!NOTE]
-> **https://devforum-uploads.s3.dualstack.us-east-2.amazonaws.com/uploads/original/5X/f/a/5/7/fa576e1b777534a50b0859e2b75e5ad6872dee47.gif**
-```json
-{
-    "FIntRigidityOuterLayerWeightPct": "45",
-    "FIntOuterCageResOver100": "22",
-    "FFlagWrappedGridFixCLI148409": "true",
-    "FFlagUseBothCagesForRBFDeformer": "true",
-    "FFlagMergeBodyCageByR15Connectivity": "true",
-    "FFlagEnableLinearCageDeformer2": "true",
-    "FFlagRigidityControl": "true",
-    "FFlagCheckDuplicateCagePoints": "true"
-}
-```
-
 ### Network Ownership
 > [!NOTE]
 > **https://create.roblox.com/docs/physics/network-ownership**
@@ -1827,13 +1834,6 @@ High
 ``` json
 {
     "FIntCLI20390_2": "0"
-}
-```
-
-### Roblox Input Runtime
-```json
-{
-    "FFlagRobloxInputUsesRuntime": "true"
 }
 ```
 
@@ -1918,8 +1918,8 @@ High
 ## [Fishstrap>>>>>](https://github.com/fishstrap/fishstrap/releases/)
 ## [Lunastrap>>>>>](https://github.com/lunastraplabs/lunastrap/releases/)
 ## [Froststrap>>>>>](https://github.com/Meddsam/Froststrap/releases/)
-## [Voidstrap>>>>>](https://github.com/voidstrap/Voidstrap/releases/)
-## [Plexity (Beta)>>>>>](https://github.com/KloBraticc/Plexity/releases/)
+## [Voidstrap (Discontinued)>>>>>](https://github.com/voidstrap/Voidstrap/releases/)
+## [Plexity (Release)>>>>>](https://github.com/KloBraticc/Plexity/releases/)
 
 
 
