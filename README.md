@@ -217,13 +217,6 @@
 }
 ```
 
-### Skip Disk Cache Check 🌟
-```json
-{
-    "DFFlagAlwaysSkipDiskCache": "true"
-}
-```
-
 ### Reset Cache On Game Leave 🌟
 > [!NOTE]
 > **Clearing the cache can improve game performance, fix loading errors, and resolve connectivity problems.**
@@ -238,8 +231,8 @@
 > **https://devforum.roblox.com/t/introducing-shapecasts/2320655**
 ```json
 {
-    "DFIntShapecastMaxDistance": "1024",
-    "DFIntShapecastMaxSize": "512"
+    "DFIntShapecastMaxDistance": "1",
+    "DFIntShapecastMaxSize": "1"
 }
 ```
 
