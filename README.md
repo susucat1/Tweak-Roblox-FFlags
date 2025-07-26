@@ -131,7 +131,7 @@
 }
 ```
 
-### Disable Unified Lighting (LightGrid - Beta)
+### Disable Unified Lighting (LightGrid - Beta) 🌟
 ```json
 {
     "FFlagRenderUnifiedLighting16": "false"
@@ -151,13 +151,21 @@
 
 
 
-### Favor Performance Over Quality
+### New Large Replicators
+```json
+{
+    "FFlagLargeReplicatorEnabled9": "true",
+    "FFlagLargeReplicatorSerializeWrite4": "true"
+}
+```
+
+### Favor Performance Over Quality 🌟
 ```json
 {
     "DFIntGraphicsOptimizationModePerformanceBiasPercent": 100,
     "FStringIXPGraphicsOptimizationModePerformanceBias": "performanceBias",
-    "FStringIXPGraphicsOptimizationModeBalancedBias": "null",
-    "FStringIXPGraphicsOptimizationModeQualityBias": "null"
+    "FStringIXPGraphicsOptimizationModeBalancedBias": "performanceBias",
+    "FStringIXPGraphicsOptimizationModeQualityBias": "performanceBias"
 }
 ```
 ### Enhanced Out-of-Memory (OOM) Handling 🌟
@@ -208,21 +216,13 @@
 }
 ```
 
-### Disable Async Lightgrid 🌟
-> [!NOTE]
-> **Undesyncing on low quality**
-```json
-{
-    "FFlagUpdateAsyncLightGrid10": "false"
-}
-```
-
 ### Reset Cache On Game Leave 🌟
 > [!NOTE]
 > **Clearing the cache can improve game performance, fix loading errors, and resolve connectivity problems.**
 ```json
 {
-    "FFlagResetCacheOnLeaveGame": "true"
+    "FFlagResetCacheOnLeaveGame": "true",
+    "FFlagClearCachedChannelOnLaunch": "true"
 }
 ```
 
@@ -1559,7 +1559,7 @@ High
 ### Draggable Capture Button
 ```json
 {
-    "FFlagEnableUpdatedCaptureControls_v8": "true"
+    "FFlagEnableUpdatedCaptureControls_v9": "true"
 }
 ```
 
@@ -1574,10 +1574,26 @@ High
 }
 ```
 
+### Rename Connections Back To Friends 🌟
+```json
+{
+    "FFlagRenameFriendsToConnections": "false",
+    "FFlagRenameFriendsToConnectionsAppChat2": "false",
+    "FFlagRenameFriendsToConnectionsCoreUI": "false",
+    "FFlagRenameFriendsToConnectionsFriendsMenu": "false",
+    "FFlagRenameFriendsToConnectionsFriendsPage": "false",
+    "FFlagRenameFriendsToConnectionsPartyLobby": "false",
+    "FFlagRenameFriendsToConnectionsProfile": "false",
+    "FFlagRenameFriendsToConnectionsWebviewHeading": "false"
+}
+```
+
 ### Disable centered experience details page 🌟
 ```json
 {
-    "FFlagLuaAppEdpSingleColumnIxp": "false"
+    "FFlagLuaAppEdpSingleColumn": "false",
+    "FFlagLuaAppEdpSingleColumnIxp": "false",
+    "FFlagLuaAppEdpSingleColumnAcrossPlatformsIxp": "false"
 }
 ```
 
@@ -1827,6 +1843,13 @@ High
 ``` json
 {
     "FIntCLI20390_2": "0"
+}
+```
+
+### Roblox Input Runtime
+```json
+{
+    "FFlagRobloxInputUsesRuntime2": "true"
 }
 ```
 
