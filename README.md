@@ -151,11 +151,33 @@
 
 
 
+### Enable memory control predictor 🌟
+> [!NOTE]
+> **Activates a system that predicts low RAM and prevents crashes. Improves stability and performance on weak devices.**
+```json
+{
+    "FFlagPerformanceControlLmkdPredictorEnabled5": "true"
+}
+```
+
+### Stable Object Physics
+> [!NOTE]
+> **Prevents extreme/unrealistic object behavior by limiting inertia values during physics calculations.**
+```json
+{
+    "DFFlagSimClampInertiaOnRead3": "true"
+}
+```
+
 ### New Large Replicators
 ```json
 {
     "FFlagLargeReplicatorEnabled9": "true",
-    "FFlagLargeReplicatorSerializeWrite4": "true"
+    "FFlagLargeReplicatorWrite5": "true",
+    "FFlagLargeReplicatorRead5": "true",
+    "FFlagLargeReplicatorSerializeRead3": "true",
+    "FFlagLargeReplicatorSerializeWrite4": "true",
+    "FFlagGlobalSettingsEngineModule3": "false"
 }
 ```
 
@@ -173,7 +195,7 @@
 > **Automatically reduces system load when running low on RAM, preventing lag spikes and crashes. Optimizes engine performance under memory constraints.**
 ```json
 {
-    "FFlagPerformanceControlEnableBoostedOomModelExecution2": "false"
+    "FFlagPerformanceControlEnableBoostedOomModelExecution2": "true"
 }
 ```
 
@@ -182,7 +204,7 @@
 > **Automatically optimizes visual quality to maintain smooth performance based on your system's capabilities.**
 ```json
 {
-    "FFlagPerformanceControlAveragedQuality3": "false"
+    "FFlagPerformanceControlAveragedQuality3": "true"
 }
 ```
 
