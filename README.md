@@ -54,6 +54,15 @@
 }
 ```
 
+### Allow Ur Old GPU Android
+> [!NOTE]
+> **if u didnt know u gpu [https://play.google.com/store/apps/details?id=flar2.devcheck]**
+```json
+{
+    "FStringRenderIGGPUWhitelistAndroid": "YOUR_GPU"
+}
+```
+
 ### Allow GPU to use Vulkan even if buggy
 ```json
 {
@@ -150,6 +159,17 @@
 <h1 align="center">Graphical Settings</h1>
 
 
+
+### Android Cpu Speed Method
+> [!NOTE]
+> **Can improve performance on some devices**
+>
+> **or worsen performance on some devices [this is very likely]**
+```json
+{
+    "DFFlagNewAndroidCpuSpeedMethod": "true"
+}
+```
 
 ### Better Thumbnailer RGBA
 ```json
@@ -1022,6 +1042,25 @@ High
 
 
 
+### Dont Ur Report Stuff To A Random Website
+> [!NOTE]
+> **rss means it sends stuff to different website**
+```json
+{
+    "DFFlagAndroidReportPeakRSS": "false"
+}
+```
+
+### Disable Mobile Advertising
+> [!NOTE]
+> **Android Only**
+```json
+{
+    "FFlagSendMobileAdvertisingIdEnabled2": "false",
+    "FFlagSendMobileAdvertisingIdEnabledAndroid2": "false"
+}
+```
+
 ### Remove Minimum required Memory For Roblox
 ```json
 {
@@ -1051,14 +1090,20 @@ High
 }
 ```
 
-### Disable Telemetry by China and VNG
+### Disable Telemetry VNG (Vietnamese User)
 ```json
 {
     "FFlagEnableVNGNewAppAvailableModal": "false",
     "FFlagVngLogoutGlobalAppSessionsOnConversion": "false",
     "FFlagLuaAppHomeVngAppUpsell": "false",
     "FFlagVngTOSRevisedEnabled": "false",
-    "FStringVNGWebshopUrl": "null",
+    "FStringVNGWebshopUrl": "null"
+}
+```
+
+### Disable Telemetry China
+```json
+{
     "FStringTencentAuthPath": "null",
     "FLogTencentAuthPath": "null",
     "FStringDevPublishChinaRequirementsLink": "null",
