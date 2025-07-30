@@ -151,6 +151,13 @@
 
 
 
+### Better Thumbnailer RGBA
+```json
+{
+    "FFlagThumbnailerUseRGBA16": "true"
+}
+```
+
 ### Spatial Partition Optimization
 > [!NOTE]
 > **Control Roblox’s use of a split octree system for spatial partitioning, improving performance in managing 3D objects.**
@@ -165,7 +172,7 @@
 > **Activates a system that predicts low RAM and prevents crashes. Improves stability and performance on weak devices.**
 ```json
 {
-    "FFlagPerformanceControlLmkdPredictorEnabled5": "true"
+    "FFlagPerformanceControlLmkdPredictorEnabled6": "true"
 }
 ```
 
@@ -185,8 +192,7 @@
     "FFlagLargeReplicatorWrite5": "true",
     "FFlagLargeReplicatorRead5": "true",
     "FFlagLargeReplicatorSerializeRead3": "true",
-    "FFlagLargeReplicatorSerializeWrite4": "true",
-    "FFlagGlobalSettingsEngineModule3": "false"
+    "FFlagLargeReplicatorSerializeWrite4": "true"
 }
 ```
 
@@ -197,23 +203,6 @@
     "FStringIXPGraphicsOptimizationModePerformanceBias": "performanceBias",
     "FStringIXPGraphicsOptimizationModeBalancedBias": "performanceBias",
     "FStringIXPGraphicsOptimizationModeQualityBias": "performanceBias"
-}
-```
-### Enhanced Out-of-Memory (OOM) Handling 🌟
-> [!NOTE]
-> **Automatically reduces system load when running low on RAM, preventing lag spikes and crashes. Optimizes engine performance under memory constraints.**
-```json
-{
-    "FFlagPerformanceControlEnableBoostedOomModelExecution2": "true"
-}
-```
-
-### Dynamic Graphics Adjustment 🌟
-> [!NOTE]
-> **Automatically optimizes visual quality to maintain smooth performance based on your system's capabilities.**
-```json
-{
-    "FFlagPerformanceControlAveragedQuality3": "true"
 }
 ```
 
@@ -335,7 +324,6 @@
 > **This improves loading time speeds for games**
 ```json
 {
-    "DFFlagEnableMeshPreloading2": "true",
     "DFFlagEnableMeshPreloading": "true",
     "DFFlagEnableTexturePreloading": "true",
     "DFFlagEnableSoundPreloading": "true",
@@ -361,17 +349,6 @@ It’s widely supported on most GPUs and helps textures stay compressed while in
 ```json
 {
     "FStringGraphicsDisableUnalignedDxtGPUNameBlacklist": "YOUR_GPU"
-}
-```
-
-### Enable Garbage Collection (GC) 🌟
-> [!NOTE]
-> **When enabled, memory cleanup can occur in parallel with rendering.**
-```json
-{
-    "DFFlagGCRemovalTimeLimitStats": "true",
-    "FFlagGcInParallelWithRenderPrepare3": "true",
-    "DFFlagGCJobMoreScopesAndLabels2": "true"
 }
 ```
 
@@ -545,8 +522,7 @@ It’s widely supported on most GPUs and helps textures stay compressed while in
 ### Fully Enable HyperThreading 🌟
 ``` json
 {
-    "FFlagDebugCheckRenderThreading": "true",
-    "FFlagRenderDebugCheckThreading2": "true"
+    "FFlagDebugCheckRenderThreading": "true"
 }
 ```
 
@@ -555,8 +531,7 @@ It’s widely supported on most GPUs and helps textures stay compressed while in
 > **lag,stuttering = remove it**
 ```json
 {
-    "FFlagMovePrerender": "true",
-    "FFlagMovePrerenderV2": "true"
+    "FFlagMovePrerender": "true"
 }
 ```
 
@@ -568,7 +543,7 @@ It’s widely supported on most GPUs and helps textures stay compressed while in
 ```
 
 ### FRM Levels
-```json
+```
 Low
 
 1 = 3
@@ -674,15 +649,6 @@ High
 }
 ```
 
-### Disable Feature Sky 🌟
-```json
-{
-    "FFlagAdvSkyUsesRuntime": "false",
-    "FFlagSkyboxOrientation": "false",
-    "DFFlagFixSkyBoxTextureBlurrines": "false"
-}
-```
-
 ### Gray Sky
 > [!NOTE]
 > **You can use it or Roblox Default**
@@ -732,6 +698,21 @@ High
 ```json
 {
     "DFFlagDebugPauseVoxelizer": "true"
+}
+```
+
+### Mesh Scale Voxelizer
+```json
+{
+    "DFFlagUseMeshScaleInVoxelizer2": "true"
+}
+```
+
+### Disable Voxelizer Terrain
+```json
+{
+    "DFFlagDebugVoxelizerDisableSIMD": "true",
+    "DFFlagVoxelizerDisableTerrainSIMD": "true"
 }
 ```
 
@@ -788,10 +769,10 @@ High
 
 ### High Quality Textures 
 > [!NOTE]
-> **1 -> 3**
+> **0 -> 3**
 ```json
 {
-    "DFFlagTextureQualityOverrideEnabled": "True",
+    "DFFlagTextureQualityOverrideEnabled": "true",
     "DFIntTextureQualityOverride": "3"
 }
 ```
@@ -1052,7 +1033,7 @@ High
 ### Zero Telemetry
 ```json
 {
-    "DFStringTelemetryV2Url": "0.0.0.0",
+    "DFStringTelemetryV2Url": "null",
     "DFStringHttpPointsReporterUrl": "null",
     "FFlagEnableServiceInitBreakdownTelemetry": "false",
     "DFFlagReportReplicatorStatsToTelemetryV22": "false",
@@ -1079,9 +1060,9 @@ High
     "FFlagVngTOSRevisedEnabled": "false",
     "FStringVNGWebshopUrl": "null",
     "FStringTencentAuthPath": "null",
-    "FLogTencentAuthPath": "false",
+    "FLogTencentAuthPath": "null",
     "FStringDevPublishChinaRequirementsLink": "null",
-    "FLogDevPublishChinaRequirementsLink": "false"
+    "FLogDevPublishChinaRequirementsLink": "null"
 }
 ```
 
@@ -1590,7 +1571,7 @@ High
 ### Draggable Capture Button
 ```json
 {
-    "FFlagEnableUpdatedCaptureControls_v9": "true"
+    "FFlagEnableUpdatedCaptureControls_v8": "true"
 }
 ```
 
@@ -1614,8 +1595,7 @@ High
     "FFlagRenameFriendsToConnectionsFriendsMenu": "false",
     "FFlagRenameFriendsToConnectionsFriendsPage": "false",
     "FFlagRenameFriendsToConnectionsPartyLobby": "false",
-    "FFlagRenameFriendsToConnectionsProfile": "false",
-    "FFlagRenameFriendsToConnectionsWebviewHeading": "false"
+    "FFlagRenameFriendsToConnectionsProfile": "false"
 }
 ```
 
@@ -1807,6 +1787,37 @@ High
 
 
 
+### Get Back Oof 🌟
+```json
+{
+    "FFlagBringBackOof": "true"
+}
+```
+
+### Disable Show Install Success Prompt
+```json
+{
+    "ShowInstallSuccessPrompt": "false"
+}
+```
+
+### Optimize VR Matrices
+```json
+{
+    "DFFlagOptimizeVRMatrices": "true",
+    "DFFlagVisBugFixVR": "true"
+}
+```
+
+### Real Time Animation Refactor ❗
+> [!WARNING]
+> **Increase CPU load.**
+```json
+{
+    "FFlagRealTimeAnimationEnableRefactor": "true"
+}
+```
+
 ### Network Ownership
 > [!NOTE]
 > **https://create.roblox.com/docs/physics/network-ownership**
@@ -1820,6 +1831,17 @@ High
 }
 ```
 
+### Better Latency and Loading Speed 🌟
+> [!WARNING]
+> **Can make your Roblox use 4-6gb of memory**
+```json
+{
+    "DFIntMemoryUtilityCurveBaseHundrethsPercent": "10000",
+    "DFIntMemoryUtilityCurveNumSegments": "100",
+    "DFIntMemoryUtilityCurveTotalMemoryReserve": "0"
+}
+```
+
 ### Disable Walk Speed Scale Based
 ``` json
 {
@@ -1827,7 +1849,16 @@ High
 }
 ```
 
-### Enable SmoothInputOffset
+### Lower Micro Lags With Camera Movement 🌟
+> [!NOTE]
+> **Tracks the last input type (Keyboard, Mouse, Gamepad, VR Controller).**
+```json
+{
+    "FFlagUserCameraControlLastInputTypeUpdate": "false"
+}
+```
+
+### Enable SmoothInputOffset 🌟
 > [!NOTE]
 > **"Smooth Input Offset" helps deliberately slow down or filter input signals, making mouse or controller movements smoother and preventing sudden stuttering or jittering.**
 ```json
