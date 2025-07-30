@@ -160,6 +160,22 @@
 
 
 
+### Improve Resource Rendering 🌟
+```json
+{
+    "DFIntHttpBatchLimit": "64",
+    "DFIntHttpBatchApiShutdownInfluxHundrethsPercentage": "0",
+    "DFIntHttpBatchApiRejectedUrlHundredthsPercentage": "0",
+    "DFIntHttpBatchApi_minWaitMs": "1",
+    "DFIntHttpBatchApi_maxWaitMs": "5",
+    "DFIntHttpBatchApi_maxReqs": "128",
+    "DFIntHttpBatchApi_MaxBatchesSentPerCyle": "5",
+    "DFIntHttpBatchApi_cacheDelayMs": "5",
+    "DFIntHttpBatchApi_bgRefreshMaxDelayMs": "30",
+    "DFIntHttpBatchApi_bgDelayMs": "10"
+}
+```
+
 ### Android Cpu Speed Method
 > [!NOTE]
 > **Can improve performance on some devices**
@@ -374,12 +390,39 @@ It’s widely supported on most GPUs and helps textures stay compressed while in
 
 ### Configure FRM Refresh Rate 🌟
 > [!NOTE]
+> **60Hz**
+```json
+{
+    "DFIntGraphicsOptimizationModeFRMFrameRateTarget": "60",
+    "DFIntGraphicsOptimizationModeMinFrameTimeTargetMs": "17",
+    "DFIntGraphicsOptimizationModeMaxFrameTimeTargetMs": "18"
+}
+```
+> [!NOTE]
+> **75Hz**
+```json
+{
+    "DFIntGraphicsOptimizationModeFRMFrameRateTarget": "75",
+    "DFIntGraphicsOptimizationModeMinFrameTimeTargetMs": "13",
+    "DFIntGraphicsOptimizationModeMaxFrameTimeTargetMs": "14"
+}
+```
+> [!NOTE]
+> **100Hz**
+```json
+{
+    "DFIntGraphicsOptimizationModeFRMFrameRateTarget": "100",
+    "DFIntGraphicsOptimizationModeMinFrameTimeTargetMs": "10",
+    "DFIntGraphicsOptimizationModeMaxFrameTimeTargetMs": "12"
+}
+```
+> [!NOTE]
 > **120Hz**
 ```json
 {
     "DFIntGraphicsOptimizationModeFRMFrameRateTarget": "120",
-    "DFIntGraphicsOptimizationModeMinFrameTimeTargetMs": "12",
-    "DFIntGraphicsOptimizationModeMaxFrameTimeTargetMs": "18"
+    "DFIntGraphicsOptimizationModeMinFrameTimeTargetMs": "8",
+    "DFIntGraphicsOptimizationModeMaxFrameTimeTargetMs": "9"
 }
 ```
 > [!NOTE]
@@ -387,8 +430,8 @@ It’s widely supported on most GPUs and helps textures stay compressed while in
 ```json
 {
     "DFIntGraphicsOptimizationModeFRMFrameRateTarget": "144",
-    "DFIntGraphicsOptimizationModeMinFrameTimeTargetMs": "10",
-    "DFIntGraphicsOptimizationModeMaxFrameTimeTargetMs": "12"
+    "DFIntGraphicsOptimizationModeMinFrameTimeTargetMs": "7",
+    "DFIntGraphicsOptimizationModeMaxFrameTimeTargetMs": "8"
 }
 ```
 > [!NOTE]
@@ -396,8 +439,8 @@ It’s widely supported on most GPUs and helps textures stay compressed while in
 ```json
 {
     "DFIntGraphicsOptimizationModeFRMFrameRateTarget": "165",
-    "DFIntGraphicsOptimizationModeMinFrameTimeTargetMs": "8",
-    "DFIntGraphicsOptimizationModeMaxFrameTimeTargetMs": "10"
+    "DFIntGraphicsOptimizationModeMinFrameTimeTargetMs": "6",
+    "DFIntGraphicsOptimizationModeMaxFrameTimeTargetMs": "7"
 }
 ```
 > [!NOTE]
@@ -405,8 +448,8 @@ It’s widely supported on most GPUs and helps textures stay compressed while in
 ```json
 {
     "DFIntGraphicsOptimizationModeFRMFrameRateTarget": "180",
-    "DFIntGraphicsOptimizationModeMinFrameTimeTargetMs": "6",
-    "DFIntGraphicsOptimizationModeMaxFrameTimeTargetMs": "8"
+    "DFIntGraphicsOptimizationModeMinFrameTimeTargetMs": "5",
+    "DFIntGraphicsOptimizationModeMaxFrameTimeTargetMs": "6"
 }
 ```
 > [!NOTE]
@@ -414,8 +457,8 @@ It’s widely supported on most GPUs and helps textures stay compressed while in
 ```json
 {
     "DFIntGraphicsOptimizationModeFRMFrameRateTarget": "240",
-    "DFIntGraphicsOptimizationModeMinFrameTimeTargetMs": "5",
-    "DFIntGraphicsOptimizationModeMaxFrameTimeTargetMs": "6"
+    "DFIntGraphicsOptimizationModeMinFrameTimeTargetMs": "4",
+    "DFIntGraphicsOptimizationModeMaxFrameTimeTargetMs": "5"
 }
 ```
 
@@ -508,6 +551,16 @@ It’s widely supported on most GPUs and helps textures stay compressed while in
 ```json
 {
     "FFlagDebugSSAOForce": "true"
+}
+```
+
+### Force SSAO
+> [!NOTE]
+> **1 -> 8**
+```json
+{
+    "FIntSSAO": "1",
+    "FIntSSAOMipLevels": "1"
 }
 ```
 
@@ -1026,6 +1079,15 @@ High
 ```json
 {
     "DFIntMaxActiveAnimationTracks": "0"
+}
+```
+
+### Render Bloom Independent 🌟
+> [!NOTE]
+> **Makes BloomEffect less consistent across all screen sizes. This lowers the blooms resolution.**
+```json
+{
+    "DFFlagRenderBloomMakeResolutionIndependent": "false"
 }
 ```
 
@@ -1753,6 +1815,13 @@ High
 <h1 align="center">Audio & Sound</h1>
 
 
+
+### Fix Sound Volume Range 🌟
+```json
+{
+    "FFlagVideoFixSoundVolumeRange": "true"
+}
+```
 
 ### Uncap Sound Limit
 ```json
