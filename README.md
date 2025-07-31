@@ -169,8 +169,8 @@
 }
 ```
 
-### Low-end Hardware Optimizations 🌟
-```json
+### Low-End Hardware Optimizations 🌟
+```
 {
     "FStringAndroidVfsLowspecHwCondition": "{"and":[ {"=":["app_bitness()",64]}, {"not":[ {"is_any_of":["manufacturer()","samsung","amazon","lge","lg","lg electronics","vivo"]} ]} ]}"
 }
