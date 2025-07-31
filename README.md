@@ -160,6 +160,22 @@
 
 
 
+### Port Texture Manager To Trim Memory 🌟
+> [!NOTE]
+> **Self explanatory: Controls "port texture manager" to trim memory**
+```json
+{
+    "FFlagPerformanceControlEnablePortTextureManagerTrimMemory": "true"
+}
+```
+
+### Low-end Hardware Optimizations 🌟
+```json
+{
+    "FStringAndroidVfsLowspecHwCondition": "{"and":[ {"=":["app_bitness()",64]}, {"not":[ {"is_any_of":["manufacturer()","samsung","amazon","lge","lg","lg electronics","vivo"]} ]} ]}"
+}
+```
+
 ### Improve Resource Rendering 🌟
 ```json
 {
@@ -176,14 +192,12 @@
 }
 ```
 
-### Android Cpu Speed Method
+### Memory Probing 🌟
 > [!NOTE]
-> **Can improve performance on some devices**
->
-> **or worsen performance on some devices [this is very likely]**
+> **Optimizes memory usage for low-end systems**
 ```json
 {
-    "DFFlagNewAndroidCpuSpeedMethod": "true"
+    "DFFlagPerformanceControlEnableMemoryProbing3": "true"
 }
 ```
 
@@ -218,6 +232,15 @@
 ```json
 {
     "DFFlagSimClampInertiaOnRead3": "true"
+}
+```
+
+### Garbage Collection (GC) 🌟
+> [!NOTE]
+> **Enables garbage collection behavior. When enabled, memory cleanup may occur in parallel with rendering.**
+```json
+{
+    "FFlagGcInParallelWithRenderPrepare3": "true"
 }
 ```
 
@@ -796,18 +819,14 @@ High
 }
 ```
 
-### Enable CPULightCulling
-```json
-{
-    "FFlagDebugForceFSMCPULightCulling": "true"
-}
-```
-
-### Enable GPULightCulling
+### Enable Light Culling
 > [!NOTE]
-> **Combine with [Lighting Attenuation] for better vision**
+> **Optimizes light rendering conducted by the CPU and GPU by reducing unnecessary light calculations.**
+>
+> **This setting may cause input lag or delay.**
 ```json
 {
+    "FFlagDebugForceFSMCPULightCulling": "true",
     "FFlagFastGPULightCulling3": "true"
 }
 ```
@@ -1079,6 +1098,15 @@ High
 ```json
 {
     "DFIntMaxActiveAnimationTracks": "0"
+}
+```
+
+### Render Blur Independent 🌟
+> [!NOTE]
+> **Makes BlurEffect less consistent across all screen sizes. This lowers the blurs resolution.**
+```json
+{
+    "DFFlagRenderBlurMakeResolutionIndependent": "false"
 }
 ```
 
@@ -1900,6 +1928,26 @@ High
 <h1 align="center">Latency & Other</h1>
 
 
+
+### Pool for instances
+> [!NOTE]
+> **In game development, a pool, or more specifically an object pool, is a design pattern that improves performance by reusing objects instead of constantly creating and destroying them. This is particularly useful for objects like bullets, enemies, or particle effects, which are frequently created and then removed during gameplay.**
+```json
+{
+    "FStringInstancesToPoolByName": "Motor6D:800;Decal:800;Frame:800;Animation:800;Vector3Value:800;SpecialMesh:800;StringValue:800;ImageLabel:800;UIStroke:800;TextLabel:800;"
+}
+```
+
+### Disable Layered Clothing 🌟
+> [!NOTE]
+> **Removes Roblox's layered clothing system from rendering on avatars.**
+>
+> **Enabling this setting potentially may lead to improved performance.**
+```json
+{
+    "DFIntLCCageDeformLimit": "-1"
+}
+```
 
 ### Get Back Oof 🌟
 ```json
