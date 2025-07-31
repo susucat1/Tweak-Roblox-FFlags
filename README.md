@@ -244,6 +244,19 @@
 }
 ```
 
+### Lua & Luau Garbage Collection 🌟
+```json
+{
+  "DFIntLuaGcBoost": 3,
+  "DFIntLuaGcMaxKb": 25000,
+  "DFIntLuauGcStepMul": 140,
+  "DFIntLuauGcStepSizeKb": 10,
+  "FIntLuaGcParallelMinMultiTasks": -5,
+  "FIntLuauGcGoal": 90,
+  "FIntLuauGcGoalCore": 100
+}
+```
+
 ### New Large Replicators
 ```json
 {
