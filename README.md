@@ -2168,7 +2168,7 @@ High
 ## [Bloxstrap Official>>>>>](https://github.com/bloxstraplabs/bloxstrap/releases/)
 ## [Fishstrap>>>>>](https://github.com/fishstrap/fishstrap/releases/)
 ## [Lunastrap>>>>>](https://github.com/lunastraplabs/lunastrap/releases/)
-## [Froststrap (Very Recommended)>>>>>](https://github.com/Meddsam/Froststrap/releases/)
+## [Froststrap (Very Recommended)>>>>>](https://github.com/RealMeddsam/Froststrap/releases/)
 ## [Voidstrap (Discontinued)>>>>>](https://github.com/voidstrap/Voidstrap/releases/)
 ## [Plexity (Release)>>>>>](https://github.com/KloBraticc/Plexity/releases/)
 
