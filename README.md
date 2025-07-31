@@ -170,9 +170,9 @@
 ```
 
 ### Low-End Hardware Optimizations 🌟
-```
+```json
 {
-    "FStringAndroidVfsLowspecHwCondition": "{"and":[ {"=":["app_bitness()",64]}, {"not":[ {"is_any_of":["manufacturer()","samsung","amazon","lge","lg","lg electronics","vivo"]} ]} ]}"
+    "FStringAndroidVfsLowspecHwCondition": {"and":[ {"=":["app_bitness()",64]}, {"not":[ {"is_any_of":["manufacturer()","samsung","amazon","lge","lg","lg electronics","vivo"]} ]} ]}
 }
 ```
 
@@ -1685,7 +1685,7 @@ High
 > **basically the things that are changing on an ui for example loading a new page**
 ```json
 {
-    "DFIntMaxAcceptableUpdateDelay": "60"
+    "DFIntMaxAcceptableUpdateDelay": "10"
 }
 ```
 
@@ -2122,9 +2122,7 @@ High
 
 ### Allows you to edit the DataModel Patch ❗
 > [!WARNING]
-> **Low chance get banned by roblox**
->
-> **risk by yourself**
+> **Roblox makes it broken**
 ```json
 {
     "FFlagDataModelPatcherForceLocal": "true"
@@ -2157,7 +2155,7 @@ High
 ## [Bloxstrap Official>>>>>](https://github.com/bloxstraplabs/bloxstrap/releases/)
 ## [Fishstrap>>>>>](https://github.com/fishstrap/fishstrap/releases/)
 ## [Lunastrap>>>>>](https://github.com/lunastraplabs/lunastrap/releases/)
-## [Froststrap>>>>>](https://github.com/Meddsam/Froststrap/releases/)
+## [Froststrap (Very Recommended)>>>>>](https://github.com/Meddsam/Froststrap/releases/)
 ## [Voidstrap (Discontinued)>>>>>](https://github.com/voidstrap/Voidstrap/releases/)
 ## [Plexity (Release)>>>>>](https://github.com/KloBraticc/Plexity/releases/)
 
