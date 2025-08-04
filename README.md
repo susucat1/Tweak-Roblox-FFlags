@@ -1975,13 +1975,6 @@ High
 
 
 
-### New Arms
-```json
-{
-    "FFlagAnimatorAndADFRefactor": "true"
-}
-```
-
 ### Better Scrolling 🌟
 ```json
 {
