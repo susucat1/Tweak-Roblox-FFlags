@@ -11,14 +11,23 @@
 
 
 
-### Direct X 11
+### DirectX 11
 ```json
 {
     "FFlagDebugGraphicsPreferD3D11": "true"
 }
 ```
 
-### Direct X 10
+### DirectX 11 Low-End Core
+> [!NOTE]
+> **Dx11 Only**
+```json
+{
+    "FIntRenderDx11LowEndCoreCount": "ur core"
+}
+```
+
+### DirectX 10
 > [!NOTE]
 > **FOR POTATO WINDOWS**
 ```json
@@ -160,6 +169,23 @@
 
 
 
+### Disable Anisotropic Filtering 🌟
+```json
+{
+    "DFFlagDebugForceAnisoOff": "true"
+}
+```
+
+### Make Everything Load In Lighting Speed ❗
+> [!WARNING]
+> **Not Recommended**
+```json
+{
+    "DFIntApiRateLimit": "2147483647",
+    "DFIntCLI61964inKB": "2147483647"
+}
+```
+
 ### Port Texture Manager To Trim Memory 🌟
 > [!NOTE]
 > **Self explanatory: Controls "port texture manager" to trim memory**
@@ -247,13 +273,13 @@
 ### Lua & Luau Garbage Collection 🌟
 ```json
 {
-  "DFIntLuaGcBoost": 3,
-  "DFIntLuaGcMaxKb": 25000,
-  "DFIntLuauGcStepMul": 140,
-  "DFIntLuauGcStepSizeKb": 10,
-  "FIntLuaGcParallelMinMultiTasks": -5,
-  "FIntLuauGcGoal": 90,
-  "FIntLuauGcGoalCore": 100
+  "DFIntLuaGcBoost": "3",
+  "DFIntLuaGcMaxKb": "40000",
+  "DFIntLuauGcStepMul": "140",
+  "DFIntLuauGcStepSizeKb": "10",
+  "FIntLuaGcParallelMinMultiTasks": "-5",
+  "FIntLuauGcGoal": "90",
+  "FIntLuauGcGoalCore": "100"
 }
 ```
 
@@ -431,7 +457,8 @@ It’s widely supported on most GPUs and helps textures stay compressed while in
 {
     "DFIntGraphicsOptimizationModeFRMFrameRateTarget": "60",
     "DFIntGraphicsOptimizationModeMinFrameTimeTargetMs": "17",
-    "DFIntGraphicsOptimizationModeMaxFrameTimeTargetMs": "18"
+    "DFIntGraphicsOptimizationModeMaxFrameTimeTargetMs": "18",
+    "FIntRenderMsFrameGatherInterval": "60"
 }
 ```
 > [!NOTE]
@@ -440,7 +467,8 @@ It’s widely supported on most GPUs and helps textures stay compressed while in
 {
     "DFIntGraphicsOptimizationModeFRMFrameRateTarget": "75",
     "DFIntGraphicsOptimizationModeMinFrameTimeTargetMs": "13",
-    "DFIntGraphicsOptimizationModeMaxFrameTimeTargetMs": "14"
+    "DFIntGraphicsOptimizationModeMaxFrameTimeTargetMs": "14",
+    "FIntRenderMsFrameGatherInterval": "75"
 }
 ```
 > [!NOTE]
@@ -449,7 +477,8 @@ It’s widely supported on most GPUs and helps textures stay compressed while in
 {
     "DFIntGraphicsOptimizationModeFRMFrameRateTarget": "100",
     "DFIntGraphicsOptimizationModeMinFrameTimeTargetMs": "10",
-    "DFIntGraphicsOptimizationModeMaxFrameTimeTargetMs": "12"
+    "DFIntGraphicsOptimizationModeMaxFrameTimeTargetMs": "12",
+    "FIntRenderMsFrameGatherInterval": "100"
 }
 ```
 > [!NOTE]
@@ -458,7 +487,8 @@ It’s widely supported on most GPUs and helps textures stay compressed while in
 {
     "DFIntGraphicsOptimizationModeFRMFrameRateTarget": "120",
     "DFIntGraphicsOptimizationModeMinFrameTimeTargetMs": "8",
-    "DFIntGraphicsOptimizationModeMaxFrameTimeTargetMs": "9"
+    "DFIntGraphicsOptimizationModeMaxFrameTimeTargetMs": "9",
+    "FIntRenderMsFrameGatherInterval": "120"
 }
 ```
 > [!NOTE]
@@ -467,7 +497,8 @@ It’s widely supported on most GPUs and helps textures stay compressed while in
 {
     "DFIntGraphicsOptimizationModeFRMFrameRateTarget": "144",
     "DFIntGraphicsOptimizationModeMinFrameTimeTargetMs": "7",
-    "DFIntGraphicsOptimizationModeMaxFrameTimeTargetMs": "8"
+    "DFIntGraphicsOptimizationModeMaxFrameTimeTargetMs": "8",
+    "FIntRenderMsFrameGatherInterval": "144"
 }
 ```
 > [!NOTE]
@@ -476,7 +507,8 @@ It’s widely supported on most GPUs and helps textures stay compressed while in
 {
     "DFIntGraphicsOptimizationModeFRMFrameRateTarget": "165",
     "DFIntGraphicsOptimizationModeMinFrameTimeTargetMs": "6",
-    "DFIntGraphicsOptimizationModeMaxFrameTimeTargetMs": "7"
+    "DFIntGraphicsOptimizationModeMaxFrameTimeTargetMs": "7",
+    "FIntRenderMsFrameGatherInterval": "165"
 }
 ```
 > [!NOTE]
@@ -485,7 +517,8 @@ It’s widely supported on most GPUs and helps textures stay compressed while in
 {
     "DFIntGraphicsOptimizationModeFRMFrameRateTarget": "180",
     "DFIntGraphicsOptimizationModeMinFrameTimeTargetMs": "5",
-    "DFIntGraphicsOptimizationModeMaxFrameTimeTargetMs": "6"
+    "DFIntGraphicsOptimizationModeMaxFrameTimeTargetMs": "6",
+    "FIntRenderMsFrameGatherInterval": "180"
 }
 ```
 > [!NOTE]
@@ -494,7 +527,8 @@ It’s widely supported on most GPUs and helps textures stay compressed while in
 {
     "DFIntGraphicsOptimizationModeFRMFrameRateTarget": "240",
     "DFIntGraphicsOptimizationModeMinFrameTimeTargetMs": "4",
-    "DFIntGraphicsOptimizationModeMaxFrameTimeTargetMs": "5"
+    "DFIntGraphicsOptimizationModeMaxFrameTimeTargetMs": "5",
+    "FIntRenderMsFrameGatherInterval": "240"
 }
 ```
 
@@ -898,10 +932,10 @@ High
 
 ### Texture Manager
 > [!NOTE]
-> **1-4 Blurry, 5-7 low quality also removes studs, 8-10 Removes almost everything (this is better)**
+> **1-4 Blurry, 5-7 low quality also removes studs, 8-12 Removes almost everything (this is better)**
 ```json
 {
-    "FIntDebugTextureManagerSkipMips": "10"
+    "FIntDebugTextureManagerSkipMips": "12"
 }
 ```
 
@@ -1099,11 +1133,10 @@ High
 }
 ```
 
-### Makes Avatars Shiny 
+### Shader Avatars
 ```json
 {
-    "DFIntRenderClampRoughnessMax": "-640000000",
-    "DFIntDebugFRMQualityLevelOverride": "6"
+    "DFIntRenderClampRoughnessMax": "-650000000"
 }
 ```
 
@@ -1941,6 +1974,13 @@ High
 <h1 align="center">Latency & Other</h1>
 
 
+
+### Better Scrolling 🌟
+```json
+{
+    "FFlagUserBetterInertialScrolling": "true"
+}
+```
 
 ### Pool for instances
 > [!NOTE]
