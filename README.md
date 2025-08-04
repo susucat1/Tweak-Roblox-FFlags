@@ -1136,7 +1136,7 @@ High
 ### Shader Avatars
 ```json
 {
-    "DFIntRenderClampRoughnessMax": "-650000000"
+    "DFIntRenderClampRoughnessMax": "-100"
 }
 ```
 
@@ -1974,6 +1974,13 @@ High
 <h1 align="center">Latency & Other</h1>
 
 
+
+### New Arms
+```json
+{
+    "FFlagAnimatorAndADFRefactor": "true"
+}
+```
 
 ### Better Scrolling 🌟
 ```json
