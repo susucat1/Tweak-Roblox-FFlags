@@ -169,6 +169,15 @@
 
 
 
+### Enable Lightweight Data Structures 🌟
+> [!NOTE]
+> **This flag enables the use of a lighter data structure for storing and transmitting object properties, reducing memory and network load, especially during synchronization between client and server.**
+```json
+{
+    "FFlagSlimPropertySet3": "true"
+}
+```
+
 ### Disable Anisotropic Filtering 🌟
 ```json
 {
@@ -1890,7 +1899,7 @@ High
 
 
 
-### Fix Sound Volume Range 🌟
+### Fix Sound Volume Range
 ```json
 {
     "FFlagVideoFixSoundVolumeRange": "true"
