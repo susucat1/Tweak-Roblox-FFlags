@@ -243,21 +243,12 @@
 }
 ```
 
-### Spatial Partition Optimization
-> [!NOTE]
-> **Control Roblox’s use of a split octree system for spatial partitioning, improving performance in managing 3D objects.**
-```json
-{
-    "FFlagUseSplitOctree5": "true"
-}
-```
-
 ### Enable memory control predictor 🌟
 > [!NOTE]
 > **Activates a system that predicts low RAM and prevents crashes. Improves stability and performance on weak devices.**
 ```json
 {
-    "FFlagPerformanceControlLmkdPredictorEnabled6": "true"
+    "FFlagPerformanceControlLmkdPredictorEnabled7": "true"
 }
 ```
 
