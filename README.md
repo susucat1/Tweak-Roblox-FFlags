@@ -113,6 +113,13 @@
 }
 ```
 
+### Enable Orbis Rendering
+```json
+{
+    "FFlagRenderEnableGlobalInstancingOrbis2": "true"
+}
+```
+
 
 
 <h1 align="center">Lightning Technologies</h1>
@@ -149,10 +156,18 @@
 }
 ```
 
+### Future Lighting (Vulkan)
+```json
+{
+    "FFlagFutureIsBrightPhase3Vulkan": "true"
+}
+```
+
 ### Disable Unified Lighting (LightGrid - Beta) 🌟
 ```json
 {
-    "FFlagRenderUnifiedLighting16": "false"
+    "FFlagRenderUnifiedLighting16": "false",
+    "FFlagRenderUnifiedLightingNew": "false"
 }
 ```
 
@@ -169,12 +184,41 @@
 
 
 
+### Optimize friends list cache 🌟
+> [!NOTE]
+> **Optimizes your friends list. 50 will be half of your friends. Setting this value any higher than 90 will most likely crash Roblox.**
+```json
+{
+    "DFIntFriendsListCacheOptimizationRolloutPercentage": "50"
+}
+```
+
+### Reduce CPU Usage When Minimized 🌟
+> [!NOTE]
+> **Reduce CPU usage when Roblox is in the background.**
+```json
+{
+    "DFFlagReduceCPUWhenBG": "true"
+}
+```
+
+### Lua menu performance improvements 🌟
+> [!NOTE]
+> **When enabled, Roblox's Lua-driven menu code runs with some performance enhancements.**
+```json
+{
+    "FFlagLuaMenuPerfImprovements": "true"
+}
+```
+
 ### Enable Lightweight Data Structures 🌟
 > [!NOTE]
 > **This flag enables the use of a lighter data structure for storing and transmitting object properties, reducing memory and network load, especially during synchronization between client and server.**
 ```json
 {
-    "FFlagSlimPropertySet3": "true"
+    "FFlagSlimPropertySet3": "true",
+    "FFlagSlimContentProvider": "true",
+    "FFlagSlimService9": "true"
 }
 ```
 
@@ -216,11 +260,9 @@
 {
     "DFIntHttpBatchLimit": "64",
     "DFIntHttpBatchApiShutdownInfluxHundrethsPercentage": "0",
-    "DFIntHttpBatchApiRejectedUrlHundredthsPercentage": "0",
     "DFIntHttpBatchApi_minWaitMs": "1",
     "DFIntHttpBatchApi_maxWaitMs": "5",
     "DFIntHttpBatchApi_maxReqs": "128",
-    "DFIntHttpBatchApi_MaxBatchesSentPerCyle": "5",
     "DFIntHttpBatchApi_cacheDelayMs": "5",
     "DFIntHttpBatchApi_bgRefreshMaxDelayMs": "30",
     "DFIntHttpBatchApi_bgDelayMs": "10"
@@ -258,15 +300,6 @@
 ```json
 {
     "DFFlagSimClampInertiaOnRead3": "true"
-}
-```
-
-### Garbage Collection (GC) 🌟
-> [!NOTE]
-> **Enables garbage collection behavior. When enabled, memory cleanup may occur in parallel with rendering.**
-```json
-{
-    "FFlagGcInParallelWithRenderPrepare3": "true"
 }
 ```
 
@@ -344,7 +377,7 @@
 }
 ```
 
-### Shapecasts
+### Disable Shapecasts 🌟
 > [!NOTE]
 > **https://devforum.roblox.com/t/introducing-shapecasts/2320655**
 ```json
@@ -538,15 +571,6 @@ It’s widely supported on most GPUs and helps textures stay compressed while in
 ```json
 {
      "FIntRenderFastCluster": "255"
-}
-```
-
-### Fine Grain Culling 🌟
-> [!NOTE]
-> **Allows the system to remove objects more accurately, improving rendering efficiency.**
-```json
-{
-    "FFlagFineGrainCull": "true"
 }
 ```
 
@@ -972,9 +996,7 @@ High
 }
 ```
 
-### ShadowMap Bias 
-> [!NOTE]
-> **[Future & ShadowMap]**
+### Disable ShadowMap Bias 🌟
 ```json
 {
     "FIntRenderShadowmapBias": "-1"
@@ -1147,15 +1169,6 @@ High
 }
 ```
 
-### Render Blur Independent 🌟
-> [!NOTE]
-> **Makes BlurEffect less consistent across all screen sizes. This lowers the blurs resolution.**
-```json
-{
-    "DFFlagRenderBlurMakeResolutionIndependent": "false"
-}
-```
-
 ### Render Bloom Independent 🌟
 > [!NOTE]
 > **Makes BloomEffect less consistent across all screen sizes. This lowers the blooms resolution.**
@@ -1168,7 +1181,7 @@ High
 ### Remove Bloom 🌟
 ``` json
 {
-    "FIntBloomFrmCutoff": "1654515"
+    "FIntBloomFrmCutoff": "1"
 }
 ```
 
@@ -1226,7 +1239,7 @@ High
 }
 ```
 
-### Disable Telemetry VNG (Vietnamese User)
+### Disable VNG (Vietnamese User)
 ```json
 {
     "FFlagEnableVNGNewAppAvailableModal": "false",
@@ -1752,7 +1765,7 @@ High
 ### Draggable Capture Button
 ```json
 {
-    "FFlagEnableUpdatedCaptureControls_v8": "true"
+    "FFlagEnableUpdatedCaptureControls_v9": "true"
 }
 ```
 
@@ -1939,6 +1952,15 @@ High
 }
 ```
 
+### Doppler Effect
+> [!NOTE]
+> **Enables the Doppler effect based on relative velocity.**
+```json
+{
+    "FFlagUserSoundsUseRelativeVelocity2": "true"
+}
+```
+
 ### Audio Occlusion 🌟
 ```json
 {
@@ -1999,13 +2021,6 @@ High
 ```json
 {
     "DFIntLCCageDeformLimit": "-1"
-}
-```
-
-### Get Back Oof 🌟
-```json
-{
-    "FFlagBringBackOof": "true"
 }
 ```
 
@@ -2089,7 +2104,7 @@ High
 > **Smoother visual effects: Effects like lighting and physics-based movements are updated more accurately in real time.**
 ```json
 {
-    "FFlagFasterPreciseTime4": "true"
+    "FFlagFasterPreciseTime5": "true"
 }
 ```
 
