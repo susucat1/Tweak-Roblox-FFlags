@@ -27,6 +27,15 @@
 }
 ```
 
+### Disable HQ Shaders Dx11
+> [!NOTE]
+> **Dx11 Only**
+```json
+{
+    "FFlagDisableHQShadersLowEndDx112": "true"
+}
+```
+
 ### DirectX 10
 > [!NOTE]
 > **FOR POTATO WINDOWS**
@@ -114,6 +123,8 @@
 ```
 
 ### Enable Orbis Rendering
+> [!NOTE]
+> **Dx11 Only**
 ```json
 {
     "FFlagRenderEnableGlobalInstancingOrbis2": "true"
@@ -184,6 +195,16 @@
 
 
 
+### High Resolution
+```json
+{
+    "DFFlagDebugOverrideDPIScale": "false",
+    "DFFlagDisableDPIScale": "true",
+    "DFIntDebugCustomDPIScale": "0",
+    "FFlagFixDPIScaling": "false",
+    "DFIntMicroProfilerDpiScaleOverride": "0"
+}
+```
 ### Optimize friends list cache 🌟
 > [!NOTE]
 > **Optimizes your friends list. 50 will be half of your friends. Setting this value any higher than 90 will most likely crash Roblox.**
@@ -323,7 +344,8 @@
     "FFlagLargeReplicatorWrite5": "true",
     "FFlagLargeReplicatorRead5": "true",
     "FFlagLargeReplicatorSerializeRead3": "true",
-    "FFlagLargeReplicatorSerializeWrite4": "true"
+    "FFlagLargeReplicatorSerializeWrite4": "true",
+    "FFlagGlobalSettingsEngineModule3": "false"
 }
 ```
 
@@ -1777,19 +1799,6 @@ High
 ```json
 {
     "FIntNetworkStatRefreshRate": "1"
-}
-```
-
-### Rename Connections Back To Friends 🌟
-```json
-{
-    "FFlagRenameFriendsToConnections": "false",
-    "FFlagRenameFriendsToConnectionsAppChat2": "false",
-    "FFlagRenameFriendsToConnectionsCoreUI": "false",
-    "FFlagRenameFriendsToConnectionsFriendsMenu": "false",
-    "FFlagRenameFriendsToConnectionsFriendsPage": "false",
-    "FFlagRenameFriendsToConnectionsPartyLobby": "false",
-    "FFlagRenameFriendsToConnectionsProfile": "false"
 }
 ```
 
