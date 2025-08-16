@@ -1,4 +1,10 @@
-## [[Looking For Check/Find FFlags] Join>>>>>>>](https://discord.gg/q5DYxgE4Bt)
+# FastFlags Bot:
+<p align="center">
+  <a href="https://postimg.cc/LhP8Qmfj">
+    <img src="https://i.postimg.cc/8kKf55zX/image-16-1.png" alt="image-16-1.png">
+  </a>
+</p>
+[![Discord](https://img.shields.io/discord/1286323109267505275?style=plastic&logo=discord&label=Discord&labelColor=white&color=blue)](https://discord.gg/xF2u8hvPA5)
 
 
 
