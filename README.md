@@ -2236,12 +2236,18 @@ High
 
 
 
-## [Bloxstrap Official>>>>>](https://github.com/bloxstraplabs/bloxstrap/releases/)
-## [Fishstrap>>>>>](https://github.com/fishstrap/fishstrap/releases/)
-## [Lunastrap>>>>>](https://github.com/lunastraplabs/lunastrap/releases/)
-## [Froststrap (Very Recommended)>>>>>](https://github.com/RealMeddsam/Froststrap/releases/)
-## [Voidstrap (Discontinued)>>>>>](https://github.com/voidstrap/Voidstrap/releases/)
-## [Plexity (Release)>>>>>](https://github.com/KloBraticc/Plexity/releases/)
+## [Bloxstrap Official]
+[![GitHub](https://img.shields.io/github/stars/bloxstraplabs/bloxstrap?style=plastic&logo=github&label=GitHub&labelColor=white&color=black)](https://github.com/bloxstraplabs/bloxstrap/)
+## [Fishstrap (non-Bloxstrap Fork)]
+[![GitHub](https://img.shields.io/github/stars/bloxstraplabs/bloxstrap?style=plastic&logo=github&label=GitHub&labelColor=white&color=black)](https://github.com/fishstrap/fishstrap/)
+## [Lunastrap (non-Bloxstrap Fork)]
+[![GitHub](https://img.shields.io/github/stars/bloxstraplabs/bloxstrap?style=plastic&logo=github&label=GitHub&labelColor=white&color=black)](https://github.com/lunastraplabs/lunastrap/)
+## [Froststrap (Recommended) (non-Bloxstrap Fork)]
+[![GitHub](https://img.shields.io/github/stars/bloxstraplabs/bloxstrap?style=plastic&logo=github&label=GitHub&labelColor=white&color=black)](https://github.com/RealMeddsam/Froststrap/)
+## [Voidstrap (Discontinued) (non-Bloxstrap Fork)]
+[![GitHub](https://img.shields.io/github/stars/bloxstraplabs/bloxstrap?style=plastic&logo=github&label=GitHub&labelColor=white&color=black)](https://github.com/voidstrap/Voidstrap/)
+## [Plexity (non-Bloxstrap Fork)]
+[![GitHub](https://img.shields.io/github/stars/bloxstraplabs/bloxstrap?style=plastic&logo=github&label=GitHub&labelColor=white&color=black)](https://github.com/KloBraticc/Plexity/)
 
 
 
@@ -2249,7 +2255,8 @@ High
 
 
 
-## [Appleblox>>>>>](https://github.com/AppleBlox/appleblox/tags)
+## [Appleblox (Not fully supported yet)]
+[![GitHub](https://img.shields.io/github/stars/bloxstraplabs/bloxstrap?style=plastic&logo=github&label=GitHub&labelColor=white&color=black)](https://github.com/AppleBlox/appleblox/)
 
 
 
@@ -2257,7 +2264,8 @@ High
 
 
 
-## [Rober>>>>>](https://sober.vinegarhq.org/)
+## [Rober Linux]
+[![Website](https://img.shields.io/badge/Website-Truy%20cập%20ngay-blue?style=plastic&logo=google-chrome&labelColor=white)](https://sober.vinegarhq.org/)
 
 
 
@@ -2265,4 +2273,5 @@ High
 
 
 
-## [Chevstrap>>>>>](https://github.com/FrosSky/Chevstrap/releases)
+## [Chevstrap Android]
+[![GitHub](https://img.shields.io/github/stars/bloxstraplabs/bloxstrap?style=plastic&logo=github&label=GitHub&labelColor=white&color=black)](https://github.com/FrosSky/Chevstrap/)
