@@ -1,4 +1,4 @@
-# FastFlags Bot:
+# Bot Check FastFlags For FREE!!!:
 <p align="center">
   <a href="https://postimg.cc/LhP8Qmfj">
     <img src="https://i.postimg.cc/8kKf55zX/image-16-1.png" alt="image-16-1.png">
@@ -31,15 +31,6 @@
 ```json
 {
     "FIntRenderDx11LowEndCoreCount": "ur core"
-}
-```
-
-### Disable HQ Shaders Dx11
-> [!NOTE]
-> **Dx11 Only**
-```json
-{
-    "FFlagDisableHQShadersLowEndDx112": "true"
 }
 ```
 
@@ -92,15 +83,6 @@
 ```json
 {
     "FStringVulkanBuggyRenderpassList2": "YOUR_GPU"
-}
-```
-
-### Stabilizes Vulkan via memory telemetry 🌟
-> [!NOTE]
-> **Enables memory telemetry for Vulkan to help reduce crashes, bugs, and instability on Vulkan-based systems.**
-```json
-{
-    "FFlagAllocatorVulkanMemoryTelemetry2": "true"
 }
 ```
 
@@ -246,7 +228,7 @@
 {
     "FFlagSlimPropertySet3": "true",
     "FFlagSlimContentProvider": "true",
-    "FFlagSlimService9": "true"
+    "FFlagSlimService11": "true"
 }
 ```
 
@@ -334,13 +316,13 @@
 ### Lua & Luau Garbage Collection 🌟
 ```json
 {
-    "DFIntLuaGcBoost": "3",
-    "DFIntLuaGcMaxKb": "40000",
-    "DFIntLuauGcStepMul": "140",
+    "DFIntLuaGcBoost": "4",
+    "DFIntLuaGcMaxKb": "1000",
+    "DFIntLuauGcStepMul": "200",
     "DFIntLuauGcStepSizeKb": "10",
-    "FIntLuaGcParallelMinMultiTasks": "-5",
-    "FIntLuauGcGoal": "90",
-    "FIntLuauGcGoalCore": "100"
+    "FIntLuaGcParallelMinMultiTasks": "1",
+    "FIntLuauGcGoal": "80",
+    "FIntLuauGcGoalCore": "95"
 }
 ```
 
@@ -352,6 +334,8 @@
     "FFlagLargeReplicatorRead5": "true",
     "FFlagLargeReplicatorSerializeRead3": "true",
     "FFlagLargeReplicatorSerializeWrite4": "true",
+    "FFlagNextGenReplicatorEnabledWrite4": "true",
+    "FFlagNextGenReplicatorEnabledRead3": "true",
     "FFlagGlobalSettingsEngineModule3": "false"
 }
 ```
@@ -359,10 +343,10 @@
 ### Favor Performance Over Quality 🌟
 ```json
 {
-    "DFIntGraphicsOptimizationModePerformanceBiasPercent": 100,
-    "FStringIXPGraphicsOptimizationModePerformanceBias": "performanceBias",
-    "FStringIXPGraphicsOptimizationModeBalancedBias": "performanceBias",
-    "FStringIXPGraphicsOptimizationModeQualityBias": "performanceBias"
+    "DFIntGraphicsOptimizationModePerformanceBiasPercent": "100",
+    "DFIntGraphicsOptimizationModeQualityBiasPercent": "0",
+    "DFIntGraphicsOptimizationModeQualityScalePercent": "0",
+    "DFIntGraphicsOptimizationModeBalancedScalePercent": "0"
 }
 ```
 
@@ -411,8 +395,8 @@
 > **https://devforum.roblox.com/t/introducing-shapecasts/2320655**
 ```json
 {
-    "DFIntShapecastMaxDistance": "1",
-    "DFIntShapecastMaxSize": "1"
+    "DFIntShapecastMaxDistance": "0",
+    "DFIntShapecastMaxSize": "0"
 }
 ```
 
@@ -425,7 +409,7 @@
     "DFFlagIkControlDeepProfile": "true",
     "DFFlagAnimatorPostProcessIK": "true",
     "DFFlagIkTwoBoneBetterSolver": "true",
-    "DFFlagIKSolverValidateChain2": "true"
+    "DFFlagIKSolverValidateChain3": "true"
 }
 ```
 
@@ -613,7 +597,7 @@ It’s widely supported on most GPUs and helps textures stay compressed while in
 ### Render Mesh Optimize
 ```json
 {
-    "FIntRenderMeshOptimizeVertexBuffer": "1"
+    "FIntRenderMeshOptimizeVertexBuffer": "128"
 }
 ```
 
@@ -727,7 +711,8 @@ It’s widely supported on most GPUs and helps textures stay compressed while in
 > **lag,stuttering = remove it**
 ```json
 {
-    "FFlagMovePrerender": "true"
+    "FFlagMovePrerender": "true",
+    "FFlagMovePrerenderV2": "true"
 }
 ```
 
@@ -1187,7 +1172,7 @@ High
 ### Shader Avatars
 ```json
 {
-    "DFIntRenderClampRoughnessMax": "-100"
+    "DFIntRenderClampRoughnessMax": "-500"
 }
 ```
 
@@ -1210,7 +1195,7 @@ High
 ### Remove Bloom 🌟
 ``` json
 {
-    "FIntBloomFrmCutoff": "1"
+    "FIntBloomFrmCutoff": "0"
 }
 ```
 
@@ -1239,46 +1224,6 @@ High
 }
 ```
 
-### Remove Minimum required Memory For Roblox
-```json
-{
-    "FIntMininumRequiredMemoryInGB": "0",
-    "FIntMininumRequiredMemoryInMB": "0"
-}
-```
-
-### Zero Telemetry
-```json
-{
-    "DFStringTelemetryV2Url": "null",
-    "DFStringHttpPointsReporterUrl": "null",
-    "FFlagEnableServiceInitBreakdownTelemetry": "false",
-    "DFFlagReportReplicatorStatsToTelemetryV22": "false",
-    "DFFlagDebugDisableTelemetryAfterTest": "true",
-    "FFlagEnableTelemetryProtocol": "false",
-    "FFlagEnableTelemetryService1": "false",
-    "FFlagOpenTelemetryEnabled2": "false",
-    "FLogRobloxTelemetry": "0",
-    "FFlagTimeAndNewJoinDataTelemetry": "false",
-    "FFlagDisableMemoryTracking": "true",
-    "DFStringRobloxAnalyticsURL": "null",
-    "FFlagLuaAppDesktopMediaGalleryTelemetry": "false",
-    "FFlagMediaAccordionAndFullTelemetry": "false",
-    "DFStringRobloxTelemetryReliabilityCountAllowList": "null"
-}
-```
-
-### Disable VNG (Vietnamese User)
-```json
-{
-    "FFlagEnableVNGNewAppAvailableModal": "false",
-    "FFlagVngLogoutGlobalAppSessionsOnConversion": "false",
-    "FFlagLuaAppHomeVngAppUpsell": "false",
-    "FFlagVngTOSRevisedEnabled": "false",
-    "FStringVNGWebshopUrl": "null"
-}
-```
-
 ### Disable Telemetry China
 ```json
 {
@@ -1286,17 +1231,6 @@ High
     "FLogTencentAuthPath": "null",
     "FStringDevPublishChinaRequirementsLink": "null",
     "FLogDevPublishChinaRequirementsLink": "null"
-}
-```
-
-### Don't Give Roblox Info On Your Device
-```json
-{
-    "DFIntReportDeviceInfoRate": 0,
-    "DFIntReportOutputDeviceInfoEventRateHundredthsPercentage": 0,
-    "DFIntReportOutputDeviceInfoRateHundredthsPercentage": 0,
-    "DFIntReportRecordingDeviceInfoEventRateHundredthsPercentage": 0,
-    "DFIntReportRecordingDeviceInfoRateHundredthsPercentage": 0
 }
 ```
 
@@ -1791,13 +1725,6 @@ High
 }
 ```
 
-### Draggable Capture Button
-```json
-{
-    "FFlagEnableUpdatedCaptureControls_v9": "true"
-}
-```
-
 ### Network Menu Update Rate
 > [!NOTE]
 > **This fast flag configures how often the network stats menu (Shift + F3) updates its information. By default, it refreshes the information every 1 second.**
@@ -1841,7 +1768,7 @@ High
 }
 ```
 
-### Multi Try On
+### Multi Try On 🌟
 > [!NOTE]
 > **Allows you to try on multiple things in the catalog and buy everything at once**
 ```json
@@ -2170,15 +2097,6 @@ High
 }
 ```
 
-### Stop Shrinking Simulation Radius 🌟
-> [!NOTE]
-> **Normally, DFIntS2PhysicsSenderRate controls how much physical data is being sent and increases synchronization with the server, but the simulation radius (the area around you where physics are actively processed) gets reduced over time.**
-```json
-{
-    "DFFlagDebugPhysicsSenderDoesNotShrinkSimRadius": "true"
-}
-```
-
 ### Dev Console Logging 🌟
 > [!NOTE]
 > **Changes how long a Message can be, doesn't give you the ability to exceed the 16k Message Length Limit.**
@@ -2204,9 +2122,7 @@ High
 }
 ```
 
-### Allows you to edit the DataModel Patch ❗
-> [!WARNING]
-> **Roblox makes it broken**
+### Allows you to edit the DataModel Patch
 ```json
 {
     "FFlagDataModelPatcherForceLocal": "true"
@@ -2244,10 +2160,6 @@ High
 [![GitHub](https://img.shields.io/github/stars/bloxstraplabs/bloxstrap?style=plastic&logo=github&label=GitHub&labelColor=white&color=black)](https://github.com/lunastraplabs/lunastrap/)
 ## [Froststrap (Recommended) (non-Bloxstrap Fork)]
 [![GitHub](https://img.shields.io/github/stars/bloxstraplabs/bloxstrap?style=plastic&logo=github&label=GitHub&labelColor=white&color=black)](https://github.com/RealMeddsam/Froststrap/)
-## [Voidstrap (Discontinued) (non-Bloxstrap Fork)]
-[![GitHub](https://img.shields.io/github/stars/bloxstraplabs/bloxstrap?style=plastic&logo=github&label=GitHub&labelColor=white&color=black)](https://github.com/voidstrap/Voidstrap/)
-## [Plexity (non-Bloxstrap Fork)]
-[![GitHub](https://img.shields.io/github/stars/bloxstraplabs/bloxstrap?style=plastic&logo=github&label=GitHub&labelColor=white&color=black)](https://github.com/KloBraticc/Plexity/)
 
 
 
@@ -2265,7 +2177,7 @@ High
 
 
 ## [Rober Linux]
-[![Website](https://img.shields.io/badge/Website-Truy%20cập%20ngay-blue?style=plastic&logo=google-chrome&labelColor=white)](https://sober.vinegarhq.org/)
+[![Website](https://img.shields.io/badge/Website%20-blue?style=plastic&logo=google-chrome&labelColor=white)](https://sober.vinegarhq.org/)
 
 
 
