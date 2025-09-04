@@ -111,9 +111,7 @@
 }
 ```
 
-### Enable Orbis Rendering
-> [!NOTE]
-> **Dx11 Only**
+### PlayStation Rendering
 ```json
 {
     "FFlagRenderEnableGlobalInstancingOrbis2": "true"
@@ -184,6 +182,43 @@
 
 
 
+### Probes Stagger Update 🌟
+> [!NOTE]
+> **By default, various performance probes might all try to run their measurements at the exact same moment in a frame. This can create a small, concentrated burst of work, which can sometimes cause a micro-stutter.**
+```json
+{
+    "DFFlagProbesStaggerUpdateCalls": "true"
+}
+```
+
+### Improve Model LOD 🌟
+> [!NOTE]
+> **Enabling improved LOD may reduce rendering workload as it may be more optimised.**
+```json
+{
+    "DFFlagUseImprovedModelLODDefaultEnabled": "true",
+    "DFFlagUseImprovedModelLODThreePhaseRolloutProperty": "true"
+}
+```
+
+### New Optimize CFrame 🌟
+```json
+{
+    "FFlagOptimizeCFrameUpdates4": "true",
+    "FFlagOptimizeCFrameUpdatesIC5": "true"
+}
+```
+
+### Make Your Game Smooth With Harmony 🌟
+> [!NOTE]
+> **If your device struggles, you’d see dropped frames. With harmony though, Roblox detects the bottleneck and changes scheduling so rendering and simulation don’t mess each other up. It’s basically a balancing tool that tries to keep rendering, physics, and frame updates “in harmony” with your device’s performance.**
+```json
+{
+    "FFlagEnableHarmonyOnFrameRateManager4": "true",
+    "FFlagEnableHarmonyOnFrameRateManagerShadow2": "true"
+}
+```
+
 ### High Resolution
 ```json
 {
@@ -228,7 +263,7 @@
 {
     "FFlagSlimPropertySet3": "true",
     "FFlagSlimContentProvider": "true",
-    "FFlagSlimService11": "true"
+    "FFlagSlimService13": "true"
 }
 ```
 
@@ -346,7 +381,10 @@
     "DFIntGraphicsOptimizationModePerformanceBiasPercent": "100",
     "DFIntGraphicsOptimizationModeQualityBiasPercent": "0",
     "DFIntGraphicsOptimizationModeQualityScalePercent": "0",
-    "DFIntGraphicsOptimizationModeBalancedScalePercent": "0"
+    "DFIntGraphicsOptimizationModeBalancedScalePercent": "0",
+    "FStringIXPGraphicsOptimizationModePerformanceBias": "performanceBias",
+    "FStringIXPGraphicsOptimizationModeBalancedBias": "performanceBias",
+    "FStringIXPGraphicsOptimizationModeQualityBias": "performanceBias"
 }
 ```
 
@@ -354,15 +392,6 @@
 ```json
 {
     "FFlagTaskThreadUsesRuntime2": "true"
-}
-```
-
-### Enable Performance Mode 🌟
-```json
-{
-    "DFFlagDebugPerfMode": "true",
-    "FFlagDebugPerfMode": "true",
-    "DFFlagEnableIASPerfStats": "true"
 }
 ```
 
@@ -594,10 +623,10 @@ It’s widely supported on most GPUs and helps textures stay compressed while in
 }
 ```
 
-### Render Mesh Optimize
+### Render Mesh Optimize 🌟
 ```json
 {
-    "FIntRenderMeshOptimizeVertexBuffer": "128"
+    "FIntRenderMeshOptimizeVertexBuffer": "1"
 }
 ```
 
@@ -643,7 +672,7 @@ It’s widely supported on most GPUs and helps textures stay compressed while in
 ### Disable Highlights on Parts 🌟
 ```json
 {
-    "DFFlagRenderHighlightManagerPrepare4": "true"
+    "DFFlagRenderHighlightManagerPrepare5": "true"
 }
 ```
 
@@ -786,14 +815,14 @@ High
 }
 ```
 
-### Disable Player Shadows
+### Disable Player Shadows 🌟
 ```json
 {
     "FIntRenderShadowIntensity": "0"
 }
 ```
 
-### Disable PostFX
+### Disable PostFX 🌟
 ```json
 {
     "FFlagDisablePostFx": "true"
@@ -935,11 +964,11 @@ High
 }
 ```
 
-### Low Quallity Terrain Textures
-> [!NOTE]
-> **0 -> 4 for less quality 16, 32, 64 for higher quality**
+### Remove Terrain Textures 🌟
 ```json
 {
+    "FStringTerrainMaterialTablePre2022": "",
+    "FStringTerrainMaterialTable2022": "",
     "FIntTerrainArraySliceSize": "0"
 }
 ```
@@ -1183,12 +1212,11 @@ High
 }
 ```
 
-### Render Bloom Independent 🌟
-> [!NOTE]
-> **Makes BloomEffect less consistent across all screen sizes. This lowers the blooms resolution.**
+### Disable Resolution Scaling On Effects 🌟
 ```json
 {
-    "DFFlagRenderBloomMakeResolutionIndependent": "false"
+    "DFFlagRenderBloomMakeResolutionIndependent": "false",
+    "DFFlagRenderSunRaysMakeResolutionIndependent": "false"
 }
 ```
 
@@ -1204,15 +1232,6 @@ High
 <h1 align="center">Telemetry</h1>
 
 
-
-### Dont Ur Report Stuff To A Random Website
-> [!NOTE]
-> **rss means it sends stuff to different website**
-```json
-{
-    "DFFlagAndroidReportPeakRSS": "false"
-}
-```
 
 ### Disable Mobile Advertising
 > [!NOTE]
@@ -1846,6 +1865,13 @@ High
 
 
 
+### Enable Audio Fidelity
+```json
+{
+    "FFlagAudioSimulationFidelity": "true"
+}
+```
+
 ### Fix Sound Volume Range
 ```json
 {
@@ -1939,6 +1965,41 @@ High
 <h1 align="center">Latency & Other</h1>
 
 
+
+### Disable The Data Size Limit For Replicator 🌟
+```json
+{
+    "DFFlagReplicatorDisKickSize": "true"
+}
+```
+
+### Fix RakNet BW Collapse
+```json
+{
+    "DFFlagRakNetFixBwCollapse": "true"
+}
+```
+
+### Prevent Network Flooding And Abnormal Data Spikes From A Client 🌟
+```json
+{
+    "DFFlagReplicatorKickRecvVariantSpeed": "true"
+}
+```
+
+### Improves Replication Efficiency 🌟
+```json
+{
+    "DFFlagReplicatorSeparateVarThresholds": "true"
+}
+```
+
+### Connect To Your Region More Often 🌟
+```json
+{
+    "DFIntTrackCountryRegionAPIHundredthsPercent": "10000"
+}
+```
 
 ### Better Scrolling 🌟
 ```json
