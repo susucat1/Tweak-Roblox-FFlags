@@ -182,6 +182,16 @@
 
 
 
+### Enable Physically Based Rendering (PBR)
+> [!NOTE]
+> **Physically Based Rendering (PBR) is a modern computer graphics technique used to create realistic-looking images by simulating how light behaves in the real world. It uses algorithms based on physical laws to accurately model how light interacts with materials.**
+```json
+{
+    "FFlagCanReplicatePBRDecalPropertiesServer": "true",
+    "FFlagRenderPBRDecal3": "true"
+}
+```
+
 ### Probes Stagger Update 🌟
 > [!NOTE]
 > **By default, various performance probes might all try to run their measurements at the exact same moment in a frame. This can create a small, concentrated burst of work, which can sometimes cause a micro-stutter.**
@@ -1966,7 +1976,7 @@ High
 
 
 
-### Disable The Data Size Limit For Replicator 🌟
+### Disable The Data Size Limit For Replicator 
 ```json
 {
     "DFFlagReplicatorDisKickSize": "true"
@@ -1980,7 +1990,7 @@ High
 }
 ```
 
-### Prevent Network Flooding And Abnormal Data Spikes From A Client 🌟
+### Prevent Network Flooding And Abnormal Data Spikes From A Client 
 ```json
 {
     "DFFlagReplicatorKickRecvVariantSpeed": "true"
@@ -1991,13 +2001,6 @@ High
 ```json
 {
     "DFFlagReplicatorSeparateVarThresholds": "true"
-}
-```
-
-### Connect To Your Region More Often 🌟
-```json
-{
-    "DFIntTrackCountryRegionAPIHundredthsPercent": "10000"
 }
 ```
 
