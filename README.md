@@ -120,11 +120,11 @@
 
 
 
-<h1 align="center">Lightning Technologies</h1>
+<h1 align="center">Roblox Hate It 😡</h1>
 
 
 
-### Voxel Lighting (Phase 1) 🌟
+### Voxel Lighting (Phase 1)
 ```json
 {
     "DFFlagDebugRenderForceTechnologyVoxel": "true"
@@ -158,14 +158,6 @@
 ```json
 {
     "FFlagFutureIsBrightPhase3Vulkan": "true"
-}
-```
-
-### Disable Unified Lighting (LightGrid - Beta) 🌟
-```json
-{
-    "FFlagRenderUnifiedLighting16": "false",
-    "FFlagRenderUnifiedLightingNew": "false"
 }
 ```
 
@@ -349,15 +341,6 @@
 }
 ```
 
-### Stable Object Physics
-> [!NOTE]
-> **Prevents extreme/unrealistic object behavior by limiting inertia values during physics calculations.**
-```json
-{
-    "DFFlagSimClampInertiaOnRead3": "true"
-}
-```
-
 ### Lua & Luau Garbage Collection 🌟
 ```json
 {
@@ -395,13 +378,6 @@
     "FStringIXPGraphicsOptimizationModePerformanceBias": "performanceBias",
     "FStringIXPGraphicsOptimizationModeBalancedBias": "performanceBias",
     "FStringIXPGraphicsOptimizationModeQualityBias": "performanceBias"
-}
-```
-
-### Alternative Runtime Algorithm 🌟
-```json
-{
-    "FFlagTaskThreadUsesRuntime2": "true"
 }
 ```
 
@@ -815,13 +791,11 @@ High
 }
 ```
 
-### Custom Limits Light Updates
-> [!NOTE]
-> **You can use it or Roblox Default**
+### Performance Limits Light Updates 🌟
 ```json
 {
     "FIntRenderLocalLightUpdatesMin": "0",
-    "FIntRenderLocalLightUpdatesMax": "8"
+    "FIntRenderLocalLightUpdatesMax": "1"
 }
 ```
 
@@ -960,14 +934,14 @@ High
 > **Weird Lighting**
 ```json
 {
-    "FFlagNewLightAttenuation": "true"
+    "FFlagNewLightAttenuation2": "true"
 }
 ```
 
 ### Custom Frame Buffer 🌟
 ```json
 {
-    "DFIntMaxFrameBufferSize": "4",
+    "DFIntMaxFrameBufferSize": "1",
     "FIntInterpolationAwareTargetTimeLerpHundredth": "100",
     "FIntMaquettesFrameRateBufferPercentage": "100",
     "DFIntMaxAverageFrameDelayExceedFactor": "0"
@@ -1029,13 +1003,6 @@ High
 ```json
 {
     "FIntGrassMovementReducedMotionFactor": "0"
-}
-```
-
-### Increased Grass Motion
-```json
-{
-    "FIntGrassMovementReducedMotionFactor": "999"
 }
 ```
 
@@ -1693,15 +1660,6 @@ High
 }
 ```
 
-### Preferred Text Size Scale 🌟
-``` json
-{
-     "FFlagEnablePreferredTextSizeGuiService": "true",
-     "FFlagEnablePreferredTextSizeScale": "true",
-     "FFlagEnablePreferredTextSizeSettingInMenus2": "true"
-}
-```
-
 ### Disable Toast Notifications 🌟
 ```json
 {
@@ -1940,7 +1898,7 @@ High
 }
 ```
 
-### Audio Occlusion 🌟
+### Audio Occlusion
 ```json
 {
     "FFlagDebugEnableDirectAudioOcclusion2": "true"
@@ -1976,17 +1934,30 @@ High
 
 
 
+### Max Packet Wait Time Before Deserialization (Useful) 🌟
+> [!NOTE]
+> **This fflag basically sets the maximum amount of time a received packet can wait before being deserialized (these deserialized packets are used for processing general tasks, etc.)**
+>
+> **Deserialize - Taking raw data (usually bytes) and converting it back into usable program data (it's essentially just a translation)**
+```json
+{
+    "DFIntMaxReceiveToDeserializeLatencyMilliseconds": "0"
+}
+```
+
+### Target Timing Delay 🌟
+> [!NOTE]
+> **It determines how long it takes the client to process and recognize a target. For example, in a game like Blade Ball, it affects how quickly the client identifies who you’re aiming the ball toward. Lowering this delay makes target recognition faster and smoother.**
+```json
+{
+    "DFIntTargetTimeDelayFacctorTenths": "0"
+}
+```
+
 ### Disable The Data Size Limit For Replicator 
 ```json
 {
     "DFFlagReplicatorDisKickSize": "true"
-}
-```
-
-### Fix RakNet BW Collapse
-```json
-{
-    "DFFlagRakNetFixBwCollapse": "true"
 }
 ```
 
@@ -1997,7 +1968,7 @@ High
 }
 ```
 
-### Improves Replication Efficiency 🌟
+### Improves Replication Efficiency
 ```json
 {
     "DFFlagReplicatorSeparateVarThresholds": "true"
