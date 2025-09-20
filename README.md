@@ -174,6 +174,14 @@
 
 
 
+### KTX 2.0 Support 🌟
+> [!NOTE]
+> **KTX 2.0 adds support for Basis Universal supercompressed GPU textures. Developed by Binomial, this compression technology produces compact textures that can be efficiently transcoded to a variety of GPU compressed texture formats at run-time. Additionally, Khronos has released the KHR_texture_basisu extension that enables glTF to contain KTX 2.0 textures, resulting in universally distributable glTF assets that reduce download size and use natively supported texture formats to reduce GPU memory size and boost rendering speed on diverse devices and platforms.**
+```json
+{
+    "FFlagKtx2Support2": "true"
+}
+```
 ### Enable Physically Based Rendering (PBR)
 > [!NOTE]
 > **Physically Based Rendering (PBR) is a modern computer graphics technique used to create realistic-looking images by simulating how light behaves in the real world. It uses algorithms based on physical laws to accurately model how light interacts with materials.**
@@ -1934,6 +1942,41 @@ High
 
 
 
+### Remote Animation Smoothing 🌟
+> [!NOTE]
+> **Bounce - Bounces backwards multiple times after reaching the target, before eventually settling**
+>
+> **Back - Slightly overshoots the target, then backs into place**
+>
+> **Cubic - Similar to Quad but with a slightly sharper curve based on cubic interpolation**
+>
+> **Constant - This holds steady like linear nd then instantly jumps with no in-between smoothing**
+>
+> **Circular - Follows a circular arc, such that acceleration is more sudden nd deceleration more gradual versus Quint or Exp**
+>
+> **Extrapolation - Predicts forward motion beyond the last known point, based on current velocity (Best)**
+>
+> **Elastic - Moves as if attached to a rubber band, overshooting the target several times**
+>
+> **Exponential - The sharpest curve based on exponential interpolation**
+>
+> **Sextic - Even sharper than Quint; uses a 6th-degree polynomial (t^6), starts very slowly nd ends very sharply (Best)**
+>
+> **Quad - Similar to Sine but with a slightly sharper curve based on quadratic interpolation [Quadratic]**
+>
+> **Quart - Similar to Cubic but with an even sharper curve based on quartic interpolation [Quartic]**
+>
+> **Quint - Similar to Quart but with an even sharper curve based on quintic interpolation [Quintic]**
+>
+> **Sine - Speed is determined by a sine wave for a gentle easing motion**
+>
+> **Linear - It moves at a constant speed without any influence**
+```json
+{
+    "FStringRemoteAnimationSmoothingStrategy": ""
+}
+```
+
 ### Max Packet Wait Time Before Deserialization (Useful) 🌟
 > [!NOTE]
 > **This fflag basically sets the maximum amount of time a received packet can wait before being deserialized (these deserialized packets are used for processing general tasks, etc.)**
@@ -1945,12 +1988,62 @@ High
 }
 ```
 
-### Target Timing Delay 🌟
+### Optimize Target Timing Delay 🌟
 > [!NOTE]
+> **Target refresh helps with flags related to "target", either that or target refresh seems to help with AI and object interpolation targeting another player, which can result in better results in games such as Blade Ball (?)**
+> 
 > **It determines how long it takes the client to process and recognize a target. For example, in a game like Blade Ball, it affects how quickly the client identifies who you’re aiming the ball toward. Lowering this delay makes target recognition faster and smoother.**
 ```json
 {
-    "DFIntTargetTimeDelayFacctorTenths": "0"
+    "FIntTargetRefreshRate": "120",
+    "DFIntTargetTimeDelayFacctorTenths": "1"
+}
+```
+
+### Interpolation Recursions
+> [!NOTE]
+> **Sets the number interpolation recursions (the interpolation function calls itself while trying to calculate intermediate states for smoother movement) before checking. More recursions result in more accurate interpolation, but since each additional recursion takes more time, it can increase latency.**
+```json
+{
+    "DFIntMaxInterpolationRecursionsBeforeCheck": "1"
+}
+```
+
+### Interpolation Thresholds
+> [!NOTE]
+> **DFIntInterpolationFramePositionThresholdMillionth: Sets the frame position threshold, expressed in parts per million, to trigger interpolation. Increasing the value can reduce motion accuracy but improve performance.**
+>
+> **DFIntInterpolationFrameRotVelocityThresholdMillionth: Sets the frame rotation rate threshold, expressed in parts per million, to trigger interpolation. Increasing the value can reduce motion accuracy but improve performance.**
+>
+> **DFIntInterpolationFrameVelocityThresholdMillionth: Sets the minimum change in an object’s movement speed (velocity) in parts per million required to trigger interpolation. Increasing the value may reduce accuracy but improve performance.**
+```json
+{
+    "DFIntInterpolationFramePositionThresholdMillionth": "0",
+    "DFIntInterpolationFrameRotVelocityThresholdMillionth": "0",
+    "DFIntInterpolationFrameVelocityThresholdMillionth": "0"
+}
+```
+
+### Interpolation Mechanism Processing 🌟
+> [!NOTE]
+> **DFIntInterpolationNumMechanismsBatchSize: Sets the number of mechanisms processed at a time in a group. Larger batch/group sizes can reduce the number of calls and improve performance, but can cause overhead. A value of 1 (default) would be the best for latency.**
+>
+> **DFIntInterpolationNumMechanismsPerTask: Sets the number of mechanisms handled per task. Works together with the batch size to determine how interpolation calculations are divided. Larger values can increase overhead while lower values can reduce latency.**
+```json
+{
+    "DFIntInterpolationNumMechanismsBatchSize": "1",
+    "DFIntInterpolationNumMechanismsPerTask": "1"
+}
+```
+
+### Configure How Many Physics Simulation Tasks Can Run In Parallel 🌟
+> [!NOTE]
+> **Higher = faster physics, worse FPS**
+>
+> **Lower = smoother FPS, slightly delayed physics**
+```json
+{
+    "FIntSimWorldTaskQueueParallelTasks": "1"
 }
 ```
 
