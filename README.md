@@ -51,9 +51,7 @@
 > **Better with Android/Linux**
 ```json
 {
-    "FFlagDebugGraphicsPreferOpenGL": "true",
-    "FFlagGraphicsGLEnableHQShadersExclusion": "true",
-    "FFlagGraphicsGLEnableSuperHQShadersExclusion": "true"
+    "FFlagDebugGraphicsPreferOpenGL": "true"
 }
 ```
 
@@ -62,11 +60,16 @@
 > **Better with Android/Linux and MacOS**
 ```json
 {
-    "FFlagDebugGraphicsPreferVulkan": "true",
-    "FFlagGraphicsVulkanBonusMemory": "true",
-    "FFlagSupportHeadlessDeviceVulkan": "true",
-    "FFlagRenderEnableGlobalInstancingVulkan": "true",
-    "FFlagRenderEnableGlobalInstancingD3D11": "false"
+    "FFlagDebugGraphicsPreferVulkan": "true"
+}
+```
+
+### Vulkan Multi Threaded Performance
+> [!NOTE]
+> **Requires Prerender to be enabled**
+```json
+{
+    "FFlagGraphicsVulkanMtSubmit3": "true"
 }
 ```
 
@@ -106,8 +109,7 @@
 > **MacOS Only**
 ```json
 {
-    "FFlagDebugGraphicsPreferMetal": "true",
-    "FFlagRenderEnableGlobalInstancingMetal": "true"
+    "FFlagDebugGraphicsPreferMetal": "true"
 }
 ```
 
@@ -729,12 +731,9 @@ It’s widely supported on most GPUs and helps textures stay compressed while in
 }
 ```
 
-### Fully Enable MovePrerender ❗
-> [!WARNING]
-> **lag,stuttering = remove it**
+### Enable MovePrerender 🌟
 ```json
 {
-    "FFlagMovePrerender": "true",
     "FFlagMovePrerenderV2": "true"
 }
 ```
@@ -799,7 +798,7 @@ High
 }
 ```
 
-### Performance Limits Light Updates 🌟
+### Performance Light Updates 🌟
 ```json
 {
     "FIntRenderLocalLightUpdatesMin": "0",
@@ -949,9 +948,9 @@ High
 ### Custom Frame Buffer 🌟
 ```json
 {
-    "DFIntMaxFrameBufferSize": "1",
+    "DFIntMaxFrameBufferSize": "4",
     "FIntInterpolationAwareTargetTimeLerpHundredth": "100",
-    "FIntMaquettesFrameRateBufferPercentage": "100",
+    "FIntMaquettesFrameRateBufferPercentage": "0",
     "DFIntMaxAverageFrameDelayExceedFactor": "0"
 }
 ```
@@ -1995,7 +1994,7 @@ High
 > **It determines how long it takes the client to process and recognize a target. For example, in a game like Blade Ball, it affects how quickly the client identifies who you’re aiming the ball toward. Lowering this delay makes target recognition faster and smoother.**
 ```json
 {
-    "FIntTargetRefreshRate": "120",
+    "FIntTargetRefreshRate": "240",
     "DFIntTargetTimeDelayFacctorTenths": "1"
 }
 ```
